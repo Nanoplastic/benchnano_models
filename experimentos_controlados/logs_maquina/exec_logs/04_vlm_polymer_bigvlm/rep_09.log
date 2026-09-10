@@ -1,0 +1,23 @@
+# comando: /home/astral_visao/Documents/visao/.venv/bin/python3 /home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/scripts/04_vlm_polymer_bigvlm_10x.py --only-seed 9
+# inicio (UTC): 2026-09-07T18:51:21.893876+00:00
+
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+
+=== 04_vlm_polymer_bigvlm — repetição 09/9 (seed=9, tag=mina_real_only_lora_bigvlm_ctrl_seed9) ===
+trainable params: 10,536,960 || all params: 2,256,809,840 || trainable%: 0.4669
+epoch 1/6  train_loss=0.6653  real_val_acc=0.421
+  -> novo melhor adapter (real_val_acc=0.421) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed9
+epoch 2/6  train_loss=0.3411  real_val_acc=0.529
+  -> novo melhor adapter (real_val_acc=0.529) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed9
+epoch 3/6  train_loss=0.2553  real_val_acc=0.608
+  -> novo melhor adapter (real_val_acc=0.608) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed9
+epoch 4/6  train_loss=0.1941  real_val_acc=0.646
+  -> novo melhor adapter (real_val_acc=0.646) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed9
+epoch 5/6  train_loss=0.1739  real_val_acc=0.625
+epoch 6/6  train_loss=0.1141  real_val_acc=0.604
+
+Melhor acurácia em real_val: 0.646. Adapter em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed9
+
+Acurácia final REAL TEST (mina_real_only_lora_bigvlm_ctrl_seed9, n=208): 0.736
+[04_vlm_polymer_bigvlm] rep 09: test_acc=0.736 (19.6 min)

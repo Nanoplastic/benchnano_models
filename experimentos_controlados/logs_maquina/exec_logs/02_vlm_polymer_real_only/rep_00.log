@@ -1,0 +1,21 @@
+# comando: /home/astral_visao/Documents/visao/.venv/bin/python3 /home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/scripts/02_vlm_polymer_real_only_10x.py --only-seed 0
+# inicio (UTC): 2026-09-07T04:59:14.608371+00:00
+
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+
+=== 02_vlm_polymer_real_only — repetição 00/9 (seed=0, tag=mina_real_only_lora_ctrl_seed0) ===
+trainable params: 4,784,128 || all params: 512,266,432 || trainable%: 0.9339
+epoch 1/6  train_loss=0.6336  real_val_acc=0.562
+  -> novo melhor adapter (real_val_acc=0.562) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_ctrl_seed0
+epoch 2/6  train_loss=0.2859  real_val_acc=0.542
+epoch 3/6  train_loss=0.2494  real_val_acc=0.613
+  -> novo melhor adapter (real_val_acc=0.613) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_ctrl_seed0
+epoch 4/6  train_loss=0.1854  real_val_acc=0.562
+epoch 5/6  train_loss=0.1227  real_val_acc=0.608
+epoch 6/6  train_loss=0.0852  real_val_acc=0.588
+
+Melhor acurácia em real_val: 0.613. Adapter em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_ctrl_seed0
+
+Acurácia final REAL TEST (mina_real_only_lora_ctrl_seed0, n=208): 0.663
+[02_vlm_polymer_real_only] rep 00: test_acc=0.663

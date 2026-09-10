@@ -1,0 +1,36 @@
+{
+  "experiment": "03_vlm_polymer_real_synth",
+  "repetition_index": 4,
+  "repetition_seed": 4,
+  "environment": {
+    "timestamp_utc": "2026-09-07T12:16:36.186118+00:00",
+    "host": "tot-B650M-D3HP-AX",
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "python_version": "3.12.3",
+    "git_commit": "f7a0a0a1",
+    "cpu_model": "AMD Ryzen 9 9900X 12-Core Processor",
+    "n_cpus_logical": 24,
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "ram_total_gb": 60.43,
+    "cuda_version": "12.1",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "nvidia_driver_version": "580.173.02",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "ultralytics_version": "8.4.141"
+  },
+  "metrics": {
+    "best_val_acc": 0.6291666666666667,
+    "test_acc": 0.6153846153846154
+  },
+  "metadata": {
+    "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed4",
+    "adapter_dir": "/home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_plus_synthetic_lora_v2_ctrl_seed4",
+    "real_train_samples": 1000,
+    "synthetic_samples": 1000,
+    "train_samples": 2000,
+    "val_samples": 240,
+    "test_samples": 208
+  }
+}

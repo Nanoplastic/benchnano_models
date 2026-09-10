@@ -1,0 +1,24 @@
+# comando: /home/astral_visao/Documents/visao/.venv/bin/python3 /home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/scripts/04_vlm_polymer_bigvlm_10x.py --only-seed 4
+# inicio (UTC): 2026-09-07T17:13:40.531794+00:00
+
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+
+=== 04_vlm_polymer_bigvlm — repetição 04/9 (seed=4, tag=mina_real_only_lora_bigvlm_ctrl_seed4) ===
+trainable params: 10,536,960 || all params: 2,256,809,840 || trainable%: 0.4669
+epoch 1/6  train_loss=0.6487  real_val_acc=0.479
+  -> novo melhor adapter (real_val_acc=0.479) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed4
+epoch 2/6  train_loss=0.3136  real_val_acc=0.613
+  -> novo melhor adapter (real_val_acc=0.613) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed4
+epoch 3/6  train_loss=0.2206  real_val_acc=0.625
+  -> novo melhor adapter (real_val_acc=0.625) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed4
+epoch 4/6  train_loss=0.1792  real_val_acc=0.625
+epoch 5/6  train_loss=0.1365  real_val_acc=0.650
+  -> novo melhor adapter (real_val_acc=0.650) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed4
+epoch 6/6  train_loss=0.1030  real_val_acc=0.658
+  -> novo melhor adapter (real_val_acc=0.658) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed4
+
+Melhor acurácia em real_val: 0.658. Adapter em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed4
+
+Acurácia final REAL TEST (mina_real_only_lora_bigvlm_ctrl_seed4, n=208): 0.764
+[04_vlm_polymer_bigvlm] rep 04: test_acc=0.764 (19.5 min)

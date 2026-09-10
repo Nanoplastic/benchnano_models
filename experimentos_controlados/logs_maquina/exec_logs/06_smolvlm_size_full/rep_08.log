@@ -1,0 +1,34 @@
+# comando: /home/astral_visao/Documents/visao/.venv/bin/python3 /home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/scripts/06_smolvlm_size_full_10x.py --only-seed 8
+# inicio (UTC): 2026-09-07T04:22:44.315504+00:00
+
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+
+=== 06_smolvlm_size_full — repetição 08/9 (seed=8, tag=size_full_ft_ctrl_seed8) ===
+full fine-tuning: 507.5M parametros treinaveis
+epoch 1/6  train_loss=0.2682  real_val_acc=0.821
+  -> novo melhor checkpoint (real_val_acc=0.821) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_full_ft_ctrl_seed8
+epoch 2/6  train_loss=0.0300  real_val_acc=0.900
+  -> novo melhor checkpoint (real_val_acc=0.900) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_full_ft_ctrl_seed8
+epoch 3/6  train_loss=0.0190  real_val_acc=0.904
+  -> novo melhor checkpoint (real_val_acc=0.904) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_full_ft_ctrl_seed8
+epoch 4/6  train_loss=0.0097  real_val_acc=0.912
+  -> novo melhor checkpoint (real_val_acc=0.912) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_full_ft_ctrl_seed8
+epoch 5/6  train_loss=0.0047  real_val_acc=0.917
+  -> novo melhor checkpoint (real_val_acc=0.917) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_full_ft_ctrl_seed8
+epoch 6/6  train_loss=0.0017  real_val_acc=0.917
+
+Melhor acurácia em real_val: 0.917. Checkpoint em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_full_ft_ctrl_seed8
+
+Acurácia final REAL TEST (size_full_ft_ctrl_seed8, n=208): 0.889
+[06_smolvlm_size_full] rep 08: test_acc=0.889

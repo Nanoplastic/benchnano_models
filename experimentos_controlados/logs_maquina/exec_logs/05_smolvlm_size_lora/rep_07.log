@@ -1,0 +1,21 @@
+# comando: /home/astral_visao/Documents/visao/.venv/bin/python3 /home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/scripts/05_smolvlm_size_lora_10x.py --only-seed 7
+# inicio (UTC): 2026-09-07T00:45:40.580752+00:00
+
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+
+=== 05_smolvlm_size_lora — repetição 07/9 (seed=7, tag=size_lora_ctrl_seed7) ===
+trainable params: 4,784,128 || all params: 512,266,432 || trainable%: 0.9339
+epoch 1/6  train_loss=0.1244  real_val_acc=0.879
+  -> novo melhor adapter (real_val_acc=0.879) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_lora_ctrl_seed7
+epoch 2/6  train_loss=0.0297  real_val_acc=0.846
+epoch 3/6  train_loss=0.0151  real_val_acc=0.925
+  -> novo melhor adapter (real_val_acc=0.925) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_lora_ctrl_seed7
+epoch 4/6  train_loss=0.0128  real_val_acc=0.896
+epoch 5/6  train_loss=0.0064  real_val_acc=0.887
+epoch 6/6  train_loss=0.0041  real_val_acc=0.917
+
+Melhor acurácia em real_val: 0.925. Adapter em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_lora_ctrl_seed7
+
+Acurácia final REAL TEST (size_lora_ctrl_seed7, n=208): 0.904
+[05_smolvlm_size_lora] rep 07: test_acc=0.904

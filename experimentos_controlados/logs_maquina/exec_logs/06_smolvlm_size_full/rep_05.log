@@ -1,0 +1,28 @@
+# comando: /home/astral_visao/Documents/visao/.venv/bin/python3 /home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/scripts/06_smolvlm_size_full_10x.py --only-seed 5
+# inicio (UTC): 2026-09-07T03:28:03.794959+00:00
+
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+
+=== 06_smolvlm_size_full — repetição 05/9 (seed=5, tag=size_full_ft_ctrl_seed5) ===
+full fine-tuning: 507.5M parametros treinaveis
+epoch 1/6  train_loss=0.2559  real_val_acc=0.879
+  -> novo melhor checkpoint (real_val_acc=0.879) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_full_ft_ctrl_seed5
+epoch 2/6  train_loss=0.0356  real_val_acc=0.887
+  -> novo melhor checkpoint (real_val_acc=0.887) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_full_ft_ctrl_seed5
+epoch 3/6  train_loss=0.0230  real_val_acc=0.875
+epoch 4/6  train_loss=0.0131  real_val_acc=0.917
+  -> novo melhor checkpoint (real_val_acc=0.917) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_full_ft_ctrl_seed5
+epoch 5/6  train_loss=0.0058  real_val_acc=0.904
+epoch 6/6  train_loss=0.0073  real_val_acc=0.904
+
+Melhor acurácia em real_val: 0.917. Checkpoint em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_full_ft_ctrl_seed5
+
+Acurácia final REAL TEST (size_full_ft_ctrl_seed5, n=208): 0.865
+[06_smolvlm_size_full] rep 05: test_acc=0.865

@@ -1,0 +1,25 @@
+# comando: /home/astral_visao/Documents/visao/.venv/bin/python3 /home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/scripts/02_vlm_polymer_real_only_10x.py --only-seed 4
+# inicio (UTC): 2026-09-07T06:26:52.821696+00:00
+
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: ab626459-707b-4e0f-ad2d-beff4480ce9a)')' thrown while requesting HEAD https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+
+=== 02_vlm_polymer_real_only — repetição 04/9 (seed=4, tag=mina_real_only_lora_ctrl_seed4) ===
+trainable params: 4,784,128 || all params: 512,266,432 || trainable%: 0.9339
+epoch 1/6  train_loss=0.5910  real_val_acc=0.537
+  -> novo melhor adapter (real_val_acc=0.537) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_ctrl_seed4
+epoch 2/6  train_loss=0.3030  real_val_acc=0.629
+  -> novo melhor adapter (real_val_acc=0.629) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_ctrl_seed4
+epoch 3/6  train_loss=0.2237  real_val_acc=0.588
+epoch 4/6  train_loss=0.1788  real_val_acc=0.613
+epoch 5/6  train_loss=0.1184  real_val_acc=0.650
+  -> novo melhor adapter (real_val_acc=0.650) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_ctrl_seed4
+epoch 6/6  train_loss=0.0887  real_val_acc=0.696
+  -> novo melhor adapter (real_val_acc=0.696) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_ctrl_seed4
+
+Melhor acurácia em real_val: 0.696. Adapter em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_ctrl_seed4
+
+Acurácia final REAL TEST (mina_real_only_lora_ctrl_seed4, n=208): 0.712
+[02_vlm_polymer_real_only] rep 04: test_acc=0.712

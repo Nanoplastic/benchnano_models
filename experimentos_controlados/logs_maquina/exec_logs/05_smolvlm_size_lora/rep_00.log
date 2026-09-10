@@ -1,0 +1,23 @@
+# comando: /home/astral_visao/Documents/visao/.venv/bin/python3 /home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/scripts/05_smolvlm_size_lora_10x.py --only-seed 0
+# inicio (UTC): 2026-09-06T22:00:02.895884+00:00
+
+/home/astral_visao/Documents/visao/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 1034f90f-1760-4d41-baa2-d00b570d459d)')' thrown while requesting HEAD https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/processor_config.json
+Retrying in 1s [Retry 1/5].
+
+=== 05_smolvlm_size_lora — repetição 00/9 (seed=0, tag=size_lora_ctrl_seed0) ===
+trainable params: 4,784,128 || all params: 512,266,432 || trainable%: 0.9339
+epoch 1/6  train_loss=0.1277  real_val_acc=0.867
+  -> novo melhor adapter (real_val_acc=0.867) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_lora_ctrl_seed0
+epoch 2/6  train_loss=0.0280  real_val_acc=0.938
+  -> novo melhor adapter (real_val_acc=0.938) salvo em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_lora_ctrl_seed0
+epoch 3/6  train_loss=0.0232  real_val_acc=0.875
+epoch 4/6  train_loss=0.0109  real_val_acc=0.900
+epoch 5/6  train_loss=0.0067  real_val_acc=0.929
+epoch 6/6  train_loss=0.0038  real_val_acc=0.933
+
+Melhor acurácia em real_val: 0.938. Adapter em /home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_lora_ctrl_seed0
+
+Acurácia final REAL TEST (size_lora_ctrl_seed0, n=208): 0.851
+[05_smolvlm_size_lora] rep 00: test_acc=0.851
