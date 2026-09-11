@@ -1,0 +1,29 @@
+Comparando Experimento A (só real) (tag=mina_real_only_lora) vs. Experimento B (real+sintético) (tag=mina_real_plus_synthetic_lora_v2)
+
+n = 208 imagens de teste (pareadas, mesmo test set)
+Acurácia Experimento A (só real): 0.697
+Acurácia Experimento B (real+sintético): 0.688
+Diferença (A - B): +0.010
+
+=== 1. IC pareado ingênuo (Jain 13.4.1, por partícula) ===
+Diferença média: +0.0096
+IC 95%: [-0.0640, +0.0832]
+Exclui zero (diferença significativa neste teste)? não
+
+=== 2. Bootstrap por imagem-fonte (unidade de reamostragem correta) ===
+14 imagens-fonte distintas, 10000 réplicas bootstrap
+Diferença média: +0.0068
+IC 95%: [-0.1845, +0.1792]
+Exclui zero (diferença significativa neste teste)? não
+
+=== 3. Teste de McNemar exato (discordâncias pareadas) ===
+A certo / B errado: 31
+B certo / A errado: 29
+n discordante: 60
+p-valor (exato, bicaudal): 0.8974
+Significativo em alpha=0.05? não
+
+=== Conclusão ===
+McNemar exato NÃO rejeita H0 (p=0.8974 >= 0.05): não há evidência estatística suficiente (n=208) para afirmar que Experimento A (só real) e Experimento B (real+sintético) têm acurácias verdadeiramente diferentes -- a diferença observada (+0.010) pode ser ruído de amostragem.
+
+Resumo salvo em /home/mi/datasetMINA/resultados/reports/compare_mina_real_only_lora_vs_mina_real_plus_synthetic_lora_v2.csv

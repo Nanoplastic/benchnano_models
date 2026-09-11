@@ -1,0 +1,104 @@
+{
+  "experiment_name": "14_yolo_test_eval",
+  "metadata": {
+    "timestamp_utc": "2026-08-23T06:34:17.210109+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "os": "Linux",
+    "os_release": "7.0.11-76070011-generic",
+    "python_version": "3.10.12",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.489498138427734,
+    "working_directory": "/home/mi/datasetMINA",
+    "results_root": "/home/mi/datasetMINA/resultados",
+    "device": "cuda",
+    "git_commit": "ae66ebd7",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "14_yolo_test_eval",
+    "script_name": "/home/mi/datasetMINA/scripts/14_yolo_test_eval.py",
+    "results_dir": "/home/mi/datasetMINA/resultados/14_yolo_test_eval",
+    "log_path": "/home/mi/datasetMINA/resultados/14_yolo_test_eval/logs/14_yolo_test_eval_20260823T063417Z.log"
+  },
+  "metrics": {
+    "model_path": "/home/mi/datasetMINA/runs_v2/microplastic_yolo26_v2/weights/best.pt",
+    "n_test_images": 14,
+    "aggregate_metrics": {
+      "precision": 0.6069422606876318,
+      "recall": 0.46682537100157057,
+      "map50": 0.28024896067965005,
+      "map50_95": 0.08606379406840536
+    },
+    "per_class_metrics": {
+      "PE": {
+        "precision": 0.1518987341772152,
+        "recall": 0.8571428571428571,
+        "ap50": 0.23844144144144147,
+        "ap50_95": 0.0508045062886326
+      },
+      "PET": {
+        "precision": 0.7241379310344828,
+        "recall": 0.3728813559322034,
+        "ap50": 0.3114041177231271,
+        "ap50_95": 0.1024559708163109
+      },
+      "PP": {
+        "precision": 0.8554360812425329,
+        "recall": 0.3711767755313634,
+        "ap50": 0.3556031835185286,
+        "ap50_95": 0.12221714644144455
+      },
+      "PS": {
+        "precision": 0.6962962962962963,
+        "recall": 0.26610049539985847,
+        "ap50": 0.21554710003550312,
+        "ap50_95": 0.06877755272723338
+      }
+    },
+    "size_stratified_recall": {
+      "small": {
+        "gt": 4574,
+        "matched": 1531,
+        "recall": 0.3347179711412331
+      },
+      "medium": {
+        "gt": 31,
+        "matched": 16,
+        "recall": 0.5161290322580645
+      },
+      "large": {
+        "gt": 5,
+        "matched": 1,
+        "recall": 0.2
+      }
+    },
+    "global_recall_bootstrap_ci95": {
+      "point": 0.33579175704989156,
+      "low": 0.2473451602961643,
+      "high": 0.5182437762733136
+    },
+    "iou_threshold": 0.5,
+    "conf_threshold": 0.15
+  }
+}

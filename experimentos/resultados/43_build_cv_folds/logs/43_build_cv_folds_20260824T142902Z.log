@@ -1,0 +1,13 @@
+2026-08-24 11:29:04,063 | INFO | === INÍCIO DO EXPERIMENTO ===
+2026-08-24 11:29:04,063 | INFO | experiment_name=43_build_cv_folds
+2026-08-24 11:29:04,063 | INFO | script_name=/home/mi/datasetMINA/scripts/43_build_cv_folds.py
+2026-08-24 11:29:04,063 | INFO | results_dir=/home/mi/datasetMINA/resultados/43_build_cv_folds
+2026-08-24 11:29:04,063 | INFO | log_path=/home/mi/datasetMINA/resultados/43_build_cv_folds/logs/43_build_cv_folds_20260824T142902Z.log
+2026-08-24 11:29:04,063 | INFO | runtime_metadata={"architecture": "x86_64", "cpu": "x86_64", "cpu_count": 24, "cuda_available": true, "cuda_device": 0, "cuda_version": "12.1", "cudnn_version": 90100, "device": "cuda", "experiment_name": "43_build_cv_folds", "git_commit": "ae90b601", "gpu_capability": [[8, 9]], "gpu_count": 1, "gpu_names": ["NVIDIA GeForce RTX 4060 Ti"], "host": "pop-os", "log_path": "/home/mi/datasetMINA/resultados/43_build_cv_folds/logs/43_build_cv_folds_20260824T142902Z.log", "numpy_version": "1.26.4", "os": "Linux", "os_release": "7.0.11-76070011-generic", "pandas_version": "2.1.4", "peft_version": "0.18.1", "pillow_version": "11.3.0", "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35", "python_implementation": "CPython", "python_version": "3.10.12", "ram_gb": 30.489498138427734, "results_dir": "/home/mi/datasetMINA/resultados/43_build_cv_folds", "results_root": "/home/mi/datasetMINA/resultados", "script_name": "/home/mi/datasetMINA/scripts/43_build_cv_folds.py", "timestamp_utc": "2026-08-24T14:29:02.938158+00:00", "torch_version": "2.4.1+cu121", "transformers_version": "4.49.0", "working_directory": "/home/mi/datasetMINA"}
+2026-08-24 11:29:04,063 | INFO | === construindo 5 folds de cross-validation ===
+2026-08-24 11:29:04,078 | INFO | imagens-fonte unicas (deduplicadas): 102
+2026-08-24 11:29:04,620 | INFO | fold=0 relatorio={'fold': 0, 'n_train_sources': 68, 'n_val_sources': 12, 'n_test_sources': 22, 'n_train_files': 128}
+2026-08-24 11:29:04,892 | INFO | fold=1 relatorio={'fold': 1, 'n_train_sources': 68, 'n_val_sources': 12, 'n_test_sources': 22, 'n_train_files': 128}
+2026-08-24 11:29:05,280 | INFO | fold=2 relatorio={'fold': 2, 'n_train_sources': 70, 'n_val_sources': 12, 'n_test_sources': 20, 'n_train_files': 130}
+2026-08-24 11:29:05,637 | INFO | fold=3 relatorio={'fold': 3, 'n_train_sources': 71, 'n_val_sources': 12, 'n_test_sources': 19, 'n_train_files': 131}
+2026-08-24 11:29:05,969 | INFO | fold=4 relatorio={'fold': 4, 'n_train_sources': 71, 'n_val_sources': 12, 'n_test_sources': 19, 'n_train_files': 121}

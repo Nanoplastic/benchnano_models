@@ -1,0 +1,41 @@
+{
+  "timestamp_utc": "2026-08-24T13:41:36.521439+00:00",
+  "host": "pop-os",
+  "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+  "os": "Linux",
+  "os_release": "7.0.11-76070011-generic",
+  "python_version": "3.10.12",
+  "python_implementation": "CPython",
+  "architecture": "x86_64",
+  "cpu": "x86_64",
+  "cpu_count": 24,
+  "ram_gb": 30.489498138427734,
+  "working_directory": "/home/mi/datasetMINA",
+  "results_root": "/home/mi/datasetMINA/resultados",
+  "device": "cuda",
+  "git_commit": "ae90b601",
+  "numpy_version": "1.26.4",
+  "pandas_version": "2.1.4",
+  "pillow_version": "11.3.0",
+  "transformers_version": "4.49.0",
+  "peft_version": "0.18.1",
+  "torch_version": "2.4.1+cu121",
+  "cuda_available": true,
+  "cuda_version": "12.1",
+  "cudnn_version": 90100,
+  "gpu_count": 1,
+  "gpu_names": [
+    "NVIDIA GeForce RTX 4060 Ti"
+  ],
+  "gpu_capability": [
+    [
+      8,
+      9
+    ]
+  ],
+  "cuda_device": 0,
+  "experiment_name": "42_class_error_analysis",
+  "script_name": "/home/mi/datasetMINA/scripts/42_class_error_analysis.py",
+  "results_dir": "/home/mi/datasetMINA/resultados/42_class_error_analysis",
+  "log_path": "/home/mi/datasetMINA/resultados/42_class_error_analysis/logs/42_class_error_analysis_20260824T134136Z.log"
+}

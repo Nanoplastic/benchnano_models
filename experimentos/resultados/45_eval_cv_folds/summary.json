@@ -1,0 +1,130 @@
+{
+  "experiment_name": "45_eval_cv_folds",
+  "metadata": {
+    "timestamp_utc": "2026-08-24T22:11:10.215781+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "os": "Linux",
+    "os_release": "7.0.11-76070011-generic",
+    "python_version": "3.10.12",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.489498138427734,
+    "working_directory": "/home/mi/datasetMINA",
+    "results_root": "/home/mi/datasetMINA/resultados",
+    "device": "cuda",
+    "git_commit": "ae90b601",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "45_eval_cv_folds",
+    "script_name": "/home/mi/datasetMINA/scripts/45_eval_cv_folds.py",
+    "results_dir": "/home/mi/datasetMINA/resultados/45_eval_cv_folds",
+    "log_path": "/home/mi/datasetMINA/resultados/45_eval_cv_folds/logs/45_eval_cv_folds_20260824T221110Z.log"
+  },
+  "metrics": {
+    "note": "resultado exploratorio/complementar -- o teste travado de 15 imagens continua sendo o resultado principal do artigo",
+    "k_folds": 5,
+    "per_fold_summary": [
+      {
+        "fold": 0,
+        "n_images": 22,
+        "n_gt": 5521,
+        "recall": 0.346132946929904
+      },
+      {
+        "fold": 1,
+        "n_images": 22,
+        "n_gt": 6468,
+        "recall": 0.12600494743351887
+      },
+      {
+        "fold": 2,
+        "n_images": 20,
+        "n_gt": 4699,
+        "recall": 0.3087891040646946
+      },
+      {
+        "fold": 3,
+        "n_images": 19,
+        "n_gt": 3742,
+        "recall": 0.3270978086584714
+      },
+      {
+        "fold": 4,
+        "n_images": 19,
+        "n_gt": 5300,
+        "recall": 0.13528301886792451
+      }
+    ],
+    "bucket_results": {
+      "small": {
+        "n": 25545,
+        "n_images": 100,
+        "recall_point": 0.2375807398708162,
+        "ci95": [
+          0.19097034037351368,
+          0.28936077365064705
+        ]
+      },
+      "medium": {
+        "n": 155,
+        "n_images": 48,
+        "recall_point": 0.2967741935483871,
+        "ci95": [
+          0.17720958888764424,
+          0.4117647058823529
+        ]
+      },
+      "large": {
+        "n": 30,
+        "n_images": 19,
+        "recall_point": 0.1,
+        "ci95": [
+          0.0,
+          0.2413793103448276
+        ]
+      }
+    },
+    "overall": {
+      "n": 25730,
+      "n_images": 100,
+      "recall_point": 0.23777691410804508,
+      "ci95": [
+        0.19091597021979573,
+        0.289583228601872
+      ]
+    },
+    "published_comparison": {
+      "published_recall_ci95_overall": [
+        0.247,
+        0.518
+      ],
+      "published_n_medium": 31,
+      "published_n_large": 5
+    },
+    "iou_threshold": 0.5,
+    "conf_threshold": 0.15,
+    "n_bootstrap": 10000,
+    "seed": 42
+  }
+}

@@ -3,62 +3,58 @@
   "repetition_index": 6,
   "repetition_seed": 6,
   "environment": {
-    "timestamp_utc": "2026-09-06T19:45:43.256156+00:00",
-    "host": "tot-B650M-D3HP-AX",
-    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
-    "python_version": "3.12.3",
-    "git_commit": "f7a0a0a1",
-    "cpu_model": "AMD Ryzen 9 9900X 12-Core Processor",
-    "n_cpus_logical": 24,
+    "timestamp_utc": "2026-09-03T23:56:39.259511+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "python_version": "3.10.12",
+    "git_commit": "27e5ff40",
     "torch_version": "2.4.1+cu121",
     "cuda_available": true,
-    "ram_total_gb": 60.43,
     "cuda_version": "12.1",
-    "gpu_name": "NVIDIA GeForce RTX 4090",
-    "nvidia_driver_version": "580.173.02",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
     "transformers_version": "4.49.0",
     "peft_version": "0.18.1",
-    "ultralytics_version": "8.4.141"
+    "ultralytics_version": "8.4.126"
   },
   "metrics": {
-    "model_path": "/home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/runs/01_yolo26_main/rep_06/weights/best.pt",
+    "model_path": "/home/mi/datasetMINA/experimentos_controlados/runs/01_yolo26_main/rep_06/weights/best.pt",
     "aggregate_metrics": {
-      "precision": 0.5716362689280433,
-      "recall": 0.5350924998129238,
-      "map50": 0.4378937020769513,
-      "map50_95": 0.19045048441226248
+      "precision": 0.642355704801741,
+      "recall": 0.43916402613379746,
+      "map50": 0.35520843836541627,
+      "map50_95": 0.09857423082500238
     },
     "per_class_metrics": {
       "PE": {
-        "precision": 0.17073170731707318,
-        "recall": 1.0,
-        "ap50": 0.8362862049476111,
-        "ap50_95": 0.37438510856482243
+        "precision": 0.4791666666666667,
+        "recall": 0.8214285714285714,
+        "ap50": 0.6861267410951623,
+        "ap50_95": 0.19148572757651705
       },
       "PET": {
-        "precision": 0.8485342019543974,
-        "recall": 0.420500403551251,
-        "ap50": 0.3993990027754245,
-        "ap50_95": 0.15626722500163354
+        "precision": 0.7807377049180327,
+        "recall": 0.3075060532687651,
+        "ap50": 0.2542361241056893,
+        "ap50_95": 0.061457620916439804
       },
       "PP": {
-        "precision": 0.5911994322214337,
-        "recall": 0.43182996371176774,
-        "ap50": 0.27804779179122285,
-        "ap50_95": 0.13585203807567967
+        "precision": 0.6448598130841121,
+        "recall": 0.39346811819595645,
+        "ap50": 0.2879817079521493,
+        "ap50_95": 0.09582630117472499
       },
       "PS": {
-        "precision": 0.6760797342192691,
-        "recall": 0.28803963198867655,
-        "ap50": 0.2378418087935466,
-        "ap50_95": 0.09529756600691427
+        "precision": 0.6646586345381527,
+        "recall": 0.23425336164189667,
+        "ap50": 0.19248918030866422,
+        "ap50_95": 0.045527273632327746
       }
     }
   },
   "metadata": {
-    "best_weights": "/home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/runs/01_yolo26_main/rep_06/weights/best.pt",
+    "best_weights": "/home/mi/datasetMINA/experimentos_controlados/runs/01_yolo26_main/rep_06/weights/best.pt",
     "train_kwargs": {
-      "data": "/home/astral_visao/Documents/visao/datasetMINA/experimentos/datasets_yolo26_v2/data.yaml",
+      "data": "/home/mi/datasetMINA/experimentos/datasets_yolo26_v2/data.yaml",
       "task": "detect",
       "epochs": 400,
       "imgsz": 1024,
@@ -69,7 +65,7 @@
       "cos_lr": true,
       "seed": 6,
       "device": "0",
-      "project": "/home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/runs/01_yolo26_main",
+      "project": "/home/mi/datasetMINA/experimentos_controlados/runs/01_yolo26_main",
       "name": "rep_06",
       "save_period": -1,
       "patience": 100,

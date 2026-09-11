@@ -1,0 +1,79 @@
+{
+  "experiment_name": "25_bootstrap_yolo_detection_metrics",
+  "metadata": {
+    "timestamp_utc": "2026-08-23T02:50:09.928402+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "os": "Linux",
+    "os_release": "7.0.11-76070011-generic",
+    "python_version": "3.10.12",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.489498138427734,
+    "working_directory": "/home/mi/datasetMINA",
+    "results_root": "/home/mi/datasetMINA/resultados",
+    "device": "cuda",
+    "git_commit": "43d09957",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "25_bootstrap_yolo_detection_metrics",
+    "script_name": "/home/mi/datasetMINA/scripts/25_bootstrap_yolo_detection_metrics.py",
+    "results_dir": "/home/mi/datasetMINA/resultados/25_bootstrap_yolo_detection_metrics",
+    "log_path": "/home/mi/datasetMINA/resultados/25_bootstrap_yolo_detection_metrics/logs/25_bootstrap_yolo_detection_metrics_20260823T025009Z.log"
+  },
+  "metrics": {
+    "model_path": "/home/mi/datasetMINA/runs_v2/microplastic_yolo26_v2/weights/best.pt",
+    "n_test_images": 15,
+    "n_bootstrap": 2000,
+    "seed": 42,
+    "conf_threshold": 0.15,
+    "point_estimates_from_14_yolo_test_eval": {
+      "precision": 0.6069422606876318,
+      "recall": 0.46682537100157057,
+      "map50": 0.28024896067965005,
+      "map50_95": 0.08606379406840536
+    },
+    "bootstrap_ci95": {
+      "precision": {
+        "mean_over_replicas": 0.6403645159712198,
+        "ci95_low": 0.4581028635265355,
+        "ci95_high": 0.7995016263193799
+      },
+      "recall": {
+        "mean_over_replicas": 0.47548048510828206,
+        "ci95_low": 0.30760106770618917,
+        "ci95_high": 0.6058712382450634
+      },
+      "map50": {
+        "mean_over_replicas": 0.3444835212384934,
+        "ci95_low": 0.20230491994918523,
+        "ci95_high": 0.5252043683423395
+      },
+      "map50_95": {
+        "mean_over_replicas": 0.10661195106439983,
+        "ci95_low": 0.06260107437962281,
+        "ci95_high": 0.16577412356311466
+      }
+    }
+  }
+}

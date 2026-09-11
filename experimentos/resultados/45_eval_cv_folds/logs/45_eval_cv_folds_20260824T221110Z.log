@@ -1,0 +1,109 @@
+2026-08-24 19:11:11,306 | INFO | === INÍCIO DO EXPERIMENTO ===
+2026-08-24 19:11:11,306 | INFO | experiment_name=45_eval_cv_folds
+2026-08-24 19:11:11,306 | INFO | script_name=/home/mi/datasetMINA/scripts/45_eval_cv_folds.py
+2026-08-24 19:11:11,306 | INFO | results_dir=/home/mi/datasetMINA/resultados/45_eval_cv_folds
+2026-08-24 19:11:11,306 | INFO | log_path=/home/mi/datasetMINA/resultados/45_eval_cv_folds/logs/45_eval_cv_folds_20260824T221110Z.log
+2026-08-24 19:11:11,307 | INFO | runtime_metadata={"architecture": "x86_64", "cpu": "x86_64", "cpu_count": 24, "cuda_available": true, "cuda_device": 0, "cuda_version": "12.1", "cudnn_version": 90100, "device": "cuda", "experiment_name": "45_eval_cv_folds", "git_commit": "ae90b601", "gpu_capability": [[8, 9]], "gpu_count": 1, "gpu_names": ["NVIDIA GeForce RTX 4060 Ti"], "host": "pop-os", "log_path": "/home/mi/datasetMINA/resultados/45_eval_cv_folds/logs/45_eval_cv_folds_20260824T221110Z.log", "numpy_version": "1.26.4", "os": "Linux", "os_release": "7.0.11-76070011-generic", "pandas_version": "2.1.4", "peft_version": "0.18.1", "pillow_version": "11.3.0", "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35", "python_implementation": "CPython", "python_version": "3.10.12", "ram_gb": 30.489498138427734, "results_dir": "/home/mi/datasetMINA/resultados/45_eval_cv_folds", "results_root": "/home/mi/datasetMINA/resultados", "script_name": "/home/mi/datasetMINA/scripts/45_eval_cv_folds.py", "timestamp_utc": "2026-08-24T22:11:10.215781+00:00", "torch_version": "2.4.1+cu121", "transformers_version": "4.49.0", "working_directory": "/home/mi/datasetMINA"}
+2026-08-24 19:11:11,307 | INFO | === avaliando 5 folds de cross-validation (held-out only) ===
+2026-08-24 19:11:12,749 | INFO | fold=0 imagem=PET_PET-2000X-3.png gt=485 matched=255
+2026-08-24 19:11:13,576 | INFO | fold=0 imagem=PET_PET-2000X.png gt=518 matched=219
+2026-08-24 19:11:13,620 | INFO | fold=0 imagem=PET_PET-5000X.png gt=106 matched=1
+2026-08-24 19:11:13,662 | INFO | fold=0 imagem=PET_PET-B-1000X.png gt=75 matched=0
+2026-08-24 19:11:13,699 | INFO | fold=0 imagem=PET_PET1-5000X.png gt=222 matched=2
+2026-08-24 19:11:13,736 | INFO | fold=0 imagem=PET_PETL 200X.png gt=652 matched=0
+2026-08-24 19:11:13,769 | INFO | fold=0 imagem=PE_PE 1000-1.png gt=8 matched=8
+2026-08-24 19:11:13,800 | INFO | fold=0 imagem=PE_PE 2000X2.png gt=5 matched=1
+2026-08-24 19:11:13,833 | INFO | fold=0 imagem=PE_PE 3000X.png gt=14 matched=9
+2026-08-24 19:11:13,870 | INFO | fold=0 imagem=PE_PE-2-3000X.png gt=36 matched=17
+2026-08-24 19:11:13,931 | INFO | fold=0 imagem=PE_PEL 500X.png gt=68 matched=45
+2026-08-24 19:11:13,977 | INFO | fold=0 imagem=PP_PP 2000X.png gt=81 matched=26
+2026-08-24 19:11:14,022 | INFO | fold=0 imagem=PP_PP 500-1.png gt=10 matched=0
+2026-08-24 19:11:14,077 | INFO | fold=0 imagem=PP_PP 500X2.png gt=113 matched=35
+2026-08-24 19:11:14,330 | INFO | fold=0 imagem=PP_PP-3000x3.png gt=227 matched=127
+2026-08-24 19:11:14,604 | INFO | fold=0 imagem=PP_PP-3000x7.png gt=233 matched=149
+2026-08-24 19:11:15,124 | INFO | fold=0 imagem=PP_PPLFT 200X.png gt=337 matched=188
+2026-08-24 19:11:16,308 | INFO | fold=0 imagem=PS_PS 2000X.png gt=592 matched=244
+2026-08-24 19:11:16,787 | INFO | fold=0 imagem=PS_PS2  5000X.png gt=229 matched=163
+2026-08-24 19:11:16,819 | INFO | fold=0 imagem=PS_PS2-2000x-3.png gt=116 matched=0
+2026-08-24 19:11:17,424 | INFO | fold=0 imagem=PS_PSFT 2000X.png gt=295 matched=188
+2026-08-24 19:11:19,590 | INFO | fold=0 imagem=PS_PSLFT 200X.png gt=1099 matched=234
+2026-08-24 19:11:19,868 | INFO | fold=1 imagem=PET_PET 5000X 2.png gt=106 matched=27
+2026-08-24 19:11:20,000 | INFO | fold=1 imagem=PET_PET-2000X-2.png gt=490 matched=28
+2026-08-24 19:11:20,134 | INFO | fold=1 imagem=PET_PET-2000X-4.png gt=436 matched=26
+2026-08-24 19:11:20,241 | INFO | fold=1 imagem=PET_PET-B-2000x-2.png gt=121 matched=47
+2026-08-24 19:11:20,436 | INFO | fold=1 imagem=PET_PET-B2-2000x-1.png gt=226 matched=62
+2026-08-24 19:11:20,544 | INFO | fold=1 imagem=PET_PET-B2-2000x-2.png gt=143 matched=43
+2026-08-24 19:11:20,580 | INFO | fold=1 imagem=PE_PE 1000X.png gt=20 matched=13
+2026-08-24 19:11:20,618 | INFO | fold=1 imagem=PE_PE 3000X 3.png gt=20 matched=19
+2026-08-24 19:11:20,653 | INFO | fold=1 imagem=PE_PE-2000X-3.png gt=16 matched=14
+2026-08-24 19:11:20,689 | INFO | fold=1 imagem=PE_PEL 200X.png gt=61 matched=11
+2026-08-24 19:11:20,723 | INFO | fold=1 imagem=PE_PELFT 2000X.png gt=28 matched=3
+2026-08-24 19:11:20,890 | INFO | fold=1 imagem=PP_PP 100X.png gt=421 matched=46
+2026-08-24 19:11:20,933 | INFO | fold=1 imagem=PP_PP 2000X2.png gt=97 matched=13
+2026-08-24 19:11:20,965 | INFO | fold=1 imagem=PP_PP 5000X.png gt=12 matched=1
+2026-08-24 19:11:21,010 | INFO | fold=1 imagem=PP_PP-3000x1.png gt=335 matched=6
+2026-08-24 19:11:21,042 | INFO | fold=1 imagem=PP_PPFT 2000X.png gt=50 matched=0
+2026-08-24 19:11:21,274 | INFO | fold=1 imagem=PP_PPFT 200X.png gt=367 matched=83
+2026-08-24 19:11:21,307 | INFO | fold=1 imagem=PS_PS 5000X.png gt=171 matched=0
+2026-08-24 19:11:22,936 | INFO | fold=1 imagem=PS_PS-200X.png gt=1934 matched=113
+2026-08-24 19:11:24,955 | INFO | fold=1 imagem=PS_PSFT 200X.png gt=1014 matched=249
+2026-08-24 19:11:24,988 | INFO | fold=1 imagem=PS_PSL 10000X.png gt=140 matched=0
+2026-08-24 19:11:25,043 | INFO | fold=1 imagem=PS_PSL 5000X.png gt=260 matched=11
+2026-08-24 19:11:25,459 | INFO | fold=2 imagem=PET_PET-2-3000X.png gt=425 matched=83
+2026-08-24 19:11:25,507 | INFO | fold=2 imagem=PET_PET-5000X-4.png gt=102 matched=16
+2026-08-24 19:11:25,631 | INFO | fold=2 imagem=PET_PET-B-2000x-4.png gt=113 matched=86
+2026-08-24 19:11:25,673 | INFO | fold=2 imagem=PET_PET-B2-5000x-4.png gt=29 matched=0
+2026-08-24 19:11:25,704 | INFO | fold=2 imagem=PET_PETL 5000X.png gt=14 matched=0
+2026-08-24 19:11:25,742 | INFO | fold=2 imagem=PE_PE 3000X2.png gt=19 matched=15
+2026-08-24 19:11:25,775 | INFO | fold=2 imagem=PE_PE 500-3.png gt=10 matched=5
+2026-08-24 19:11:25,808 | INFO | fold=2 imagem=PE_PE-2000X.png gt=16 matched=12
+2026-08-24 19:11:25,840 | INFO | fold=2 imagem=PE_PE-3000X.png gt=11 matched=6
+2026-08-24 19:11:25,872 | INFO | fold=2 imagem=PE_PE-5000x.png gt=0 matched=0
+2026-08-24 19:11:26,398 | INFO | fold=2 imagem=PP_PP 100X2.png gt=330 matched=158
+2026-08-24 19:11:28,526 | INFO | fold=2 imagem=PP_PP-1000x3.png gt=1074 matched=269
+2026-08-24 19:11:28,641 | INFO | fold=2 imagem=PP_PP-2-3000X.png gt=218 matched=53
+2026-08-24 19:11:28,738 | INFO | fold=2 imagem=PP_PP-3000X.png gt=330 matched=28
+2026-08-24 19:11:28,861 | INFO | fold=2 imagem=PP_PP-3000x4.png gt=198 matched=61
+2026-08-24 19:11:29,054 | INFO | fold=2 imagem=PP_PP-3000x5.png gt=249 matched=87
+2026-08-24 19:11:29,139 | INFO | fold=2 imagem=PS_PS 500X 2.png gt=211 matched=34
+2026-08-24 19:11:30,805 | INFO | fold=2 imagem=PS_PS 500X.png gt=840 matched=267
+2026-08-24 19:11:30,941 | INFO | fold=2 imagem=PS_PS2-200x2.png gt=156 matched=69
+2026-08-24 19:11:31,660 | INFO | fold=2 imagem=PS_PSLFT 2000X.png gt=354 matched=202
+2026-08-24 19:11:31,805 | INFO | fold=3 imagem=PET_PET-10000X.png gt=31 matched=0
+2026-08-24 19:11:31,859 | INFO | fold=3 imagem=PET_PET-5000X-3.png gt=95 matched=4
+2026-08-24 19:11:31,903 | INFO | fold=3 imagem=PET_PET-B-5000x-1.png gt=36 matched=0
+2026-08-24 19:11:31,956 | INFO | fold=3 imagem=PET_PET-B2-2000x-4.png gt=156 matched=10
+2026-08-24 19:11:31,989 | INFO | fold=3 imagem=PET_PETL 1000X.png gt=56 matched=1
+2026-08-24 19:11:32,033 | INFO | fold=3 imagem=PE_PE 1000X 3.png gt=49 matched=24
+2026-08-24 19:11:32,064 | INFO | fold=3 imagem=PE_PE 2000X.png gt=2 matched=1
+2026-08-24 19:11:32,094 | INFO | fold=3 imagem=PE_PE 500-1.png gt=13 matched=6
+2026-08-24 19:11:32,124 | INFO | fold=3 imagem=PE_PE-10000X.png gt=0 matched=0
+2026-08-24 19:11:32,160 | INFO | fold=3 imagem=PE_PELFT 500X.png gt=40 matched=19
+2026-08-24 19:11:32,191 | INFO | fold=3 imagem=PP_PP-10000X.png gt=16 matched=2
+2026-08-24 19:11:32,322 | INFO | fold=3 imagem=PP_PP-3000x6.png gt=231 matched=60
+2026-08-24 19:11:32,604 | INFO | fold=3 imagem=PP_PP-3000x8.png gt=257 matched=141
+2026-08-24 19:11:32,689 | INFO | fold=3 imagem=PP_PPFT 500X.png gt=212 matched=39
+2026-08-24 19:11:32,839 | INFO | fold=3 imagem=PP_PPLFT 500X.png gt=202 matched=86
+2026-08-24 19:11:34,706 | INFO | fold=3 imagem=PS_PS 500X2.png gt=940 matched=273
+2026-08-24 19:11:35,045 | INFO | fold=3 imagem=PS_PS-200x-2.png gt=160 matched=129
+2026-08-24 19:11:35,922 | INFO | fold=3 imagem=PS_PS2  2000X.png gt=427 matched=181
+2026-08-24 19:11:37,544 | INFO | fold=3 imagem=PS_PSL 200X.png gt=819 matched=248
+2026-08-24 19:11:37,761 | INFO | fold=4 imagem=PET_PET 5000X 1.png gt=141 matched=43
+2026-08-24 19:11:37,823 | INFO | fold=4 imagem=PET_PET 5000X.png gt=76 matched=36
+2026-08-24 19:11:37,866 | INFO | fold=4 imagem=PET_PET-5000X-2.png gt=83 matched=16
+2026-08-24 19:11:37,908 | INFO | fold=4 imagem=PET_PET-B-2-5000X.png gt=90 matched=0
+2026-08-24 19:11:37,953 | INFO | fold=4 imagem=PET_PET-B-5000X.png gt=3 matched=0
+2026-08-24 19:11:37,989 | INFO | fold=4 imagem=PE_PE 1000X 2.png gt=34 matched=11
+2026-08-24 19:11:38,020 | INFO | fold=4 imagem=PE_PE 500-2.png gt=10 matched=0
+2026-08-24 19:11:38,056 | INFO | fold=4 imagem=PE_PE-1000x.png gt=114 matched=6
+2026-08-24 19:11:38,089 | INFO | fold=4 imagem=PE_PE-2000X-2.png gt=10 matched=8
+2026-08-24 19:11:38,120 | INFO | fold=4 imagem=PE_PE-5000x-1.png gt=12 matched=7
+2026-08-24 19:11:38,151 | INFO | fold=4 imagem=PP_PP 500X.png gt=235 matched=0
+2026-08-24 19:11:40,418 | INFO | fold=4 imagem=PP_PP-1000x1.png gt=1268 matched=232
+2026-08-24 19:11:41,967 | INFO | fold=4 imagem=PP_PP-1000x2.png gt=960 matched=188
+2026-08-24 19:11:42,211 | INFO | fold=4 imagem=PP_PP-3000x2.png gt=218 matched=130
+2026-08-24 19:11:42,248 | INFO | fold=4 imagem=PP_PP-5000X.png gt=81 matched=8
+2026-08-24 19:11:42,539 | INFO | fold=4 imagem=PS_PS-100x.png gt=957 matched=26
+2026-08-24 19:11:42,571 | INFO | fold=4 imagem=PS_PS-200x-3.png gt=98 matched=0
+2026-08-24 19:11:42,640 | INFO | fold=4 imagem=PS_PS-200x-4.png gt=616 matched=6
+2026-08-24 19:11:42,672 | INFO | fold=4 imagem=PS_PS2-200x-1.png gt=294 matched=0

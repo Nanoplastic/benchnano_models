@@ -1,59 +1,427 @@
 {
   "01_yolo26_main": {
+    "fonte": "ultralytics results.csv (coluna 'time') -- rodou antes do execution_log.jsonl existir",
     "n_execucoes_logadas": 10,
     "n_ok": 10,
     "n_falhas": 0,
-    "tempo_total_sec": 26848.5,
-    "tempo_total_human": "7h27m28s",
-    "tempo_medio_sec": 2684.8,
-    "tempo_medio_human": "44m45s"
-  },
-  "05_smolvlm_size_lora": {
-    "n_execucoes_logadas": 10,
-    "n_ok": 10,
-    "n_falhas": 0,
-    "tempo_total_sec": 14222.3,
-    "tempo_total_human": "3h57m02s",
-    "tempo_medio_sec": 1422.2,
-    "tempo_medio_human": "23m42s"
-  },
-  "06_smolvlm_size_full": {
-    "n_execucoes_logadas": 10,
-    "n_ok": 10,
-    "n_falhas": 0,
-    "tempo_total_sec": 10929.1,
-    "tempo_total_human": "3h02m09s",
-    "tempo_medio_sec": 1092.9,
-    "tempo_medio_human": "18m13s"
+    "tempo_total_sec": 48072.7,
+    "tempo_total_human": "13h21m13s",
+    "tempo_medio_sec": 4807.3,
+    "tempo_medio_human": "1h20m07s",
+    "por_repeticao": [
+      {
+        "repeticao": "rep_00",
+        "n_epocas": 352,
+        "duration_sec": 5205.5
+      },
+      {
+        "repeticao": "rep_01",
+        "n_epocas": 295,
+        "duration_sec": 4791.78
+      },
+      {
+        "repeticao": "rep_02",
+        "n_epocas": 366,
+        "duration_sec": 5321.4
+      },
+      {
+        "repeticao": "rep_03",
+        "n_epocas": 232,
+        "duration_sec": 3299.11
+      },
+      {
+        "repeticao": "rep_04",
+        "n_epocas": 369,
+        "duration_sec": 5192.77
+      },
+      {
+        "repeticao": "rep_05",
+        "n_epocas": 401,
+        "duration_sec": 5638.77
+      },
+      {
+        "repeticao": "rep_06",
+        "n_epocas": 265,
+        "duration_sec": 3728.12
+      },
+      {
+        "repeticao": "rep_07",
+        "n_epocas": 401,
+        "duration_sec": 5656.21
+      },
+      {
+        "repeticao": "rep_08",
+        "n_epocas": 353,
+        "duration_sec": 4963.15
+      },
+      {
+        "repeticao": "rep_09",
+        "n_epocas": 303,
+        "duration_sec": 4275.86
+      }
+    ]
   },
   "02_vlm_polymer_real_only": {
+    "fonte": "aproximado, via horário de modificação dos CSVs de validação por época (<tag>_epochN_val_predictions.csv) -- vlm_common.py não registra tempo de treino internamente; rodou antes do execution_log.jsonl existir",
     "n_execucoes_logadas": 10,
     "n_ok": 10,
     "n_falhas": 0,
-    "tempo_total_sec": 13200.9,
-    "tempo_total_human": "3h40m01s",
-    "tempo_medio_sec": 1320.1,
-    "tempo_medio_human": "22m00s"
+    "tempo_total_sec": 22409.4,
+    "tempo_total_human": "6h13m29s",
+    "tempo_medio_sec": 2240.9,
+    "tempo_medio_human": "37m21s",
+    "por_repeticao": [
+      {
+        "repeticao": 0,
+        "tag": "mina_real_only_lora_ctrl_seed0",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2318.2
+      },
+      {
+        "repeticao": 1,
+        "tag": "mina_real_only_lora_ctrl_seed1",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2296.0
+      },
+      {
+        "repeticao": 2,
+        "tag": "mina_real_only_lora_ctrl_seed2",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2294.7
+      },
+      {
+        "repeticao": 3,
+        "tag": "mina_real_only_lora_ctrl_seed3",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2184.3
+      },
+      {
+        "repeticao": 4,
+        "tag": "mina_real_only_lora_ctrl_seed4",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2311.2
+      },
+      {
+        "repeticao": 5,
+        "tag": "mina_real_only_lora_ctrl_seed5",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2167.4
+      },
+      {
+        "repeticao": 6,
+        "tag": "mina_real_only_lora_ctrl_seed6",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2303.3
+      },
+      {
+        "repeticao": 7,
+        "tag": "mina_real_only_lora_ctrl_seed7",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2178.2
+      },
+      {
+        "repeticao": 8,
+        "tag": "mina_real_only_lora_ctrl_seed8",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2175.7
+      },
+      {
+        "repeticao": 9,
+        "tag": "mina_real_only_lora_ctrl_seed9",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2180.4
+      }
+    ]
   },
   "03_vlm_polymer_real_synth": {
+    "fonte": "aproximado, via horário de modificação dos CSVs de validação por época (<tag>_epochN_val_predictions.csv) -- vlm_common.py não registra tempo de treino internamente; rodou antes do execution_log.jsonl existir",
     "n_execucoes_logadas": 10,
     "n_ok": 10,
     "n_falhas": 0,
-    "tempo_total_sec": 26123.6,
-    "tempo_total_human": "7h15m24s",
-    "tempo_medio_sec": 2612.4,
-    "tempo_medio_human": "43m32s"
+    "tempo_total_sec": 44046.1,
+    "tempo_total_human": "12h14m06s",
+    "tempo_medio_sec": 4404.6,
+    "tempo_medio_human": "1h13m25s",
+    "por_repeticao": [
+      {
+        "repeticao": 0,
+        "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed0",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 4503.7
+      },
+      {
+        "repeticao": 1,
+        "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed1",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 4567.5
+      },
+      {
+        "repeticao": 2,
+        "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed2",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 4391.4
+      },
+      {
+        "repeticao": 3,
+        "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed3",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 4471.1
+      },
+      {
+        "repeticao": 4,
+        "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed4",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 4408.9
+      },
+      {
+        "repeticao": 5,
+        "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed5",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 4239.5
+      },
+      {
+        "repeticao": 6,
+        "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed6",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 4552.1
+      },
+      {
+        "repeticao": 7,
+        "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed7",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 4334.6
+      },
+      {
+        "repeticao": 8,
+        "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed8",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 4231.1
+      },
+      {
+        "repeticao": 9,
+        "tag": "mina_real_plus_synthetic_lora_v2_ctrl_seed9",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 4346.2
+      }
+    ]
   },
   "04_vlm_polymer_bigvlm": {
+    "fonte": "aproximado, via horário de modificação dos CSVs de validação por época (<tag>_epochN_val_predictions.csv) -- vlm_common.py não registra tempo de treino internamente; rodou antes do execution_log.jsonl existir",
     "n_execucoes_logadas": 10,
     "n_ok": 10,
     "n_falhas": 0,
-    "tempo_total_sec": 11780.3,
-    "tempo_total_human": "3h16m20s",
-    "tempo_medio_sec": 1178.0,
-    "tempo_medio_human": "19m38s"
+    "tempo_total_sec": 25408.5,
+    "tempo_total_human": "7h03m29s",
+    "tempo_medio_sec": 2540.9,
+    "tempo_medio_human": "42m21s",
+    "por_repeticao": [
+      {
+        "repeticao": 0,
+        "tag": "mina_real_only_lora_bigvlm_ctrl_seed0",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2547.1
+      },
+      {
+        "repeticao": 1,
+        "tag": "mina_real_only_lora_bigvlm_ctrl_seed1",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2515.8
+      },
+      {
+        "repeticao": 2,
+        "tag": "mina_real_only_lora_bigvlm_ctrl_seed2",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2552.8
+      },
+      {
+        "repeticao": 3,
+        "tag": "mina_real_only_lora_bigvlm_ctrl_seed3",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2539.9
+      },
+      {
+        "repeticao": 4,
+        "tag": "mina_real_only_lora_bigvlm_ctrl_seed4",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2541.4
+      },
+      {
+        "repeticao": 5,
+        "tag": "mina_real_only_lora_bigvlm_ctrl_seed5",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2541.4
+      },
+      {
+        "repeticao": 6,
+        "tag": "mina_real_only_lora_bigvlm_ctrl_seed6",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2541.6
+      },
+      {
+        "repeticao": 7,
+        "tag": "mina_real_only_lora_bigvlm_ctrl_seed7",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2541.9
+      },
+      {
+        "repeticao": 8,
+        "tag": "mina_real_only_lora_bigvlm_ctrl_seed8",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2539.2
+      },
+      {
+        "repeticao": 9,
+        "tag": "mina_real_only_lora_bigvlm_ctrl_seed9",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2547.4
+      }
+    ]
+  },
+  "05_smolvlm_size_lora": {
+    "fonte": "aproximado, via horário de modificação dos CSVs de validação por época (<tag>_epochN_val_predictions.csv) -- vlm_common.py não registra tempo de treino internamente; rodou antes do execution_log.jsonl existir",
+    "n_execucoes_logadas": 10,
+    "n_ok": 10,
+    "n_falhas": 0,
+    "tempo_total_sec": 24117.4,
+    "tempo_total_human": "6h41m57s",
+    "tempo_medio_sec": 2411.7,
+    "tempo_medio_human": "40m12s",
+    "por_repeticao": [
+      {
+        "repeticao": 0,
+        "tag": "size_lora_ctrl_seed0",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2426.6
+      },
+      {
+        "repeticao": 1,
+        "tag": "size_lora_ctrl_seed1",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2371.0
+      },
+      {
+        "repeticao": 2,
+        "tag": "size_lora_ctrl_seed2",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2476.4
+      },
+      {
+        "repeticao": 3,
+        "tag": "size_lora_ctrl_seed3",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2396.8
+      },
+      {
+        "repeticao": 4,
+        "tag": "size_lora_ctrl_seed4",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2337.9
+      },
+      {
+        "repeticao": 5,
+        "tag": "size_lora_ctrl_seed5",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2484.4
+      },
+      {
+        "repeticao": 6,
+        "tag": "size_lora_ctrl_seed6",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2422.2
+      },
+      {
+        "repeticao": 7,
+        "tag": "size_lora_ctrl_seed7",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2491.7
+      },
+      {
+        "repeticao": 8,
+        "tag": "size_lora_ctrl_seed8",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2376.9
+      },
+      {
+        "repeticao": 9,
+        "tag": "size_lora_ctrl_seed9",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 2333.5
+      }
+    ]
+  },
+  "06_smolvlm_size_full": {
+    "fonte": "aproximado, via horário de modificação dos CSVs de validação por época (<tag>_epochN_val_predictions.csv) -- vlm_common.py não registra tempo de treino internamente; rodou antes do execution_log.jsonl existir",
+    "n_execucoes_logadas": 10,
+    "n_ok": 10,
+    "n_falhas": 0,
+    "tempo_total_sec": 19139.8,
+    "tempo_total_human": "5h19m00s",
+    "tempo_medio_sec": 1914.0,
+    "tempo_medio_human": "31m54s",
+    "por_repeticao": [
+      {
+        "repeticao": 0,
+        "tag": "size_full_ft_ctrl_seed0",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 1952.2
+      },
+      {
+        "repeticao": 1,
+        "tag": "size_full_ft_ctrl_seed1",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 1894.6
+      },
+      {
+        "repeticao": 2,
+        "tag": "size_full_ft_ctrl_seed2",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 1903.3
+      },
+      {
+        "repeticao": 3,
+        "tag": "size_full_ft_ctrl_seed3",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 1918.4
+      },
+      {
+        "repeticao": 4,
+        "tag": "size_full_ft_ctrl_seed4",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 1916.9
+      },
+      {
+        "repeticao": 5,
+        "tag": "size_full_ft_ctrl_seed5",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 1920.3
+      },
+      {
+        "repeticao": 6,
+        "tag": "size_full_ft_ctrl_seed6",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 1906.8
+      },
+      {
+        "repeticao": 7,
+        "tag": "size_full_ft_ctrl_seed7",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 1907.3
+      },
+      {
+        "repeticao": 8,
+        "tag": "size_full_ft_ctrl_seed8",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 1915.7
+      },
+      {
+        "repeticao": 9,
+        "tag": "size_full_ft_ctrl_seed9",
+        "n_epocas_com_csv": 6,
+        "duration_sec": 1904.3
+      }
+    ]
   },
   "__sessoes_da_fila__": [],
-  "__tempo_total_geral_sec__": 103104.7,
-  "__tempo_total_geral_human__": "28h38m25s"
+  "__tempo_total_geral_sec__": 183193.9,
+  "__tempo_total_geral_human__": "50h53m14s"
 }

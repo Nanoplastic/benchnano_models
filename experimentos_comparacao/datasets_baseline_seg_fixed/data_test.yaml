@@ -1,0 +1,6 @@
+path: /home/mi/datasetMINA/experimentos_comparacao/datasets_baseline_seg_fixed
+train: images/test
+val: images/test
+nc: 1
+names:
+  - particle

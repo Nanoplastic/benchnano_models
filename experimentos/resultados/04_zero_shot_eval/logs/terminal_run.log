@@ -1,0 +1,6 @@
+avaliando zero-shot em 208 recortes reais de teste...
+pred_label
+PET    208
+Name: count, dtype: int64
+
+acurácia zero-shot (real test, n=208): 0.288

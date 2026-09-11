@@ -1,0 +1,6 @@
+PE: 25 imagens presentes -> train=18img/511inst  val=4img/75inst  test=3img/28inst
+PET: 27 imagens presentes -> train=19img/3258inst  val=4img/481inst  test=4img/1200inst
+PP: 28 imagens presentes -> train=20img/4675inst  val=4img/1602inst  test=4img/1679inst
+PS: 22 imagens presentes -> train=15img/8531inst  val=3img/565inst  test=4img/1057inst
+
+split salvo em /home/mi/datasetMINA/resultados/00_split_images/data/image_splits.csv (102 imagens no total)

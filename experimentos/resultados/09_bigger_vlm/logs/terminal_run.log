@@ -1,0 +1,23 @@
+/home/mi/.local/lib/python3.10/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+Experimento #4 (VLM maior, só real): modelo=HuggingFaceTB/SmolVLM-Instruct  train=1000  val=240  test=208
+label
+PE     250
+PET    250
+PP     250
+PS     250
+Name: count, dtype: int64
+trainable params: 10,536,960 || all params: 2,256,809,840 || trainable%: 0.4669
+epoch 1/6  train_loss=0.6662  real_val_acc=0.475
+  -> novo melhor adapter (real_val_acc=0.475) salvo em /home/mi/datasetMINA/resultados/checkpoints/mina_real_only_lora_bigvlm
+epoch 2/6  train_loss=0.2937  real_val_acc=0.633
+  -> novo melhor adapter (real_val_acc=0.633) salvo em /home/mi/datasetMINA/resultados/checkpoints/mina_real_only_lora_bigvlm
+epoch 3/6  train_loss=0.2363  real_val_acc=0.592
+epoch 4/6  train_loss=0.2050  real_val_acc=0.658
+  -> novo melhor adapter (real_val_acc=0.658) salvo em /home/mi/datasetMINA/resultados/checkpoints/mina_real_only_lora_bigvlm
+epoch 5/6  train_loss=0.1437  real_val_acc=0.600
+epoch 6/6  train_loss=0.1124  real_val_acc=0.613
+
+Melhor acurácia em real_val: 0.658. Adapter em /home/mi/datasetMINA/resultados/checkpoints/mina_real_only_lora_bigvlm
+
+Acurácia final REAL TEST (mina_real_only_lora_bigvlm, n=208): 0.769

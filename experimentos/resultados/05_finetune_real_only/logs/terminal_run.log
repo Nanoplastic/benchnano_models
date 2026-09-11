@@ -1,0 +1,23 @@
+/home/mi/.local/lib/python3.10/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+Experimento A (só real): train=1000  val=240  test=208
+label
+PE     250
+PET    250
+PP     250
+PS     250
+Name: count, dtype: int64
+trainable params: 4,784,128 || all params: 512,266,432 || trainable%: 0.9339
+epoch 1/6  train_loss=0.6155  real_val_acc=0.446
+  -> novo melhor adapter (real_val_acc=0.446) salvo em /home/mi/datasetMINA/resultados/checkpoints/mina_real_only_lora
+epoch 2/6  train_loss=0.2909  real_val_acc=0.579
+  -> novo melhor adapter (real_val_acc=0.579) salvo em /home/mi/datasetMINA/resultados/checkpoints/mina_real_only_lora
+epoch 3/6  train_loss=0.2347  real_val_acc=0.554
+epoch 4/6  train_loss=0.1814  real_val_acc=0.646
+  -> novo melhor adapter (real_val_acc=0.646) salvo em /home/mi/datasetMINA/resultados/checkpoints/mina_real_only_lora
+epoch 5/6  train_loss=0.1312  real_val_acc=0.546
+epoch 6/6  train_loss=0.0973  real_val_acc=0.579
+
+Melhor acurácia em real_val: 0.646. Adapter em /home/mi/datasetMINA/resultados/checkpoints/mina_real_only_lora
+
+Acurácia final REAL TEST (mina_real_only_lora, n=208): 0.712

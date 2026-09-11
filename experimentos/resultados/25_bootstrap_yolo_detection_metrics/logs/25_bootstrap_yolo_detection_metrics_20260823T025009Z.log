@@ -1,0 +1,52 @@
+2026-08-22 23:50:11,112 | INFO | === INÍCIO DO EXPERIMENTO ===
+2026-08-22 23:50:11,112 | INFO | experiment_name=25_bootstrap_yolo_detection_metrics
+2026-08-22 23:50:11,113 | INFO | script_name=/home/mi/datasetMINA/scripts/25_bootstrap_yolo_detection_metrics.py
+2026-08-22 23:50:11,113 | INFO | results_dir=/home/mi/datasetMINA/resultados/25_bootstrap_yolo_detection_metrics
+2026-08-22 23:50:11,113 | INFO | log_path=/home/mi/datasetMINA/resultados/25_bootstrap_yolo_detection_metrics/logs/25_bootstrap_yolo_detection_metrics_20260823T025009Z.log
+2026-08-22 23:50:11,113 | INFO | runtime_metadata={"architecture": "x86_64", "cpu": "x86_64", "cpu_count": 24, "cuda_available": true, "cuda_device": 0, "cuda_version": "12.1", "cudnn_version": 90100, "device": "cuda", "experiment_name": "25_bootstrap_yolo_detection_metrics", "git_commit": "43d09957", "gpu_capability": [[8, 9]], "gpu_count": 1, "gpu_names": ["NVIDIA GeForce RTX 4060 Ti"], "host": "pop-os", "log_path": "/home/mi/datasetMINA/resultados/25_bootstrap_yolo_detection_metrics/logs/25_bootstrap_yolo_detection_metrics_20260823T025009Z.log", "numpy_version": "1.26.4", "os": "Linux", "os_release": "7.0.11-76070011-generic", "pandas_version": "2.1.4", "peft_version": "0.18.1", "pillow_version": "11.3.0", "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35", "python_implementation": "CPython", "python_version": "3.10.12", "ram_gb": 30.489498138427734, "results_dir": "/home/mi/datasetMINA/resultados/25_bootstrap_yolo_detection_metrics", "results_root": "/home/mi/datasetMINA/resultados", "script_name": "/home/mi/datasetMINA/scripts/25_bootstrap_yolo_detection_metrics.py", "timestamp_utc": "2026-08-23T02:50:09.928402+00:00", "torch_version": "2.4.1+cu121", "transformers_version": "4.49.0", "working_directory": "/home/mi/datasetMINA"}
+2026-08-22 23:50:11,113 | INFO | === bootstrap por imagem para precisao/mAP50/mAP50-95 (N=2000) ===
+2026-08-22 23:50:11,174 | INFO | n_imagens=15
+2026-08-22 23:50:43,465 | INFO | replica 50/2000 concluida (32.3s decorridos, 0.65s/replica)
+2026-08-22 23:51:15,034 | INFO | replica 100/2000 concluida (63.9s decorridos, 0.64s/replica)
+2026-08-22 23:51:46,634 | INFO | replica 150/2000 concluida (95.5s decorridos, 0.64s/replica)
+2026-08-22 23:52:18,173 | INFO | replica 200/2000 concluida (127.0s decorridos, 0.63s/replica)
+2026-08-22 23:52:49,943 | INFO | replica 250/2000 concluida (158.8s decorridos, 0.64s/replica)
+2026-08-22 23:53:21,603 | INFO | replica 300/2000 concluida (190.4s decorridos, 0.63s/replica)
+2026-08-22 23:53:52,999 | INFO | replica 350/2000 concluida (221.8s decorridos, 0.63s/replica)
+2026-08-22 23:54:24,588 | INFO | replica 400/2000 concluida (253.4s decorridos, 0.63s/replica)
+2026-08-22 23:54:56,113 | INFO | replica 450/2000 concluida (284.9s decorridos, 0.63s/replica)
+2026-08-22 23:55:28,003 | INFO | replica 500/2000 concluida (316.8s decorridos, 0.63s/replica)
+2026-08-22 23:55:59,642 | INFO | replica 550/2000 concluida (348.5s decorridos, 0.63s/replica)
+2026-08-22 23:56:31,117 | INFO | replica 600/2000 concluida (379.9s decorridos, 0.63s/replica)
+2026-08-22 23:57:02,431 | INFO | replica 650/2000 concluida (411.3s decorridos, 0.63s/replica)
+2026-08-22 23:57:33,847 | INFO | replica 700/2000 concluida (442.7s decorridos, 0.63s/replica)
+2026-08-22 23:58:05,134 | INFO | replica 750/2000 concluida (474.0s decorridos, 0.63s/replica)
+2026-08-22 23:58:36,568 | INFO | replica 800/2000 concluida (505.4s decorridos, 0.63s/replica)
+2026-08-22 23:59:07,888 | INFO | replica 850/2000 concluida (536.7s decorridos, 0.63s/replica)
+2026-08-22 23:59:39,332 | INFO | replica 900/2000 concluida (568.2s decorridos, 0.63s/replica)
+2026-08-23 00:00:10,907 | INFO | replica 950/2000 concluida (599.7s decorridos, 0.63s/replica)
+2026-08-23 00:00:42,239 | INFO | replica 1000/2000 concluida (631.1s decorridos, 0.63s/replica)
+2026-08-23 00:01:13,586 | INFO | replica 1050/2000 concluida (662.4s decorridos, 0.63s/replica)
+2026-08-23 00:01:44,888 | INFO | replica 1100/2000 concluida (693.7s decorridos, 0.63s/replica)
+2026-08-23 00:02:16,226 | INFO | replica 1150/2000 concluida (725.1s decorridos, 0.63s/replica)
+2026-08-23 00:02:47,693 | INFO | replica 1200/2000 concluida (756.5s decorridos, 0.63s/replica)
+2026-08-23 00:03:19,127 | INFO | replica 1250/2000 concluida (788.0s decorridos, 0.63s/replica)
+2026-08-23 00:03:50,459 | INFO | replica 1300/2000 concluida (819.3s decorridos, 0.63s/replica)
+2026-08-23 00:04:21,826 | INFO | replica 1350/2000 concluida (850.7s decorridos, 0.63s/replica)
+2026-08-23 00:04:53,262 | INFO | replica 1400/2000 concluida (882.1s decorridos, 0.63s/replica)
+2026-08-23 00:05:24,675 | INFO | replica 1450/2000 concluida (913.5s decorridos, 0.63s/replica)
+2026-08-23 00:05:56,092 | INFO | replica 1500/2000 concluida (944.9s decorridos, 0.63s/replica)
+2026-08-23 00:06:27,542 | INFO | replica 1550/2000 concluida (976.4s decorridos, 0.63s/replica)
+2026-08-23 00:06:58,989 | INFO | replica 1600/2000 concluida (1007.8s decorridos, 0.63s/replica)
+2026-08-23 00:07:30,484 | INFO | replica 1650/2000 concluida (1039.3s decorridos, 0.63s/replica)
+2026-08-23 00:08:01,971 | INFO | replica 1700/2000 concluida (1070.8s decorridos, 0.63s/replica)
+2026-08-23 00:08:33,446 | INFO | replica 1750/2000 concluida (1102.3s decorridos, 0.63s/replica)
+2026-08-23 00:09:04,905 | INFO | replica 1800/2000 concluida (1133.7s decorridos, 0.63s/replica)
+2026-08-23 00:09:36,348 | INFO | replica 1850/2000 concluida (1165.2s decorridos, 0.63s/replica)
+2026-08-23 00:10:07,836 | INFO | replica 1900/2000 concluida (1196.7s decorridos, 0.63s/replica)
+2026-08-23 00:10:39,234 | INFO | replica 1950/2000 concluida (1228.1s decorridos, 0.63s/replica)
+2026-08-23 00:11:10,585 | INFO | replica 2000/2000 concluida (1259.4s decorridos, 0.63s/replica)
+2026-08-23 00:11:10,585 | INFO | precision: media_replicas=0.6404 ic95_low=0.4581 ic95_high=0.7995
+2026-08-23 00:11:10,586 | INFO | recall: media_replicas=0.4755 ic95_low=0.3076 ic95_high=0.6059
+2026-08-23 00:11:10,586 | INFO | map50: media_replicas=0.3445 ic95_low=0.2023 ic95_high=0.5252
+2026-08-23 00:11:10,586 | INFO | map50_95: media_replicas=0.1066 ic95_low=0.0626 ic95_high=0.1658

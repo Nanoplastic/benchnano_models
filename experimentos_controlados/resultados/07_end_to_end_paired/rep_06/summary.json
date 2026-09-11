@@ -3,34 +3,34 @@
   "repetition_index": 6,
   "repetition_seed": 6,
   "environment": {
-    "timestamp_utc": "2026-09-07T20:02:56.342528+00:00",
-    "host": "tot-B650M-D3HP-AX",
-    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
-    "python_version": "3.12.3",
+    "timestamp_utc": "2026-09-05T15:18:03.865751+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "python_version": "3.10.12",
     "git_commit": "f7a0a0a1",
-    "cpu_model": "AMD Ryzen 9 9900X 12-Core Processor",
+    "cpu_model": "AMD Ryzen 9 7900 12-Core Processor",
     "n_cpus_logical": 24,
     "torch_version": "2.4.1+cu121",
     "cuda_available": true,
-    "ram_total_gb": 60.43,
+    "ram_total_gb": 30.49,
     "cuda_version": "12.1",
-    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
     "nvidia_driver_version": "580.173.02",
     "transformers_version": "4.49.0",
     "peft_version": "0.18.1",
-    "ultralytics_version": "8.4.141"
+    "ultralytics_version": "8.4.126"
   },
   "metrics": {
     "n_gt_particles": 4610,
-    "D_rate": 0.43644251626898045,
-    "P_rate_given_D": 0.8573558648111332,
-    "S_rate_given_DP": 0.8568115942028985,
-    "E_rate_strict_end_to_end": 0.3206073752711497,
-    "n_classified_by_smolvlm": 1725,
-    "smolvlm_accuracy_predicted_box": 0.8568115942028985
+    "D_rate": 0.38503253796095444,
+    "P_rate_given_D": 0.8608450704225352,
+    "S_rate_given_DP": 0.8619109947643979,
+    "E_rate_strict_end_to_end": 0.28568329718004337,
+    "n_classified_by_smolvlm": 1528,
+    "smolvlm_accuracy_predicted_box": 0.8619109947643979
   },
   "metadata": {
-    "yolo_checkpoint": "/home/astral_visao/Documents/visao/datasetMINA/experimentos_controlados/runs/01_yolo26_main/rep_06/weights/best.pt",
-    "size_lora_adapter": "/home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/size_lora_ctrl_seed6"
+    "yolo_checkpoint": "/home/mi/datasetMINA/experimentos_controlados/runs/01_yolo26_main/rep_06/weights/best.pt",
+    "size_lora_adapter": "/home/mi/datasetMINA/experimentos/resultados/checkpoints/size_lora_ctrl_seed6"
   }
 }

@@ -1,0 +1,5 @@
+PE: 250 imagens sintéticas -> /home/mi/datasetMINA/resultados/03_compose_synthetic/data/synthetic/PE (509 shape templates, 254 tiles de fundo disponíveis)
+PET: 250 imagens sintéticas -> /home/mi/datasetMINA/resultados/03_compose_synthetic/data/synthetic/PET (3152 shape templates, 196 tiles de fundo disponíveis)
+PP: 250 imagens sintéticas -> /home/mi/datasetMINA/resultados/03_compose_synthetic/data/synthetic/PP (4434 shape templates, 202 tiles de fundo disponíveis)
+PS: 250 imagens sintéticas -> /home/mi/datasetMINA/resultados/03_compose_synthetic/data/synthetic/PS (8027 shape templates, 233 tiles de fundo disponíveis)
+manifest sintético -> /home/mi/datasetMINA/resultados/03_compose_synthetic/data/manifest_synthetic.csv (1000 linhas)

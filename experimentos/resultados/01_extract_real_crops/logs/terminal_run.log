@@ -1,0 +1,17 @@
+/home/mi/datasetMINA/scripts/01_extract_real_crops.py:112: DeprecationWarning: 'mode' parameter is deprecated and will be removed in Pillow 13 (2026-10-15)
+  Image.fromarray(rgba, mode="RGBA").save(
+PE/train: 250/511 recortes salvos
+PE/val: 60/75 recortes salvos
+PE/test: 28/28 recortes salvos
+PET/train: 250/3258 recortes salvos
+PET/val: 60/481 recortes salvos
+PET/test: 60/1200 recortes salvos
+PP/train: 250/4675 recortes salvos
+PP/val: 60/1602 recortes salvos
+PP/test: 60/1679 recortes salvos
+PS/train: 250/8531 recortes salvos
+PS/val: 60/565 recortes salvos
+PS/test: 60/1057 recortes salvos
+
+manifest real -> /home/mi/datasetMINA/resultados/01_extract_real_crops/data/manifest_real.csv (1448 recortes)
+shape templates (só train) por classe: {'PE': 509, 'PET': 3152, 'PP': 4434, 'PS': 8027}

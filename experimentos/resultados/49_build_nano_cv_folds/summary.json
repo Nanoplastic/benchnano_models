@@ -1,0 +1,110 @@
+{
+  "experiment_name": "49_build_nano_cv_folds",
+  "metadata": {
+    "timestamp_utc": "2026-08-29T17:32:58.337176+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "os": "Linux",
+    "os_release": "7.0.11-76070011-generic",
+    "python_version": "3.10.12",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.489498138427734,
+    "working_directory": "/home/mi/datasetMINA",
+    "results_root": "/home/mi/datasetMINA/resultados",
+    "device": "cuda",
+    "git_commit": "11554351",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "49_build_nano_cv_folds",
+    "script_name": "/home/mi/datasetMINA/scripts/49_build_nano_cv_folds.py",
+    "results_dir": "/home/mi/datasetMINA/resultados/49_build_nano_cv_folds",
+    "log_path": "/home/mi/datasetMINA/resultados/49_build_nano_cv_folds/logs/49_build_nano_cv_folds_20260829T173258Z.log"
+  },
+  "metrics": {
+    "nano_max_nm": 1000.0,
+    "n_unique_source_images": 102,
+    "class_counts": {
+      "PET": 27,
+      "PE": 25,
+      "PP": 28,
+      "PS": 22
+    },
+    "n_nano_boxes_total": 9399,
+    "n_micro_boxes_total": 16331,
+    "k_folds": 5,
+    "val_fraction_of_pool": 0.15,
+    "seed": 42,
+    "fold_sizes_held_out": {
+      "0": 22,
+      "1": 22,
+      "2": 20,
+      "3": 19,
+      "4": 19
+    },
+    "fold_reports": [
+      {
+        "fold": 0,
+        "n_train_sources": 68,
+        "n_val_sources": 12,
+        "n_test_sources": 22,
+        "n_train_files_kept_nano": 97,
+        "n_val_files_kept_nano": 9
+      },
+      {
+        "fold": 1,
+        "n_train_sources": 68,
+        "n_val_sources": 12,
+        "n_test_sources": 22,
+        "n_train_files_kept_nano": 90,
+        "n_val_files_kept_nano": 11
+      },
+      {
+        "fold": 2,
+        "n_train_sources": 70,
+        "n_val_sources": 12,
+        "n_test_sources": 20,
+        "n_train_files_kept_nano": 101,
+        "n_val_files_kept_nano": 7
+      },
+      {
+        "fold": 3,
+        "n_train_sources": 71,
+        "n_val_sources": 12,
+        "n_test_sources": 19,
+        "n_train_files_kept_nano": 101,
+        "n_val_files_kept_nano": 10
+      },
+      {
+        "fold": 4,
+        "n_train_sources": 71,
+        "n_val_sources": 12,
+        "n_test_sources": 19,
+        "n_train_files_kept_nano": 90,
+        "n_val_files_kept_nano": 10
+      }
+    ],
+    "output_dir": "/home/mi/datasetMINA/datasets_yolo26_v2_cv_nano",
+    "assignment_csv": "/home/mi/datasetMINA/resultados/49_build_nano_cv_folds/data/fold_assignment.csv"
+  }
+}

@@ -1,7 +1,7 @@
-experiment,n_execucoes_logadas,n_ok,n_falhas,tempo_total_sec,tempo_total_human,tempo_medio_sec,tempo_medio_human
-01_yolo26_main,10,10,0,26848.5,7h27m28s,2684.8,44m45s
-05_smolvlm_size_lora,10,10,0,14222.3,3h57m02s,1422.2,23m42s
-06_smolvlm_size_full,10,10,0,10929.1,3h02m09s,1092.9,18m13s
-02_vlm_polymer_real_only,10,10,0,13200.9,3h40m01s,1320.1,22m00s
-03_vlm_polymer_real_synth,10,10,0,26123.6,7h15m24s,2612.4,43m32s
-04_vlm_polymer_bigvlm,10,10,0,11780.3,3h16m20s,1178.0,19m38s
+experiment,fonte,n_execucoes_logadas,n_ok,n_falhas,tempo_total_sec,tempo_total_human,tempo_medio_sec,tempo_medio_human
+01_yolo26_main,ultralytics results.csv (coluna 'time') -- rodou antes do execution_log.jsonl existir,10,10,0,48072.7,13h21m13s,4807.3,1h20m07s
+02_vlm_polymer_real_only,"aproximado, via horário de modificação dos CSVs de validação por época (<tag>_epochN_val_predictions.csv) -- vlm_common.py não registra tempo de treino internamente; rodou antes do execution_log.jsonl existir",10,10,0,22409.4,6h13m29s,2240.9,37m21s
+03_vlm_polymer_real_synth,"aproximado, via horário de modificação dos CSVs de validação por época (<tag>_epochN_val_predictions.csv) -- vlm_common.py não registra tempo de treino internamente; rodou antes do execution_log.jsonl existir",10,10,0,44046.1,12h14m06s,4404.6,1h13m25s
+04_vlm_polymer_bigvlm,"aproximado, via horário de modificação dos CSVs de validação por época (<tag>_epochN_val_predictions.csv) -- vlm_common.py não registra tempo de treino internamente; rodou antes do execution_log.jsonl existir",10,10,0,25408.5,7h03m29s,2540.9,42m21s
+05_smolvlm_size_lora,"aproximado, via horário de modificação dos CSVs de validação por época (<tag>_epochN_val_predictions.csv) -- vlm_common.py não registra tempo de treino internamente; rodou antes do execution_log.jsonl existir",10,10,0,24117.4,6h41m57s,2411.7,40m12s
+06_smolvlm_size_full,"aproximado, via horário de modificação dos CSVs de validação por época (<tag>_epochN_val_predictions.csv) -- vlm_common.py não registra tempo de treino internamente; rodou antes do execution_log.jsonl existir",10,10,0,19139.8,5h19m00s,1914.0,31m54s

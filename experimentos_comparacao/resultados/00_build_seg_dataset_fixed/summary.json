@@ -1,0 +1,43 @@
+{
+  "experiment": "00_build_seg_dataset_fixed",
+  "environment": {
+    "timestamp_utc": "2026-09-10T17:29:12.118864+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.1.1-76070101-generic-x86_64-with-glibc2.35",
+    "python_version": "3.10.12",
+    "git_commit": "f7a0a0a1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
+    "transformers_version": "4.49.0",
+    "ultralytics_version": "8.4.126",
+    "detectron2_version": null
+  },
+  "metrics": {
+    "train": {
+      "n_source_images": 162,
+      "n_files": 162,
+      "n_annotations": 19530,
+      "n_annotations_skipped": 0
+    },
+    "val": {
+      "n_source_images": 14,
+      "n_files": 14,
+      "n_annotations": 2628,
+      "n_annotations_skipped": 0
+    },
+    "test": {
+      "n_source_images": 15,
+      "n_files": 15,
+      "n_annotations": 3964,
+      "n_annotations_skipped": 0
+    }
+  },
+  "metadata": {
+    "data_yaml": "../datasets_baseline_seg_fixed/data.yaml",
+    "split_manifest_source": "/home/mi/datasetMINA/experimentos/resultados/00_split_images/data/image_splits.csv",
+    "coco_source_root": "/home/mi/datasetMINA/MPDataset/Full_Images/COCO Format",
+    "note": "reaproveita split travado por imagem-fonte de experimentos/00_split_images.py; imagens são symlinks para experimentos/datasets_yolo26_v2/images/ (byte-idênticas); multi-polígono por anotação: mantém só o de maior área."
+  }
+}

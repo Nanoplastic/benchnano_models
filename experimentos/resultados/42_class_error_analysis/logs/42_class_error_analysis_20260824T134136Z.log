@@ -1,0 +1,22 @@
+2026-08-24 10:41:37,548 | INFO | === INÍCIO DO EXPERIMENTO ===
+2026-08-24 10:41:37,548 | INFO | experiment_name=42_class_error_analysis
+2026-08-24 10:41:37,548 | INFO | script_name=/home/mi/datasetMINA/scripts/42_class_error_analysis.py
+2026-08-24 10:41:37,548 | INFO | results_dir=/home/mi/datasetMINA/resultados/42_class_error_analysis
+2026-08-24 10:41:37,548 | INFO | log_path=/home/mi/datasetMINA/resultados/42_class_error_analysis/logs/42_class_error_analysis_20260824T134136Z.log
+2026-08-24 10:41:37,548 | INFO | runtime_metadata={"architecture": "x86_64", "cpu": "x86_64", "cpu_count": 24, "cuda_available": true, "cuda_device": 0, "cuda_version": "12.1", "cudnn_version": 90100, "device": "cuda", "experiment_name": "42_class_error_analysis", "git_commit": "ae90b601", "gpu_capability": [[8, 9]], "gpu_count": 1, "gpu_names": ["NVIDIA GeForce RTX 4060 Ti"], "host": "pop-os", "log_path": "/home/mi/datasetMINA/resultados/42_class_error_analysis/logs/42_class_error_analysis_20260824T134136Z.log", "numpy_version": "1.26.4", "os": "Linux", "os_release": "7.0.11-76070011-generic", "pandas_version": "2.1.4", "peft_version": "0.18.1", "pillow_version": "11.3.0", "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35", "python_implementation": "CPython", "python_version": "3.10.12", "ram_gb": 30.489498138427734, "results_dir": "/home/mi/datasetMINA/resultados/42_class_error_analysis", "results_root": "/home/mi/datasetMINA/resultados", "script_name": "/home/mi/datasetMINA/scripts/42_class_error_analysis.py", "timestamp_utc": "2026-08-24T13:41:36.521439+00:00", "torch_version": "2.4.1+cu121", "transformers_version": "4.49.0", "working_directory": "/home/mi/datasetMINA"}
+2026-08-24 10:41:37,548 | INFO | === analise de erro por classe (PE falso positivo, PS falso negativo) ===
+2026-08-24 10:41:38,344 | INFO | imagem=PET_PET 5000X 1.png n_gt=141 n_pred=116
+2026-08-24 10:41:39,203 | INFO | imagem=PET_PET-2000X-2.png n_gt=490 n_pred=262
+2026-08-24 10:41:39,578 | INFO | imagem=PET_PET-2000X.png n_gt=518 n_pred=126
+2026-08-24 10:41:39,671 | INFO | imagem=PET_PET-B-2-5000X.png n_gt=90 n_pred=90
+2026-08-24 10:41:39,704 | INFO | imagem=PE_PE 1000-1.png n_gt=8 n_pred=24
+2026-08-24 10:41:39,744 | INFO | imagem=PE_PE 1000X.png n_gt=20 n_pred=74
+2026-08-24 10:41:39,775 | INFO | imagem=PE_PE-5000x.png n_gt=0 n_pred=0
+2026-08-24 10:41:42,251 | INFO | imagem=PP_PP-1000x1.png n_gt=1268 n_pred=300
+2026-08-24 10:41:42,465 | INFO | imagem=PP_PP-3000x4.png n_gt=198 n_pred=203
+2026-08-24 10:41:42,795 | INFO | imagem=PP_PP-3000x6.png n_gt=231 n_pred=202
+2026-08-24 10:41:43,146 | INFO | imagem=PP_PP-3000x7.png n_gt=233 n_pred=215
+2026-08-24 10:41:46,292 | INFO | imagem=PS_PS-100x.png n_gt=957 n_pred=300
+2026-08-24 10:41:46,402 | INFO | imagem=PS_PS-200x-2.png n_gt=160 n_pred=54
+2026-08-24 10:41:46,589 | INFO | imagem=PS_PS2-200x2.png n_gt=156 n_pred=107
+2026-08-24 10:41:46,676 | INFO | imagem=PS_PSL 10000X.png n_gt=140 n_pred=44

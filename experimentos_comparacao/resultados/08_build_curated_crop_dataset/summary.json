@@ -1,0 +1,36 @@
+{
+  "experiment": "08_build_curated_crop_dataset",
+  "environment": {
+    "timestamp_utc": "2026-09-07T22:59:51.053244+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "python_version": "3.10.12",
+    "git_commit": "f7a0a0a1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
+    "transformers_version": "4.49.0",
+    "ultralytics_version": "8.4.126",
+    "detectron2_version": null
+  },
+  "metrics": {
+    "train": {
+      "n_patches": 851,
+      "n_particles": 16553
+    },
+    "val": {
+      "n_patches": 170,
+      "n_particles": 2593
+    },
+    "test": {
+      "n_patches": 181,
+      "n_particles": 3844
+    }
+  },
+  "metadata": {
+    "crop_size": 256,
+    "split_manifest_source": "/home/mi/datasetMINA/experimentos/resultados/00_split_images/data/image_splits.csv",
+    "note": "janela deslizante sem sobreposicao, so janelas inteiras (borda incompleta descartada); patch sem anotacao apos recorte e descartado; split herdado da imagem-fonte."
+  }
+}

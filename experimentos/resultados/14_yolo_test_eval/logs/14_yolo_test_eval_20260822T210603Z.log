@@ -1,0 +1,26 @@
+2026-08-22 18:06:05,619 | INFO | === INÍCIO DO EXPERIMENTO ===
+2026-08-22 18:06:05,619 | INFO | experiment_name=14_yolo_test_eval
+2026-08-22 18:06:05,619 | INFO | script_name=/home/mi/datasetMINA/scripts/14_yolo_test_eval.py
+2026-08-22 18:06:05,619 | INFO | results_dir=/home/mi/datasetMINA/resultados/14_yolo_test_eval
+2026-08-22 18:06:05,619 | INFO | log_path=/home/mi/datasetMINA/resultados/14_yolo_test_eval/logs/14_yolo_test_eval_20260822T210603Z.log
+2026-08-22 18:06:05,619 | INFO | runtime_metadata={"architecture": "x86_64", "cpu": "x86_64", "cpu_count": 24, "cuda_available": true, "cuda_device": 0, "cuda_version": "12.1", "cudnn_version": 90100, "device": "cuda", "experiment_name": "14_yolo_test_eval", "git_commit": "59e0c39a", "gpu_capability": [[8, 9]], "gpu_count": 1, "gpu_names": ["NVIDIA GeForce RTX 4060 Ti"], "host": "pop-os", "log_path": "/home/mi/datasetMINA/resultados/14_yolo_test_eval/logs/14_yolo_test_eval_20260822T210603Z.log", "numpy_version": "1.26.4", "os": "Linux", "os_release": "7.0.11-76070011-generic", "pandas_version": "2.1.4", "peft_version": "0.18.1", "pillow_version": "11.3.0", "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35", "python_implementation": "CPython", "python_version": "3.10.12", "ram_gb": 30.489498138427734, "results_dir": "/home/mi/datasetMINA/resultados/14_yolo_test_eval", "results_root": "/home/mi/datasetMINA/resultados", "script_name": "/home/mi/datasetMINA/scripts/14_yolo_test_eval.py", "timestamp_utc": "2026-08-22T21:06:03.794927+00:00", "torch_version": "2.4.1+cu121", "transformers_version": "4.49.0", "working_directory": "/home/mi/datasetMINA"}
+2026-08-22 18:06:05,620 | INFO | === avaliacao final YOLO26L v2 no test set travado (15 imagens) ===
+2026-08-22 18:06:05,620 | INFO | model_path=/home/mi/datasetMINA/runs_v2/microplastic_yolo26_v2/weights/best.pt
+2026-08-22 18:06:08,980 | INFO | metricas_agregadas={'precision': 0.6069422606876318, 'recall': 0.46682537100157057, 'map50': 0.28024896067965005, 'map50_95': 0.08606379406840536}
+2026-08-22 18:06:08,980 | INFO | metricas_por_classe={'PE': {'ap50': 0.23844144144144147, 'ap50_95': 0.0508045062886326}, 'PET': {'ap50': 0.3114041177231271, 'ap50_95': 0.1024559708163109}, 'PP': {'ap50': 0.3556031835185286, 'ap50_95': 0.12221714644144455}, 'PS': {'ap50': 0.21554710003550312, 'ap50_95': 0.06877755272723338}}
+2026-08-22 18:06:08,980 | INFO | iniciando recall por tamanho com casamento por IoU (threshold=0.50)
+2026-08-22 18:06:09,149 | INFO | imagem=PET_PET 5000X 1.png gt=141 casados=86 falsos_positivos=30 predicoes=116
+2026-08-22 18:06:10,032 | INFO | imagem=PET_PET-2000X-2.png gt=490 casados=233 falsos_positivos=29 predicoes=262
+2026-08-22 18:06:10,423 | INFO | imagem=PET_PET-2000X.png gt=518 casados=99 falsos_positivos=27 predicoes=126
+2026-08-22 18:06:10,457 | INFO | imagem=PET_PET-B-2-5000X.png gt=90 casados=0 falsos_positivos=90 predicoes=90
+2026-08-22 18:06:10,485 | INFO | imagem=PE_PE 1000-1.png gt=8 casados=8 falsos_positivos=16 predicoes=24
+2026-08-22 18:06:10,521 | INFO | imagem=PE_PE 1000X.png gt=20 casados=20 falsos_positivos=54 predicoes=74
+2026-08-22 18:06:13,079 | INFO | imagem=PP_PP-1000x1.png gt=1268 casados=275 falsos_positivos=25 predicoes=300
+2026-08-22 18:06:13,298 | INFO | imagem=PP_PP-3000x4.png gt=198 casados=131 falsos_positivos=72 predicoes=203
+2026-08-22 18:06:13,637 | INFO | imagem=PP_PP-3000x6.png gt=231 casados=182 falsos_positivos=20 predicoes=202
+2026-08-22 18:06:13,997 | INFO | imagem=PP_PP-3000x7.png gt=233 casados=182 falsos_positivos=33 predicoes=215
+2026-08-22 18:06:15,970 | INFO | imagem=PS_PS-100x.png gt=957 casados=198 falsos_positivos=102 predicoes=300
+2026-08-22 18:06:16,038 | INFO | imagem=PS_PS-200x-2.png gt=160 casados=33 falsos_positivos=21 predicoes=54
+2026-08-22 18:06:16,188 | INFO | imagem=PS_PS2-200x2.png gt=156 casados=69 falsos_positivos=38 predicoes=107
+2026-08-22 18:06:16,259 | INFO | imagem=PS_PSL 10000X.png gt=140 casados=32 falsos_positivos=12 predicoes=44
+2026-08-22 18:06:16,305 | INFO | recall_global=0.3358 ic95_low=0.2473 ic95_high=0.5182 n_imagens=14

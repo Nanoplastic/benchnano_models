@@ -1,0 +1,206 @@
+{
+  "experiment": "12_maskrcnn__patches",
+  "environment": {
+    "timestamp_utc": "2026-09-08T04:48:09.091814+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "python_version": "3.10.12",
+    "git_commit": "f7a0a0a1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
+    "transformers_version": "4.49.0",
+    "ultralytics_version": "8.4.126",
+    "detectron2_version": null
+  },
+  "metrics": {
+    "aggregate_metrics": {
+      "precision": 0.6301561874249099,
+      "recall": 0.818678459937565,
+      "map50": 0.6870560050010681,
+      "map50_95": 0.38611117005348206,
+      "f1": 0.712152070604209
+    },
+    "precision_micro": 0.6301561874249099,
+    "recall_micro": 0.818678459937565,
+    "per_class": {
+      "1": {
+        "precision": 0.6301561874249099,
+        "recall": 0.818678459937565,
+        "tp": 3147,
+        "fp": 1847,
+        "fn": 697
+      }
+    },
+    "n_tp": 3147,
+    "n_fp": 1847,
+    "n_fn": 697,
+    "mask": {
+      "ap50": 0.7001816630363464,
+      "ap75": 0.35206857323646545,
+      "ap": 0.3731227219104767
+    }
+  },
+  "metadata": {
+    "protocol": "patches",
+    "epochs": 30,
+    "max_instances_per_image": null,
+    "model_path": "/home/mi/datasetMINA/experimentos_comparacao/runs/12_maskrcnn/patches/model_final.pt",
+    "train_history": [
+      {
+        "epoch": 0,
+        "loss": 1.0128089777180846,
+        "elapsed_sec": 99.6
+      },
+      {
+        "epoch": 1,
+        "loss": 0.7938836204334044,
+        "elapsed_sec": 199.4
+      },
+      {
+        "epoch": 2,
+        "loss": 0.7324032189560609,
+        "elapsed_sec": 299.3
+      },
+      {
+        "epoch": 3,
+        "loss": 0.6841442815854516,
+        "elapsed_sec": 399.4
+      },
+      {
+        "epoch": 4,
+        "loss": 0.6419431858919036,
+        "elapsed_sec": 499.7
+      },
+      {
+        "epoch": 5,
+        "loss": 0.5994819211707988,
+        "elapsed_sec": 600.1
+      },
+      {
+        "epoch": 6,
+        "loss": 0.5805217157787,
+        "elapsed_sec": 700.6
+      },
+      {
+        "epoch": 7,
+        "loss": 0.5485282292668249,
+        "elapsed_sec": 801.0
+      },
+      {
+        "epoch": 8,
+        "loss": 0.5158329150626357,
+        "elapsed_sec": 901.7
+      },
+      {
+        "epoch": 9,
+        "loss": 0.49638060532825096,
+        "elapsed_sec": 1002.2
+      },
+      {
+        "epoch": 10,
+        "loss": 0.46753283642547233,
+        "elapsed_sec": 1102.8
+      },
+      {
+        "epoch": 11,
+        "loss": 0.45942105730654487,
+        "elapsed_sec": 1203.3
+      },
+      {
+        "epoch": 12,
+        "loss": 0.43286843461469865,
+        "elapsed_sec": 1303.7
+      },
+      {
+        "epoch": 13,
+        "loss": 0.4109534819571065,
+        "elapsed_sec": 1404.3
+      },
+      {
+        "epoch": 14,
+        "loss": 0.3876970818554851,
+        "elapsed_sec": 1505.0
+      },
+      {
+        "epoch": 15,
+        "loss": 0.377742426286281,
+        "elapsed_sec": 1605.6
+      },
+      {
+        "epoch": 16,
+        "loss": 0.3639551273114245,
+        "elapsed_sec": 1706.4
+      },
+      {
+        "epoch": 17,
+        "loss": 0.34829504861378335,
+        "elapsed_sec": 1807.2
+      },
+      {
+        "epoch": 18,
+        "loss": 0.33685046486871345,
+        "elapsed_sec": 1907.9
+      },
+      {
+        "epoch": 19,
+        "loss": 0.3249886362275607,
+        "elapsed_sec": 2008.5
+      },
+      {
+        "epoch": 20,
+        "loss": 0.33112147660322594,
+        "elapsed_sec": 2108.9
+      },
+      {
+        "epoch": 21,
+        "loss": 0.3076011190112208,
+        "elapsed_sec": 2209.8
+      },
+      {
+        "epoch": 22,
+        "loss": 0.2993947541419889,
+        "elapsed_sec": 2310.3
+      },
+      {
+        "epoch": 23,
+        "loss": 0.2881617710833818,
+        "elapsed_sec": 2411.0
+      },
+      {
+        "epoch": 24,
+        "loss": 0.28110863362819377,
+        "elapsed_sec": 2511.6
+      },
+      {
+        "epoch": 25,
+        "loss": 0.27710499131763483,
+        "elapsed_sec": 2612.3
+      },
+      {
+        "epoch": 26,
+        "loss": 0.2764949709386893,
+        "elapsed_sec": 2712.9
+      },
+      {
+        "epoch": 27,
+        "loss": 0.2704543094609825,
+        "elapsed_sec": 2813.7
+      },
+      {
+        "epoch": 28,
+        "loss": 0.26421083205602536,
+        "elapsed_sec": 2914.3
+      },
+      {
+        "epoch": 29,
+        "loss": 0.2560279661081207,
+        "elapsed_sec": 3014.9
+      }
+    ],
+    "duration_sec": 3015.0,
+    "duration_human": "50m15s",
+    "reeval_note": "Precisao/Recall recalculados por 15_reeval_rcnn_macro_pr.py em 2026-09-08T13:30:18.721609 -- media macro por classe (antes: media micro, pool de TP/FP/FN de todas as classes, nao comparavel com metrics.box.mp/mr do Ultralytics usado por YOLOv10/Benchnano-seg). mAP50/mAP50:95 inalterados (ja eram por classe com media, via torchmetrics). Nenhum checkpoint foi retreinado, so reavaliado."
+  }
+}

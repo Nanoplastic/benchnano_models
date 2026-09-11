@@ -1,0 +1,62 @@
+{
+  "experiment_name": "52_class_error_analysis_nano",
+  "metadata": {
+    "timestamp_utc": "2026-08-29T22:42:46.556538+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "os": "Linux",
+    "os_release": "7.0.11-76070011-generic",
+    "python_version": "3.10.12",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.489498138427734,
+    "working_directory": "/home/mi/datasetMINA",
+    "results_root": "/home/mi/datasetMINA/resultados",
+    "device": "cuda",
+    "git_commit": "11554351",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "52_class_error_analysis_nano",
+    "script_name": "/home/mi/datasetMINA/scripts/52_class_error_analysis_nano.py",
+    "results_dir": "/home/mi/datasetMINA/resultados/52_class_error_analysis_nano",
+    "log_path": "/home/mi/datasetMINA/resultados/52_class_error_analysis_nano/logs/52_class_error_analysis_nano_20260829T224246Z.log"
+  },
+  "metrics": {
+    "note": "analise exploratoria, detector nano-only -- gera hipotese, nao e resultado confirmatorio do artigo",
+    "model_path": "/home/mi/datasetMINA/runs_v2_nano/microplastic_yolo26_nano_ft/weights/best.pt",
+    "nano_max_nm": 1000.0,
+    "n_unresolved_magnification": 0,
+    "n_pe_false_positives": 125,
+    "frac_pe_fp_overlapping_other_class_gt": 0.504,
+    "n_ps_false_negatives": 111,
+    "n_ps_true_positives": 0,
+    "frac_ps_fn_with_no_prediction_overlap": 1.0,
+    "ps_area_norm_median_fn": 0.002318522135416667,
+    "ps_area_norm_median_tp": null,
+    "bootstrap_ps_area_norm_median_diff_fn_vs_tp": null,
+    "iou_threshold": 0.5,
+    "conf_threshold": 0.15,
+    "n_bootstrap": 10000,
+    "seed": 42
+  }
+}

@@ -1,0 +1,6 @@
+path: /home/mi/datasetMINA/experimentos_comparacao/datasets_curated_crop/seg
+train: images/test
+val: images/test
+nc: 1
+names:
+  - particle

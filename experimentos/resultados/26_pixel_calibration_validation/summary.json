@@ -1,0 +1,115 @@
+{
+  "experiment_name": "26_pixel_calibration_validation",
+  "metadata": {
+    "timestamp_utc": "2026-08-23T06:30:20.544829+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "os": "Linux",
+    "os_release": "7.0.11-76070011-generic",
+    "python_version": "3.10.12",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.489498138427734,
+    "working_directory": "/home/mi/datasetMINA",
+    "results_root": "/home/mi/datasetMINA/resultados",
+    "device": "cuda",
+    "git_commit": "ae66ebd7",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "26_pixel_calibration_validation",
+    "script_name": "/home/mi/datasetMINA/scripts/26_pixel_calibration_validation.py",
+    "results_dir": "/home/mi/datasetMINA/resultados/26_pixel_calibration_validation",
+    "log_path": "/home/mi/datasetMINA/resultados/26_pixel_calibration_validation/logs/26_pixel_calibration_validation_20260823T063020Z.log"
+  },
+  "metrics": {
+    "white_threshold": 200,
+    "footer_band_px": 130,
+    "n_magnifications": 7,
+    "rows": [
+      {
+        "magnification": 100,
+        "image": "MPDataset/Full_Images/Segmentado/PP/PP 100X.png",
+        "scale_bar_px": 100,
+        "label_um": 100,
+        "um_per_px_measured": 1.0,
+        "um_per_px_predicted": 1.0,
+        "error_pct": 0.0
+      },
+      {
+        "magnification": 200,
+        "image": "MPDataset/Full_Images/Segmentado/PS/PS-200X.png",
+        "scale_bar_px": 200,
+        "label_um": 100,
+        "um_per_px_measured": 0.5,
+        "um_per_px_predicted": 0.5,
+        "error_pct": 0.0
+      },
+      {
+        "magnification": 1000,
+        "image": "MPDataset/Full_Images/Segmentado/PE/PE 1000X.png",
+        "scale_bar_px": 100,
+        "label_um": 10,
+        "um_per_px_measured": 0.1,
+        "um_per_px_predicted": 0.1,
+        "error_pct": 0.0
+      },
+      {
+        "magnification": 2000,
+        "image": "MPDataset/Full_Images/Segmentado/PE/PE 2000X.png",
+        "scale_bar_px": 200,
+        "label_um": 10,
+        "um_per_px_measured": 0.05,
+        "um_per_px_predicted": 0.05,
+        "error_pct": 0.0
+      },
+      {
+        "magnification": 3000,
+        "image": "MPDataset/Full_Images/Segmentado/PE/PE 3000X.png",
+        "scale_bar_px": 152,
+        "label_um": 5,
+        "um_per_px_measured": 0.03289473684210526,
+        "um_per_px_predicted": 0.03333333333333333,
+        "error_pct": -1.3157894736842146
+      },
+      {
+        "magnification": 5000,
+        "image": "MPDataset/Full_Images/Segmentado/PE/PE-5000x.png",
+        "scale_bar_px": 252,
+        "label_um": 5,
+        "um_per_px_measured": 0.01984126984126984,
+        "um_per_px_predicted": 0.02,
+        "error_pct": -0.7936507936508013
+      },
+      {
+        "magnification": 10000,
+        "image": "MPDataset/Full_Images/Segmentado/PE/PE-10000X.png",
+        "scale_bar_px": 100,
+        "label_um": 1,
+        "um_per_px_measured": 0.01,
+        "um_per_px_predicted": 0.01,
+        "error_pct": 0.0
+      }
+    ],
+    "max_abs_error_pct": 1.3157894736842146
+  }
+}

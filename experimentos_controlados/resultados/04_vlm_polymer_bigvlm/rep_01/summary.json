@@ -3,32 +3,32 @@
   "repetition_index": 1,
   "repetition_seed": 1,
   "environment": {
-    "timestamp_utc": "2026-09-07T16:34:27.539764+00:00",
-    "host": "tot-B650M-D3HP-AX",
-    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
-    "python_version": "3.12.3",
+    "timestamp_utc": "2026-09-05T08:23:55.241334+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "python_version": "3.10.12",
     "git_commit": "f7a0a0a1",
-    "cpu_model": "AMD Ryzen 9 9900X 12-Core Processor",
+    "cpu_model": "AMD Ryzen 9 7900 12-Core Processor",
     "n_cpus_logical": 24,
     "torch_version": "2.4.1+cu121",
     "cuda_available": true,
-    "ram_total_gb": 60.43,
+    "ram_total_gb": 30.49,
     "cuda_version": "12.1",
-    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
     "nvidia_driver_version": "580.173.02",
     "transformers_version": "4.49.0",
     "peft_version": "0.18.1",
-    "ultralytics_version": "8.4.141"
+    "ultralytics_version": "8.4.126"
   },
   "metrics": {
-    "best_val_acc": 0.6625,
-    "test_acc": 0.7548076923076923
+    "best_val_acc": 0.6333333333333333,
+    "test_acc": 0.75
   },
   "metadata": {
     "tag": "mina_real_only_lora_bigvlm_ctrl_seed1",
-    "adapter_dir": "/home/astral_visao/Documents/visao/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed1",
+    "adapter_dir": "/home/mi/datasetMINA/experimentos/resultados/checkpoints/mina_real_only_lora_bigvlm_ctrl_seed1",
     "model_id": "HuggingFaceTB/SmolVLM-Instruct",
-    "elapsed_minutes": 19.8,
+    "elapsed_minutes": 42.1,
     "train_samples": 1000,
     "val_samples": 240,
     "test_samples": 208

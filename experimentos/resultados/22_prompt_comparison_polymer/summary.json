@@ -1,0 +1,72 @@
+{
+  "experiment_name": "22_prompt_comparison_polymer",
+  "metadata": {
+    "timestamp_utc": "2026-08-22T23:25:49.623824+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "os": "Linux",
+    "os_release": "7.0.11-76070011-generic",
+    "python_version": "3.10.12",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.489498138427734,
+    "working_directory": "/home/mi/datasetMINA",
+    "results_root": "/home/mi/datasetMINA/resultados",
+    "device": "cuda",
+    "git_commit": "9acff749",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "22_prompt_comparison_polymer",
+    "script_name": "/home/mi/datasetMINA/scripts/22_prompt_comparison_polymer.py",
+    "results_dir": "/home/mi/datasetMINA/resultados/22_prompt_comparison_polymer",
+    "log_path": "/home/mi/datasetMINA/resultados/22_prompt_comparison_polymer/logs/22_prompt_comparison_polymer_20260822T232549Z.log"
+  },
+  "metrics": {
+    "val_accuracies_by_prompt": {
+      "P1_baseline": 0.2375,
+      "P2_morfologia": 0.22916666666666666,
+      "P3_minimo": 0.25,
+      "P4_raciocinio": 0.25,
+      "P5_eliminacao": 0.041666666666666664
+    },
+    "winner_prompt": "P3_minimo",
+    "winner_test_acc": 0.28846153846153844,
+    "winner_test_ci95": [
+      0.030927835051546393,
+      0.6033655590219834
+    ],
+    "mcnemar_vs_baseline": {
+      "a_only": 0,
+      "b_only": 0,
+      "n_discordant": 0,
+      "p_value": 1.0
+    },
+    "prompts": {
+      "P1_baseline": "This is a scanning electron microscope (SEM) image from a controlled reference sample containing a single known plastic polymer, showing particle(s) deposited on a filter membrane. Which polymer is this sample made of: PE (polyethylene), PET (polyethylene terephthalate), PP (polypropylene), or PS (polystyrene)? Answer with just one label: PE, PET, PP, or PS.",
+      "P2_morfologia": "This is a scanning electron microscope (SEM) image from a controlled reference sample containing a single known plastic polymer. PE (polyethylene) fragments typically appear as irregular, waxy, folded flakes with smooth rounded edges. PET (polyethylene terephthalate) fragments typically appear as angular, glassy fragments with sharp edges, sometimes fibrous strands. PP (polypropylene) fragments typically appear as irregular blocky fragments with a rougher, more granular surface texture. PS (polystyrene) particles typically appear as smooth spherical beads or brittle angular fragments with a glassy surface. Based on the particle(s) shown, which polymer is this sample made of? Answer with just one label: PE, PET, PP, or PS.",
+      "P3_minimo": "SEM image of a plastic particle sample. Which polymer: PE, PET, PP, or PS? Answer with one label only.",
+      "P4_raciocinio": "This is a scanning electron microscope (SEM) image from a controlled reference sample containing a single known plastic polymer, showing particle(s) deposited on a filter membrane. In one short sentence, describe the particle's shape, edges, and surface texture. Then, on a new line, give your final answer as exactly one label: PE, PET, PP, or PS.",
+      "P5_eliminacao": "This is a scanning electron microscope (SEM) image from a controlled reference sample containing a single known plastic polymer, showing particle(s) deposited on a filter membrane. Consider the four candidates PE, PET, PP, and PS. Rule out the ones that clearly do not match the visible shape and surface texture, then answer with the single most likely label: PE, PET, PP, or PS."
+    }
+  }
+}

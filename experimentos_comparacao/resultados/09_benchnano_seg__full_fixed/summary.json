@@ -1,0 +1,40 @@
+{
+  "experiment": "09_benchnano_seg__full_fixed",
+  "environment": {
+    "timestamp_utc": "2026-09-10T19:04:52.734247+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.1.1-76070101-generic-x86_64-with-glibc2.35",
+    "python_version": "3.10.12",
+    "git_commit": "f7a0a0a1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
+    "transformers_version": "4.49.0",
+    "ultralytics_version": "8.4.126",
+    "detectron2_version": null
+  },
+  "metrics": {
+    "box": {
+      "precision": 0.7939418094858509,
+      "recall": 0.5026495079485238,
+      "map50": 0.4433276499159199,
+      "map50_95": 0.2820381646835167
+    },
+    "mask": {
+      "ap50": 0.30493529481919873,
+      "ap75": 0.09042684380060922,
+      "ap": 0.11707012039830993
+    }
+  },
+  "metadata": {
+    "protocol": "full",
+    "fixed_pool": true,
+    "weights": "yolo26l-seg.pt",
+    "best_weights": "/home/mi/datasetMINA/experimentos_comparacao/runs/09_benchnano_seg/benchnano_seg_full_fixed/weights/best.pt",
+    "epochs": 200,
+    "imgsz": 1024,
+    "duration_sec": 5464.3,
+    "duration_human": "1h31m04s"
+  }
+}

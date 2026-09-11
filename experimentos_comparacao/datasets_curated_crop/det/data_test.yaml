@@ -1,0 +1,9 @@
+path: /home/mi/datasetMINA/experimentos_comparacao/datasets_curated_crop/det
+train: images/test
+val: images/test
+nc: 4
+names:
+  - PE
+  - PET
+  - PP
+  - PS

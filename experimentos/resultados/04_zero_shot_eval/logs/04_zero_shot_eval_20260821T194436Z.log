@@ -1,0 +1,9 @@
+2026-08-21 16:44:37,619 | INFO | === INÍCIO DO EXPERIMENTO ===
+2026-08-21 16:44:37,619 | INFO | experiment_name=04_zero_shot_eval
+2026-08-21 16:44:37,619 | INFO | script_name=/home/mi/datasetMINA/scripts/04_zero_shot_eval.py
+2026-08-21 16:44:37,619 | INFO | results_dir=/home/mi/datasetMINA/resultados/04_zero_shot_eval
+2026-08-21 16:44:37,619 | INFO | log_path=/home/mi/datasetMINA/resultados/04_zero_shot_eval/logs/04_zero_shot_eval_20260821T194436Z.log
+2026-08-21 16:44:37,619 | INFO | runtime_metadata={"architecture": "x86_64", "cpu": "x86_64", "cpu_count": 24, "cuda_available": true, "cuda_device": 0, "cuda_version": "12.1", "cudnn_version": 90100, "device": "cuda", "experiment_name": "04_zero_shot_eval", "git_commit": "f78e7a6", "gpu_capability": [[8, 9]], "gpu_count": 1, "gpu_names": ["NVIDIA GeForce RTX 4060 Ti"], "host": "pop-os", "log_path": "/home/mi/datasetMINA/resultados/04_zero_shot_eval/logs/04_zero_shot_eval_20260821T194436Z.log", "numpy_version": "1.26.4", "os": "Linux", "os_release": "7.0.11-76070011-generic", "pandas_version": "2.1.4", "peft_version": "0.18.1", "pillow_version": "11.3.0", "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35", "python_implementation": "CPython", "python_version": "3.10.12", "ram_gb": 30.489498138427734, "results_dir": "/home/mi/datasetMINA/resultados/04_zero_shot_eval", "results_root": "/home/mi/datasetMINA/resultados", "script_name": "/home/mi/datasetMINA/scripts/04_zero_shot_eval.py", "timestamp_utc": "2026-08-21T19:44:36.460869+00:00", "torch_version": "2.4.1+cu121", "transformers_version": "4.49.0", "working_directory": "/home/mi/datasetMINA"}
+2026-08-21 16:44:37,619 | INFO | iniciando baseline zero-shot no split real test
+2026-08-21 16:44:41,782 | INFO | n_test=208
+2026-08-21 16:45:10,171 | INFO | Resumo zero-shot: n_test=208 acc=0.2885 pred_counts={'PET': 208}
