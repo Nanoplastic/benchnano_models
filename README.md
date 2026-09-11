@@ -109,5 +109,3 @@ No MiNa images are redistributed directly in this repository. Only derived annot
 * The locked test split contains only 15 micrographs, distributed unevenly across polymer labels. PE appears in only 2 of the 15 images, which makes PE precision sensitive to the seed.
 * The SmolVLM fine tuning scripts do not fix all PyTorch seeds deterministically. The 10 repetition protocol in `experimentos_controlados/` is used to quantify this variability.
 * A 5 fold cross validation over the 102 available micrographs (exploratory, see `experimentos/resultados/45_eval_cv_folds`) indicates a more conservative population recall (23.8%) than that obtained from the locked test split (43.0%), suggesting that the latter is a relatively favorable sample of source images.
-
-reported statistical analyses.
