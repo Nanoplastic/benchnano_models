@@ -1,8 +1,9 @@
 """Utilitários compartilhados pelos experimentos controlados (10 repetições,
-seed explícita 0-9) -- só para os 6 treinos citados no artigo main_V5.tex:
+seed explícita 0-9) -- para os experimentos citados no artigo (mainV11.tex):
 YOLO26L principal (13), SmolVLM LoRA polímero real-only/real+sintético/
-bigvlm (05/06/09), SmolVLM LoRA/full regime de tamanho (17/18). Ver plano em
-/home/mi/.claude/plans/parallel-giggling-ocean.md.
+bigvlm (05/06/09), SmolVLM LoRA/full regime de tamanho (17/18), além das
+reavaliações posteriores com max_det=2000 e com a regra de regime de tamanho
+"eq1" (ver experimentos/scripts/60-84 e final_report.py).
 
 Não modifica nada em experimentos/scripts/ -- todo output novo (summary.json
 por repetição, log de máquina, relatório final) vai em

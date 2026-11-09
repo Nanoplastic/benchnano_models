@@ -40,15 +40,19 @@ Layer 3 is the central record. For each particle, the source image identifier, p
 
 Values are reported as mean ± standard deviation over **10 controlled repetitions** (seeds 0 to 9), which is the most reliable reference according to the analysis presented in the paper. Single run values from the *abstract* are, in some cases, close to the upper bound of the confidence interval from these repetitions.
 
+These are the final values reported in the paper, computed with `max_det=2000` for the detector and with the `eq1` size-regime rule (see `experimentos_controlados/scripts/final_report.py` and `experimentos/scripts/61_reeval_detector_maxdet.py`). An earlier, superseded set of repetitions used the Ultralytics default `max_det=300`, which silently truncated detections on dense micrographs; both the superseded and the corrected values are kept side by side in `experimentos_controlados/relatorio_final/estatisticas_agregadas.csv` for traceability.
+
+This repository contains the scripts that produce the experimental data, metrics and statistics reported in the paper. It does not include the figure-generation scripts (plotting/rendering code for the paper's own PDF figures) — those depend on the paper's local LaTeX project structure and are kept out of this repository by design.
+
 | Stage                                  | Metric                       | Result (10 repetitions) |
 | -------------------------------------- | ---------------------------- | ----------------------- |
-| Benchnano Detector                     | Precision                    | 65.5% ± 6.1%            |
-| Benchnano Detector                     | Recall                       | 43.0% ± 2.9%            |
-| Benchnano Detector                     | mAP@0.5                      | 35.8% ± 4.6%            |
-| Benchnano Detector                     | mAP@0.5:0.95                 | 10.9% ± 2.2%            |
-| SmolVLM LoRA (size regime)             | Accuracy                     | 89.8% ± 2.1%            |
-| SmolVLM full fine tuning (size regime) | Accuracy                     | 87.9% ± 2.0%            |
-| Strict end to end pipeline             | Rate $E = D \cdot P \cdot S$ | 26.6% ± 3.5%            |
+| Benchnano Detector                     | Precision                    | 59.8% ± 6.9%            |
+| Benchnano Detector                     | Recall                       | 49.4% ± 3.3%            |
+| Benchnano Detector                     | mAP@0.5                      | 40.0% ± 5.6%            |
+| Benchnano Detector                     | mAP@0.5:0.95                 | 12.1% ± 2.3%            |
+| SmolVLM LoRA (size regime)             | Accuracy                     | 92.9% ± 1.3%            |
+| SmolVLM full fine tuning (size regime) | Accuracy                     | 92.8% ± 1.1%            |
+| Strict end to end pipeline             | Rate $E = D \cdot P \cdot S$ | 32.9% ± 5.2%            |
 
 The MiNa dataset contains 105 SEM micrographs ($1280\times960$ px) and 26,869 annotated particles (PE: 616, PP: 8,362, PS: 12,847, PET: 5,044). The partition uses 70/15/15 at the micrograph level, with particles from the same image never being mixed across splits. The locked test split contains 15 images and 4,610 particles.
 
@@ -68,7 +72,11 @@ The material is organized into the three experimental categories used in the pro
 ```
 benchnano_models/
 ├── experimentos/                 # Single run pilot studies (VLM, detector, ablations)
-│   ├── scripts/                  # 00–55: one script per stage, numbered according to pipeline order
+│   ├── scripts/                  # one script per stage, numbered according to pipeline
+│   │                              #   order. 57-81 are the max_det=2000 / "eq1"
+│   │                              #   re-evaluation and correction suite -- see "Known
+│   │                              #   Limitations" below. Figure-generation scripts are
+│   │                              #   not included in this repository (see "Main Results").
 │   └── resultados/               # summary.json, metrics, crops, and reports from each script
 │
 ├── experimentos_comparacao/      # Direct comparison with the original MiNa benchmark
@@ -80,7 +88,9 @@ benchnano_models/
 │
 └── experimentos_controlados/     # Controlled repetition protocol (10 seeds)
     ├── scripts/                  # mirror the single run experiments, with a fixed seed
-    ├── resultados/               # 01–07: one folder per configuration, rep_00 .. rep_09
+    ├── resultados/               # 01–09: one folder per configuration, rep_00 .. rep_09
+    │                              #   (07_..._eq1, 08_..._eq1 and 09_..._maxdet2000 are the
+    │                              #   corrected repetitions that the paper actually reports)
     ├── relatorio_final/           # mean, standard deviation, 95% CI, and statistical tests
     └── logs_maquina/              # continuous GPU monitoring during the training queue
 ```
@@ -108,4 +118,5 @@ No MiNa images are redistributed directly in this repository. Only derived annot
 * Evaluation is restricted to SEM images from MiNa. No external dataset was used to test acquisition domain transfer.
 * The locked test split contains only 15 micrographs, distributed unevenly across polymer labels. PE appears in only 2 of the 15 images, which makes PE precision sensitive to the seed.
 * The SmolVLM fine tuning scripts do not fix all PyTorch seeds deterministically. The 10 repetition protocol in `experimentos_controlados/` is used to quantify this variability.
-* A 5 fold cross validation over the 102 available micrographs (exploratory, see `experimentos/resultados/45_eval_cv_folds`) indicates a more conservative population recall (23.8%) than that obtained from the locked test split (43.0%), suggesting that the latter is a relatively favorable sample of source images.
+* A 5 fold cross validation over the 102 available micrographs (exploratory, see `experimentos/resultados/77_reeval_cv_folds_maxdet2000`, max_det=2000) indicates a more conservative pooled recall (30.6%) than that obtained from the locked test split (49.4%, ten-repetition mean), suggesting that the latter is a relatively favorable sample of source images.
+* The original detector-evaluation scripts never passed `max_det` explicitly to the Ultralytics predictor, so they silently used the default (300) instead of the 2000 declared in the Methods section and recorded in the training checkpoint. This truncated detections on dense micrographs (some have 900-1300+ particles) and understated recall, precision and mAP. The issue was found and corrected via `experimentos/scripts/60_maxdet_sensitivity.py` and `61_reeval_detector_maxdet.py`; all results in this README and in the paper now use the corrected evaluation. The superseded, pre-correction numbers are kept in the repository for traceability (see "Main Results" above).

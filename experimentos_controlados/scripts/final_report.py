@@ -1,7 +1,8 @@
-"""Agrega as 10 repetições de cada um dos 6 experimentos (+ a avaliação
-fim-a-fim pareada) em estatísticas prontas pro artigo: média, desvio-padrão
-e IC95% (distribuição t, n=10) por métrica -- mesma disciplina de relato de
-Jain (cap. 13.2), já citada em main_V5.tex.
+"""Agrega as 10 repetições de cada experimento controlado (+ a avaliação
+fim-a-fim pareada, + as reavaliações max_det=2000/"eq1") em estatísticas
+prontas pro artigo: média, desvio-padrão e IC95% (distribuição t, n=10) por
+métrica -- mesma disciplina de relato de Jain (cap. 13.2), citada no artigo
+(mainV11.tex).
 
 Saída em experimentos_controlados/relatorio_final/:
     estatisticas_agregadas.json  -- tudo, estruturado
@@ -24,8 +25,28 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import ctrl_common as cc
 
 # quais métricas relatar por experimento, e como extraí-las de metrics{}
+#
+# NOTA DE AUDITORIA (2026-11-09): os scripts de avaliação originais nunca
+# passavam max_det explicitamente ao preditor do Ultralytics, que por isso
+# usava o padrão 300 em vez do max_det=2000 declarado nos Methods do artigo
+# e gravado no checkpoint de treino (ver experimentos/resultados/
+# 61_reeval_detector_maxdet/summary.json, campo "note"). Isso subestimava
+# recall/precisão/mAP do detector em micrografias densas. A correção
+# ("01_yolo26_main_maxdet2000") e a redefinição "eq1" do regime de tamanho
+# ("07_smolvlm_size_lora_eq1", "08_smolvlm_size_full_eq1") e o re-pareamento
+# fim-a-fim sob max_det=2000 ("09_end_to_end_paired_maxdet2000") são o que o
+# artigo atual (mainV11.tex, Tabela 1) efetivamente reporta. As entradas
+# "01_yolo26_main", "05_smolvlm_size_lora", "06_smolvlm_size_full" e
+# "07_end_to_end_paired" são preservadas abaixo por completude/histórico
+# (não foram removidas), mas estão SUPERADAS como resultado publicado.
 METRIC_SPECS = {
     "01_yolo26_main": [
+        ("precision", lambda m: m["aggregate_metrics"]["precision"]),
+        ("recall", lambda m: m["aggregate_metrics"]["recall"]),
+        ("map50", lambda m: m["aggregate_metrics"]["map50"]),
+        ("map50_95", lambda m: m["aggregate_metrics"]["map50_95"]),
+    ],
+    "01_yolo26_main_maxdet2000": [
         ("precision", lambda m: m["aggregate_metrics"]["precision"]),
         ("recall", lambda m: m["aggregate_metrics"]["recall"]),
         ("map50", lambda m: m["aggregate_metrics"]["map50"]),
@@ -36,7 +57,15 @@ METRIC_SPECS = {
     "04_vlm_polymer_bigvlm": [("test_acc", lambda m: m["test_acc"])],
     "05_smolvlm_size_lora": [("test_acc", lambda m: m["test_acc"])],
     "06_smolvlm_size_full": [("test_acc", lambda m: m["test_acc"])],
+    "07_smolvlm_size_lora_eq1": [("test_acc", lambda m: m["test_acc"])],
+    "08_smolvlm_size_full_eq1": [("test_acc", lambda m: m["test_acc"])],
     "07_end_to_end_paired": [
+        ("D_rate", lambda m: m["D_rate"]),
+        ("P_rate_given_D", lambda m: m["P_rate_given_D"]),
+        ("smolvlm_accuracy_predicted_box", lambda m: m["smolvlm_accuracy_predicted_box"]),
+        ("E_rate_strict_end_to_end", lambda m: m["E_rate_strict_end_to_end"]),
+    ],
+    "09_end_to_end_paired_maxdet2000": [
         ("D_rate", lambda m: m["D_rate"]),
         ("P_rate_given_D", lambda m: m["P_rate_given_D"]),
         ("smolvlm_accuracy_predicted_box", lambda m: m["smolvlm_accuracy_predicted_box"]),
@@ -45,18 +74,46 @@ METRIC_SPECS = {
 }
 
 LABELS = {
-    "01_yolo26_main": "YOLO26L principal",
+    "01_yolo26_main": "YOLO26L principal (histórico, max_det=300 -- SUPERADO, ver 01_yolo26_main_maxdet2000)",
+    "01_yolo26_main_maxdet2000": "YOLO26L principal (max_det=2000, corrigido -- valor publicado no artigo)",
     "02_vlm_polymer_real_only": "SmolVLM LoRA polímero (só real)",
     "03_vlm_polymer_real_synth": "SmolVLM LoRA polímero (real+sintético)",
     "04_vlm_polymer_bigvlm": "SmolVLM ~2B polímero (só real)",
-    "05_smolvlm_size_lora": "SmolVLM LoRA regime de tamanho",
-    "06_smolvlm_size_full": "SmolVLM full fine-tune regime de tamanho",
-    "07_end_to_end_paired": "Fim-a-fim pareado (YOLO+SmolVLM regime)",
+    "05_smolvlm_size_lora": "SmolVLM LoRA regime de tamanho (histórico -- SUPERADO, ver 07_smolvlm_size_lora_eq1)",
+    "06_smolvlm_size_full": "SmolVLM full fine-tune regime de tamanho (histórico -- SUPERADO, ver 08_smolvlm_size_full_eq1)",
+    "07_smolvlm_size_lora_eq1": "SmolVLM LoRA regime de tamanho (regra eq1 -- valor publicado no artigo)",
+    "08_smolvlm_size_full_eq1": "SmolVLM full fine-tune regime de tamanho (regra eq1 -- valor publicado no artigo)",
+    "07_end_to_end_paired": "Fim-a-fim pareado (YOLO+SmolVLM regime) (histórico, max_det=300 -- SUPERADO, ver 09_end_to_end_paired_maxdet2000)",
+    "09_end_to_end_paired_maxdet2000": "Fim-a-fim pareado (YOLO+SmolVLM regime) (max_det=2000 -- valor publicado no artigo)",
 }
+
+# Fonte especial para "01_yolo26_main_maxdet2000": não é uma pasta
+# experimentos_controlados/resultados/<exp>/rep_NN/ como as demais -- os 10
+# seeds da reavaliação ficam num único summary.json em experimentos/resultados/
+# (ver nota de auditoria acima).
+DETECTOR_MAXDET2000_SUMMARY = (
+    cc.DATASETMINA_ROOT / "experimentos" / "resultados"
+    / "61_reeval_detector_maxdet" / "summary.json"
+)
+
+
+def load_detector_maxdet2000_reps() -> list:
+    if not DETECTOR_MAXDET2000_SUMMARY.exists():
+        return []
+    with open(DETECTOR_MAXDET2000_SUMMARY, encoding="utf-8") as f:
+        data = json.load(f)
+    per_seed = data["metrics"]["controlled_seeds_maxdet2000"]
+    return [
+        {"repetition_index": int(seed), "metrics": seed_metrics}
+        for seed, seed_metrics in per_seed.items()
+    ]
 
 
 def aggregate_experiment(experiment: str) -> dict:
-    reps = cc.load_all_rep_summaries(experiment)
+    if experiment == "01_yolo26_main_maxdet2000":
+        reps = load_detector_maxdet2000_reps()
+    else:
+        reps = cc.load_all_rep_summaries(experiment)
     if not reps:
         return {"experiment": experiment, "n_reps_found": 0, "metrics": {}}
 

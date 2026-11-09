@@ -1,0 +1,41 @@
+{
+  "timestamp_utc": "2026-10-26T21:35:48.318059+00:00",
+  "host": "pop-os",
+  "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+  "os": "Linux",
+  "os_release": "7.1.5-76070105-generic",
+  "python_version": "3.10.22",
+  "python_implementation": "CPython",
+  "architecture": "x86_64",
+  "cpu": "x86_64",
+  "cpu_count": 24,
+  "ram_gb": 30.48801040649414,
+  "working_directory": "/home/mi/Dev/datasetMINA/experimentos",
+  "results_root": "/home/mi/Dev/datasetMINA/experimentos/resultados",
+  "device": "cuda",
+  "git_commit": "f7a0a0a1",
+  "numpy_version": "1.26.4",
+  "pandas_version": "2.1.4",
+  "pillow_version": "11.3.0",
+  "transformers_version": "4.49.0",
+  "peft_version": "0.18.1",
+  "torch_version": "2.4.1+cu121",
+  "cuda_available": true,
+  "cuda_version": "12.1",
+  "cudnn_version": 90100,
+  "gpu_count": 1,
+  "gpu_names": [
+    "NVIDIA GeForce RTX 4060 Ti"
+  ],
+  "gpu_capability": [
+    [
+      8,
+      9
+    ]
+  ],
+  "cuda_device": 0,
+  "experiment_name": "78_compare_nano_ablation_maxdet2000",
+  "script_name": "/home/mi/Dev/datasetMINA/experimentos/scripts/78_compare_nano_ablation_maxdet2000.py",
+  "results_dir": "/home/mi/Dev/datasetMINA/experimentos/resultados/78_compare_nano_ablation_maxdet2000",
+  "log_path": "/home/mi/Dev/datasetMINA/experimentos/resultados/78_compare_nano_ablation_maxdet2000/logs/78_compare_nano_ablation_maxdet2000_20261026T213548Z.log"
+}

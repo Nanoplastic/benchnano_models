@@ -1,0 +1,128 @@
+{
+  "experiment_name": "78_compare_nano_ablation_maxdet2000",
+  "metadata": {
+    "timestamp_utc": "2026-10-26T21:35:48.318059+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+    "os": "Linux",
+    "os_release": "7.1.5-76070105-generic",
+    "python_version": "3.10.22",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.48801040649414,
+    "working_directory": "/home/mi/Dev/datasetMINA/experimentos",
+    "results_root": "/home/mi/Dev/datasetMINA/experimentos/resultados",
+    "device": "cuda",
+    "git_commit": "f7a0a0a1",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "78_compare_nano_ablation_maxdet2000",
+    "script_name": "/home/mi/Dev/datasetMINA/experimentos/scripts/78_compare_nano_ablation_maxdet2000.py",
+    "results_dir": "/home/mi/Dev/datasetMINA/experimentos/resultados/78_compare_nano_ablation_maxdet2000",
+    "log_path": "/home/mi/Dev/datasetMINA/experimentos/resultados/78_compare_nano_ablation_maxdet2000/logs/78_compare_nano_ablation_maxdet2000_20261026T213548Z.log"
+  },
+  "metrics": {
+    "note": "comparacao CV-vs-CV (misto vs nano-only) com max_det explicito -- alimenta o paragrafo da ablacao nano-only na Discussao",
+    "sanity_reproduces_published": true,
+    "maxdet_300": {
+      "overall": {
+        "mixed_recall": 0.2103415256942228,
+        "nano_only_recall": 0.1501223534418555,
+        "n_reference": 9399,
+        "diff_point": 0.06021917225236728,
+        "ci95": [
+          -0.014947563633692776,
+          0.14452473185594536
+        ],
+        "excludes_zero": false,
+        "n_images": 79
+      },
+      "by_polymer_label": {
+        "PE": {
+          "n_reference": 273,
+          "mixed_recall": 0.3333333333333333,
+          "nano_only_recall": 0.23443223443223443,
+          "diff_point": 0.09890109890109888
+        },
+        "PET": {
+          "n_reference": 3587,
+          "mixed_recall": 0.20797323668804016,
+          "nano_only_recall": 0.047672149428491774,
+          "diff_point": 0.1603010872595484
+        },
+        "PP": {
+          "n_reference": 4514,
+          "mixed_recall": 0.20336730172795747,
+          "nano_only_recall": 0.25232609658839167,
+          "diff_point": -0.048958794860434196
+        },
+        "PS": {
+          "n_reference": 1025,
+          "mixed_recall": 0.21658536585365853,
+          "nano_only_recall": 0.03609756097560975,
+          "diff_point": 0.18048780487804877
+        }
+      }
+    },
+    "maxdet_2000": {
+      "overall": {
+        "mixed_recall": 0.25949569103096076,
+        "nano_only_recall": 0.19416959250984148,
+        "n_reference": 9399,
+        "diff_point": 0.06532609852111929,
+        "ci95": [
+          -0.07081961586362939,
+          0.20864335186349325
+        ],
+        "excludes_zero": false,
+        "n_images": 79
+      },
+      "by_polymer_label": {
+        "PE": {
+          "n_reference": 273,
+          "mixed_recall": 0.3333333333333333,
+          "nano_only_recall": 0.23443223443223443,
+          "diff_point": 0.09890109890109888
+        },
+        "PET": {
+          "n_reference": 3587,
+          "mixed_recall": 0.24393643713409535,
+          "nano_only_recall": 0.047672149428491774,
+          "diff_point": 0.19626428770560359
+        },
+        "PP": {
+          "n_reference": 4514,
+          "mixed_recall": 0.26362428001772265,
+          "nano_only_recall": 0.34404076207354894,
+          "diff_point": -0.0804164820558263
+        },
+        "PS": {
+          "n_reference": 1025,
+          "mixed_recall": 0.2760975609756098,
+          "nano_only_recall": 0.03609756097560975,
+          "diff_point": 0.24000000000000002
+        }
+      }
+    }
+  }
+}

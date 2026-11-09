@@ -1,0 +1,115 @@
+{
+  "experiment_name": "58_eval_cv_folds_mixed_by_regime",
+  "metadata": {
+    "timestamp_utc": "2026-10-23T21:45:25.391892+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+    "os": "Linux",
+    "os_release": "7.1.5-76070105-generic",
+    "python_version": "3.10.22",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.48801040649414,
+    "working_directory": "/home/mi/Dev/datasetMINA/experimentos",
+    "results_root": "/home/mi/Dev/datasetMINA/experimentos/resultados",
+    "device": "cuda",
+    "git_commit": "f7a0a0a1",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "58_eval_cv_folds_mixed_by_regime",
+    "script_name": "/home/mi/Dev/datasetMINA/experimentos/scripts/58_eval_cv_folds_mixed_by_regime.py",
+    "results_dir": "/home/mi/Dev/datasetMINA/experimentos/resultados/58_eval_cv_folds_mixed_by_regime",
+    "log_path": "/home/mi/Dev/datasetMINA/experimentos/resultados/58_eval_cv_folds_mixed_by_regime/logs/58_eval_cv_folds_mixed_by_regime_20261023T214525Z.log"
+  },
+  "metrics": {
+    "note": "resultado exploratorio/complementar, detector nano-only -- compara com 45_eval_cv_folds.py (dataset misto) e com o SAHI fine-tunado (40/41)",
+    "nano_max_nm": 1000.0,
+    "k_folds": 5,
+    "n_unresolved_magnification": 0,
+    "per_fold_summary": [
+      {
+        "fold": 0,
+        "n_images": 22,
+        "n_gt": 5521,
+        "recall": 0.346132946929904
+      },
+      {
+        "fold": 1,
+        "n_images": 22,
+        "n_gt": 6468,
+        "recall": 0.12600494743351887
+      },
+      {
+        "fold": 2,
+        "n_images": 20,
+        "n_gt": 4699,
+        "recall": 0.3087891040646946
+      },
+      {
+        "fold": 3,
+        "n_images": 19,
+        "n_gt": 3742,
+        "recall": 0.3270978086584714
+      },
+      {
+        "fold": 4,
+        "n_images": 19,
+        "n_gt": 5300,
+        "recall": 0.13528301886792451
+      }
+    ],
+    "bucket_results": {
+      "NANOPLASTIC": {
+        "n": 9399,
+        "n_images": 79,
+        "recall_point": 0.2103415256942228,
+        "ci95": [
+          0.15165759063026923,
+          0.28090832059205895
+        ]
+      },
+      "MICROPLASTIC": {
+        "n": 16331,
+        "n_images": 99,
+        "recall_point": 0.25356683607862346,
+        "ci95": [
+          0.18886657654350467,
+          0.3327969562926511
+        ]
+      }
+    },
+    "overall": {
+      "n": 25730,
+      "n_images": 100,
+      "recall_point": 0.23777691410804508,
+      "ci95": [
+        0.19091597021979573,
+        0.289583228601872
+      ]
+    },
+    "iou_threshold": 0.5,
+    "conf_threshold": 0.15,
+    "n_bootstrap": 10000,
+    "seed": 42
+  }
+}

@@ -1,8 +1,8 @@
-"""Orquestrador da fila de repetições controladas -- roda os 6 experimentos
+"""Orquestrador da fila de repetições controladas -- roda os experimentos
 citados no artigo, 10 repetições cada, na ordem: YOLO26L principal, SmolVLM
 regime de tamanho (LoRA, full), SmolVLM polímero (real-only, real+sintético,
-bigvlm), e por fim a avaliação fim-a-fim pareada. Ver plano completo em
-/home/mi/.claude/plans/parallel-giggling-ocean.md.
+bigvlm), e por fim a avaliação fim-a-fim pareada. As reavaliações posteriores
+com max_det=2000 e com a regra "eq1" reusam este mesmo mecanismo de fila.
 
 Cada repetição roda como um PROCESSO PYTHON NOVO (subprocess), não dentro
 de um loop no mesmo processo -- mesma prática já usada no projeto original

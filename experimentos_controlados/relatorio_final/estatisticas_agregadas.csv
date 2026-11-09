@@ -1,14 +1,24 @@
 experiment,label,metric,n,mean,std,ci95_low,ci95_high
-01_yolo26_main,YOLO26L principal,precision,10,0.6545275161220572,0.061380031217056805,0.6106188869033511,0.6984361453407633
-01_yolo26_main,YOLO26L principal,recall,10,0.4300843090718155,0.028694629113588697,0.40955740797166207,0.4506112101719689
-01_yolo26_main,YOLO26L principal,map50,10,0.3582890369635182,0.046225971777340544,0.32522096881822893,0.3913571051088075
-01_yolo26_main,YOLO26L principal,map50_95,10,0.10949697638573888,0.022178056812910046,0.09363175028401519,0.12536220248746258
+01_yolo26_main,"YOLO26L principal (histórico, max_det=300 -- SUPERADO, ver 01_yolo26_main_maxdet2000)",precision,10,0.6545275161220572,0.061380031217056805,0.6106188869033511,0.6984361453407633
+01_yolo26_main,"YOLO26L principal (histórico, max_det=300 -- SUPERADO, ver 01_yolo26_main_maxdet2000)",recall,10,0.4300843090718155,0.028694629113588697,0.40955740797166207,0.4506112101719689
+01_yolo26_main,"YOLO26L principal (histórico, max_det=300 -- SUPERADO, ver 01_yolo26_main_maxdet2000)",map50,10,0.3582890369635182,0.046225971777340544,0.32522096881822893,0.3913571051088075
+01_yolo26_main,"YOLO26L principal (histórico, max_det=300 -- SUPERADO, ver 01_yolo26_main_maxdet2000)",map50_95,10,0.10949697638573888,0.022178056812910046,0.09363175028401519,0.12536220248746258
+01_yolo26_main_maxdet2000,"YOLO26L principal (max_det=2000, corrigido -- valor publicado no artigo)",precision,10,0.5981700016358139,0.0687938514960789,0.5489578448810182,0.6473821583906096
+01_yolo26_main_maxdet2000,"YOLO26L principal (max_det=2000, corrigido -- valor publicado no artigo)",recall,10,0.4942716178225073,0.033440796839604506,0.47034951286273924,0.5181937227822753
+01_yolo26_main_maxdet2000,"YOLO26L principal (max_det=2000, corrigido -- valor publicado no artigo)",map50,10,0.3995936284182807,0.05603726856908761,0.35950698135666487,0.4396802754798966
+01_yolo26_main_maxdet2000,"YOLO26L principal (max_det=2000, corrigido -- valor publicado no artigo)",map50_95,10,0.12105482649984627,0.022959087441912888,0.1046308847439049,0.13747876825578761
 02_vlm_polymer_real_only,SmolVLM LoRA polímero (só real),test_acc,10,0.7024038461538461,0.03447934450129031,0.6777388089521302,0.727068883355562
 03_vlm_polymer_real_synth,SmolVLM LoRA polímero (real+sintético),test_acc,10,0.6798076923076923,0.043132500014814154,0.6489525605510956,0.710662824064289
 04_vlm_polymer_bigvlm,SmolVLM ~2B polímero (só real),test_acc,10,0.7341346153846153,0.032215126091828764,0.7110893024586927,0.7571799283105379
-05_smolvlm_size_lora,SmolVLM LoRA regime de tamanho,test_acc,10,0.8975961538461539,0.020529090102435758,0.8829105274684539,0.9122817802238539
-06_smolvlm_size_full,SmolVLM full fine-tune regime de tamanho,test_acc,10,0.8793269230769232,0.019945325085541112,0.8650588970355123,0.893594949118334
-07_end_to_end_paired,Fim-a-fim pareado (YOLO+SmolVLM regime),D_rate,10,0.3737093275488069,0.02909812988155875,0.352893779387729,0.39452487570988487
-07_end_to_end_paired,Fim-a-fim pareado (YOLO+SmolVLM regime),P_rate_given_D,10,0.8167479040998487,0.08303618600082374,0.7573473950001971,0.8761484131995002
-07_end_to_end_paired,Fim-a-fim pareado (YOLO+SmolVLM regime),smolvlm_accuracy_predicted_box,10,0.8697301455500073,0.023709510950459357,0.8527693831548381,0.8866909079451765
-07_end_to_end_paired,Fim-a-fim pareado (YOLO+SmolVLM regime),E_rate_strict_end_to_end,10,0.265531453362256,0.034517657221928955,0.24083900889124543,0.2902238978332665
+05_smolvlm_size_lora,"SmolVLM LoRA regime de tamanho (histórico -- SUPERADO, ver 07_smolvlm_size_lora_eq1)",test_acc,10,0.8975961538461539,0.020529090102435758,0.8829105274684539,0.9122817802238539
+06_smolvlm_size_full,"SmolVLM full fine-tune regime de tamanho (histórico -- SUPERADO, ver 08_smolvlm_size_full_eq1)",test_acc,10,0.8793269230769232,0.019945325085541112,0.8650588970355123,0.893594949118334
+07_smolvlm_size_lora_eq1,SmolVLM LoRA regime de tamanho (regra eq1 -- valor publicado no artigo),test_acc,10,0.9288461538461539,0.012979779955972192,0.9195609786169044,0.9381313290754033
+08_smolvlm_size_full_eq1,SmolVLM full fine-tune regime de tamanho (regra eq1 -- valor publicado no artigo),test_acc,10,0.9283653846153845,0.010738375363942928,0.920683613640077,0.9360471555906921
+07_end_to_end_paired,"Fim-a-fim pareado (YOLO+SmolVLM regime) (histórico, max_det=300 -- SUPERADO, ver 09_end_to_end_paired_maxdet2000)",D_rate,10,0.3737093275488069,0.02909812988155875,0.352893779387729,0.39452487570988487
+07_end_to_end_paired,"Fim-a-fim pareado (YOLO+SmolVLM regime) (histórico, max_det=300 -- SUPERADO, ver 09_end_to_end_paired_maxdet2000)",P_rate_given_D,10,0.8167479040998487,0.08303618600082374,0.7573473950001971,0.8761484131995002
+07_end_to_end_paired,"Fim-a-fim pareado (YOLO+SmolVLM regime) (histórico, max_det=300 -- SUPERADO, ver 09_end_to_end_paired_maxdet2000)",smolvlm_accuracy_predicted_box,10,0.8697301455500073,0.023709510950459357,0.8527693831548381,0.8866909079451765
+07_end_to_end_paired,"Fim-a-fim pareado (YOLO+SmolVLM regime) (histórico, max_det=300 -- SUPERADO, ver 09_end_to_end_paired_maxdet2000)",E_rate_strict_end_to_end,10,0.265531453362256,0.034517657221928955,0.24083900889124543,0.2902238978332665
+09_end_to_end_paired_maxdet2000,Fim-a-fim pareado (YOLO+SmolVLM regime) (max_det=2000 -- valor publicado no artigo),D_rate,10,0.45689804772234277,0.05866617876276488,0.4149307915985508,0.49886530384613476
+09_end_to_end_paired_maxdet2000,Fim-a-fim pareado (YOLO+SmolVLM regime) (max_det=2000 -- valor publicado no artigo),P_rate_given_D,10,0.8355677372461745,0.07351830283901864,0.7829759115963699,0.8881595628959791
+09_end_to_end_paired_maxdet2000,Fim-a-fim pareado (YOLO+SmolVLM regime) (max_det=2000 -- valor publicado no artigo),smolvlm_accuracy_predicted_box,10,0.8606921115829514,0.029898271685317994,0.839304176456813,0.8820800467090899
+09_end_to_end_paired_maxdet2000,Fim-a-fim pareado (YOLO+SmolVLM regime) (max_det=2000 -- valor publicado no artigo),E_rate_strict_end_to_end,10,0.3289154013015184,0.05219133314592186,0.2915799707047118,0.366250831898325

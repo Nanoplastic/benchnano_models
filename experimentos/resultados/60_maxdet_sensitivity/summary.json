@@ -1,0 +1,297 @@
+{
+  "experiment_name": "60_maxdet_sensitivity",
+  "metadata": {
+    "timestamp_utc": "2026-10-23T22:13:49.090426+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+    "os": "Linux",
+    "os_release": "7.1.5-76070105-generic",
+    "python_version": "3.10.22",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.48801040649414,
+    "working_directory": "/home/mi/Dev/datasetMINA/experimentos",
+    "results_root": "/home/mi/Dev/datasetMINA/experimentos/resultados",
+    "device": "cuda",
+    "git_commit": "f7a0a0a1",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "60_maxdet_sensitivity",
+    "script_name": "/home/mi/Dev/datasetMINA/experimentos/scripts/60_maxdet_sensitivity.py",
+    "results_dir": "/home/mi/Dev/datasetMINA/experimentos/resultados/60_maxdet_sensitivity",
+    "log_path": "/home/mi/Dev/datasetMINA/experimentos/resultados/60_maxdet_sensitivity/logs/60_maxdet_sensitivity_20261023T221349Z.log"
+  },
+  "metrics": {
+    "note": "sensibilidade ao max_det. Os Metodos do artigo afirmam 2.000 deteccoes por imagem, mas os scripts de avaliacao nao passam max_det e rodaram com o padrao 300 do Ultralytics. Duas micrografias do teste travado foram truncadas.",
+    "model_path": "/home/mi/Dev/datasetMINA/experimentos/runs_v2/microplastic_yolo26_v2/weights/best.pt",
+    "published_with_max_det_300": {
+      "global_recall": 0.33579,
+      "d_rate": 0.35445
+    },
+    "sanity_reproduces_published": true,
+    "conf_threshold": 0.15,
+    "iou_threshold": 0.5,
+    "results": {
+      "300": {
+        "max_det": 300,
+        "n_gt": 4610,
+        "global_recall": 0.33579175704989156,
+        "d_rate": 0.3544468546637744,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 116,
+            "matched_class_aware": 86,
+            "matched_spatial": 86,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 262,
+            "matched_class_aware": 233,
+            "matched_spatial": 233,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 126,
+            "matched_class_aware": 99,
+            "matched_spatial": 110,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 90,
+            "matched_class_aware": 0,
+            "matched_spatial": 63,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 24,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 74,
+            "matched_class_aware": 20,
+            "matched_spatial": 20,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 300,
+            "matched_class_aware": 275,
+            "matched_spatial": 275,
+            "truncated": true
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 203,
+            "matched_class_aware": 131,
+            "matched_spatial": 134,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 202,
+            "matched_class_aware": 182,
+            "matched_spatial": 182,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 215,
+            "matched_class_aware": 182,
+            "matched_spatial": 182,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 300,
+            "matched_class_aware": 198,
+            "matched_spatial": 198,
+            "truncated": true
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 54,
+            "matched_class_aware": 33,
+            "matched_spatial": 42,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 107,
+            "matched_class_aware": 69,
+            "matched_spatial": 69,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 44,
+            "matched_class_aware": 32,
+            "matched_spatial": 32,
+            "truncated": false
+          }
+        ]
+      },
+      "2000": {
+        "max_det": 2000,
+        "n_gt": 4610,
+        "global_recall": 0.40260303687635574,
+        "d_rate": 0.42125813449023863,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 116,
+            "matched_class_aware": 86,
+            "matched_spatial": 86,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 262,
+            "matched_class_aware": 233,
+            "matched_spatial": 233,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 126,
+            "matched_class_aware": 99,
+            "matched_spatial": 110,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 90,
+            "matched_class_aware": 0,
+            "matched_spatial": 63,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 24,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 74,
+            "matched_class_aware": 20,
+            "matched_spatial": 20,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 784,
+            "matched_class_aware": 550,
+            "matched_spatial": 550,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 203,
+            "matched_class_aware": 131,
+            "matched_spatial": 134,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 202,
+            "matched_class_aware": 182,
+            "matched_spatial": 182,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 215,
+            "matched_class_aware": 182,
+            "matched_spatial": 182,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 374,
+            "matched_class_aware": 231,
+            "matched_spatial": 231,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 54,
+            "matched_class_aware": 33,
+            "matched_spatial": 42,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 107,
+            "matched_class_aware": 69,
+            "matched_spatial": 69,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 44,
+            "matched_class_aware": 32,
+            "matched_spatial": 32,
+            "truncated": false
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,2099 @@
+{
+  "experiment_name": "61_reeval_detector_maxdet",
+  "metadata": {
+    "timestamp_utc": "2026-10-24T04:55:30.718512+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+    "os": "Linux",
+    "os_release": "7.1.5-76070105-generic",
+    "python_version": "3.10.22",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.48801040649414,
+    "working_directory": "/home/mi/Dev/datasetMINA/experimentos",
+    "results_root": "/home/mi/Dev/datasetMINA/experimentos/resultados",
+    "device": "cuda",
+    "git_commit": "f7a0a0a1",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "61_reeval_detector_maxdet",
+    "script_name": "/home/mi/Dev/datasetMINA/experimentos/scripts/61_reeval_detector_maxdet.py",
+    "results_dir": "/home/mi/Dev/datasetMINA/experimentos/resultados/61_reeval_detector_maxdet",
+    "log_path": "/home/mi/Dev/datasetMINA/experimentos/resultados/61_reeval_detector_maxdet/logs/61_reeval_detector_maxdet_20261024T045530Z.log"
+  },
+  "metrics": {
+    "note": "reavaliacao do detector com max_det explicito. Os scripts originais de avaliacao nao passam max_det e rodaram com o padrao 300 do Ultralytics, apesar de max_det=2000 estar nos scripts de treino e gravado no checkpoint (descartado por predictor.py:426). Nao cobre a cadeia fim-a-fim D.P.S.",
+    "conf_threshold": 0.15,
+    "val_nms_iou": 0.7,
+    "match_iou": 0.5,
+    "published_with_max_det_300": {
+      "precision": 0.60694,
+      "recall": 0.46683,
+      "map50": 0.28025,
+      "global_recall": 0.33579,
+      "d_rate": 0.35445
+    },
+    "single_run_maxdet300": {
+      "max_det": 300,
+      "aggregate_metrics": {
+        "precision": 0.6069422606876318,
+        "recall": 0.46682537100157057,
+        "map50": 0.28024896067965005,
+        "map50_95": 0.08606379406840536
+      },
+      "per_class_metrics": {
+        "PE": {
+          "precision": 0.1518987341772152,
+          "recall": 0.8571428571428571,
+          "ap50": 0.23844144144144147,
+          "ap50_95": 0.0508045062886326
+        },
+        "PET": {
+          "precision": 0.7241379310344828,
+          "recall": 0.3728813559322034,
+          "ap50": 0.3114041177231271,
+          "ap50_95": 0.1024559708163109
+        },
+        "PP": {
+          "precision": 0.8554360812425329,
+          "recall": 0.3711767755313634,
+          "ap50": 0.3556031835185286,
+          "ap50_95": 0.12221714644144455
+        },
+        "PS": {
+          "precision": 0.6962962962962963,
+          "recall": 0.26610049539985847,
+          "ap50": 0.21554710003550312,
+          "ap50_95": 0.06877755272723338
+        }
+      },
+      "n_gt": 4610,
+      "global_recall": 0.33579175704989156,
+      "d_rate": 0.3544468546637744,
+      "regime_recall": {
+        "NANOPLASTIC": {
+          "gt": 2630,
+          "matched": 888,
+          "recall": 0.3376425855513308
+        },
+        "MICROPLASTIC": {
+          "gt": 1980,
+          "matched": 746,
+          "recall": 0.37676767676767675
+        }
+      },
+      "density_correlation": {
+        "pearson_r": -0.6239564644318863,
+        "t": -2.765913899324776,
+        "n_images": 14
+      },
+      "n_truncated_images": 2,
+      "per_image": [
+        {
+          "image": "PET_PET 5000X 1.png",
+          "n_gt": 141,
+          "n_pred": 116,
+          "matched_class_aware": 86,
+          "matched_spatial": 86,
+          "truncated": false
+        },
+        {
+          "image": "PET_PET-2000X-2.png",
+          "n_gt": 490,
+          "n_pred": 262,
+          "matched_class_aware": 233,
+          "matched_spatial": 233,
+          "truncated": false
+        },
+        {
+          "image": "PET_PET-2000X.png",
+          "n_gt": 518,
+          "n_pred": 126,
+          "matched_class_aware": 99,
+          "matched_spatial": 110,
+          "truncated": false
+        },
+        {
+          "image": "PET_PET-B-2-5000X.png",
+          "n_gt": 90,
+          "n_pred": 90,
+          "matched_class_aware": 0,
+          "matched_spatial": 63,
+          "truncated": false
+        },
+        {
+          "image": "PE_PE 1000-1.png",
+          "n_gt": 8,
+          "n_pred": 24,
+          "matched_class_aware": 8,
+          "matched_spatial": 8,
+          "truncated": false
+        },
+        {
+          "image": "PE_PE 1000X.png",
+          "n_gt": 20,
+          "n_pred": 74,
+          "matched_class_aware": 20,
+          "matched_spatial": 20,
+          "truncated": false
+        },
+        {
+          "image": "PP_PP-1000x1.png",
+          "n_gt": 1268,
+          "n_pred": 300,
+          "matched_class_aware": 275,
+          "matched_spatial": 275,
+          "truncated": true
+        },
+        {
+          "image": "PP_PP-3000x4.png",
+          "n_gt": 198,
+          "n_pred": 203,
+          "matched_class_aware": 131,
+          "matched_spatial": 134,
+          "truncated": false
+        },
+        {
+          "image": "PP_PP-3000x6.png",
+          "n_gt": 231,
+          "n_pred": 202,
+          "matched_class_aware": 182,
+          "matched_spatial": 182,
+          "truncated": false
+        },
+        {
+          "image": "PP_PP-3000x7.png",
+          "n_gt": 233,
+          "n_pred": 215,
+          "matched_class_aware": 182,
+          "matched_spatial": 182,
+          "truncated": false
+        },
+        {
+          "image": "PS_PS-100x.png",
+          "n_gt": 957,
+          "n_pred": 300,
+          "matched_class_aware": 198,
+          "matched_spatial": 198,
+          "truncated": true
+        },
+        {
+          "image": "PS_PS-200x-2.png",
+          "n_gt": 160,
+          "n_pred": 54,
+          "matched_class_aware": 33,
+          "matched_spatial": 42,
+          "truncated": false
+        },
+        {
+          "image": "PS_PS2-200x2.png",
+          "n_gt": 156,
+          "n_pred": 107,
+          "matched_class_aware": 69,
+          "matched_spatial": 69,
+          "truncated": false
+        },
+        {
+          "image": "PS_PSL 10000X.png",
+          "n_gt": 140,
+          "n_pred": 44,
+          "matched_class_aware": 32,
+          "matched_spatial": 32,
+          "truncated": false
+        }
+      ]
+    },
+    "single_run_maxdet2000": {
+      "max_det": 2000,
+      "aggregate_metrics": {
+        "precision": 0.5675057080896679,
+        "recall": 0.5121347565230392,
+        "map50": 0.31568136979134026,
+        "map50_95": 0.09535511046969802
+      },
+      "per_class_metrics": {
+        "PE": {
+          "precision": 0.1518987341772152,
+          "recall": 0.8571428571428571,
+          "ap50": 0.23844144144144147,
+          "ap50_95": 0.0508045062886326
+        },
+        "PET": {
+          "precision": 0.7241379310344828,
+          "recall": 0.3728813559322034,
+          "ap50": 0.3114041177231271,
+          "ap50_95": 0.1024559708163109
+        },
+        "PP": {
+          "precision": 0.728386167146974,
+          "recall": 0.5241057542768274,
+          "ap50": 0.47699678255120337,
+          "ap50_95": 0.15344571979136945
+        },
+        "PS": {
+          "precision": 0.6656,
+          "recall": 0.29440905874026896,
+          "ap50": 0.2358831374495891,
+          "ap50_95": 0.07471424498247915
+        }
+      },
+      "n_gt": 4610,
+      "global_recall": 0.40260303687635574,
+      "d_rate": 0.42125813449023863,
+      "regime_recall": {
+        "NANOPLASTIC": {
+          "gt": 2630,
+          "matched": 1075,
+          "recall": 0.40874524714828897
+        },
+        "MICROPLASTIC": {
+          "gt": 1980,
+          "matched": 867,
+          "recall": 0.43787878787878787
+        }
+      },
+      "density_correlation": {
+        "pearson_r": -0.4898390693809337,
+        "t": -1.9463492261982045,
+        "n_images": 14
+      },
+      "n_truncated_images": 0,
+      "per_image": [
+        {
+          "image": "PET_PET 5000X 1.png",
+          "n_gt": 141,
+          "n_pred": 116,
+          "matched_class_aware": 86,
+          "matched_spatial": 86,
+          "truncated": false
+        },
+        {
+          "image": "PET_PET-2000X-2.png",
+          "n_gt": 490,
+          "n_pred": 262,
+          "matched_class_aware": 233,
+          "matched_spatial": 233,
+          "truncated": false
+        },
+        {
+          "image": "PET_PET-2000X.png",
+          "n_gt": 518,
+          "n_pred": 126,
+          "matched_class_aware": 99,
+          "matched_spatial": 110,
+          "truncated": false
+        },
+        {
+          "image": "PET_PET-B-2-5000X.png",
+          "n_gt": 90,
+          "n_pred": 90,
+          "matched_class_aware": 0,
+          "matched_spatial": 63,
+          "truncated": false
+        },
+        {
+          "image": "PE_PE 1000-1.png",
+          "n_gt": 8,
+          "n_pred": 24,
+          "matched_class_aware": 8,
+          "matched_spatial": 8,
+          "truncated": false
+        },
+        {
+          "image": "PE_PE 1000X.png",
+          "n_gt": 20,
+          "n_pred": 74,
+          "matched_class_aware": 20,
+          "matched_spatial": 20,
+          "truncated": false
+        },
+        {
+          "image": "PP_PP-1000x1.png",
+          "n_gt": 1268,
+          "n_pred": 784,
+          "matched_class_aware": 550,
+          "matched_spatial": 550,
+          "truncated": false
+        },
+        {
+          "image": "PP_PP-3000x4.png",
+          "n_gt": 198,
+          "n_pred": 203,
+          "matched_class_aware": 131,
+          "matched_spatial": 134,
+          "truncated": false
+        },
+        {
+          "image": "PP_PP-3000x6.png",
+          "n_gt": 231,
+          "n_pred": 202,
+          "matched_class_aware": 182,
+          "matched_spatial": 182,
+          "truncated": false
+        },
+        {
+          "image": "PP_PP-3000x7.png",
+          "n_gt": 233,
+          "n_pred": 215,
+          "matched_class_aware": 182,
+          "matched_spatial": 182,
+          "truncated": false
+        },
+        {
+          "image": "PS_PS-100x.png",
+          "n_gt": 957,
+          "n_pred": 374,
+          "matched_class_aware": 231,
+          "matched_spatial": 231,
+          "truncated": false
+        },
+        {
+          "image": "PS_PS-200x-2.png",
+          "n_gt": 160,
+          "n_pred": 54,
+          "matched_class_aware": 33,
+          "matched_spatial": 42,
+          "truncated": false
+        },
+        {
+          "image": "PS_PS2-200x2.png",
+          "n_gt": 156,
+          "n_pred": 107,
+          "matched_class_aware": 69,
+          "matched_spatial": 69,
+          "truncated": false
+        },
+        {
+          "image": "PS_PSL 10000X.png",
+          "n_gt": 140,
+          "n_pred": 44,
+          "matched_class_aware": 32,
+          "matched_spatial": 32,
+          "truncated": false
+        }
+      ]
+    },
+    "controlled_seeds_maxdet2000": {
+      "0": {
+        "max_det": 2000,
+        "aggregate_metrics": {
+          "precision": 0.5675057080896679,
+          "recall": 0.5121347565230392,
+          "map50": 0.31568136979134026,
+          "map50_95": 0.09535511046969802
+        },
+        "per_class_metrics": {
+          "PE": {
+            "precision": 0.1518987341772152,
+            "recall": 0.8571428571428571,
+            "ap50": 0.23844144144144147,
+            "ap50_95": 0.0508045062886326
+          },
+          "PET": {
+            "precision": 0.7241379310344828,
+            "recall": 0.3728813559322034,
+            "ap50": 0.3114041177231271,
+            "ap50_95": 0.1024559708163109
+          },
+          "PP": {
+            "precision": 0.728386167146974,
+            "recall": 0.5241057542768274,
+            "ap50": 0.47699678255120337,
+            "ap50_95": 0.15344571979136945
+          },
+          "PS": {
+            "precision": 0.6656,
+            "recall": 0.29440905874026896,
+            "ap50": 0.2358831374495891,
+            "ap50_95": 0.07471424498247915
+          }
+        },
+        "n_gt": 4610,
+        "global_recall": 0.40260303687635574,
+        "d_rate": 0.42125813449023863,
+        "regime_recall": {
+          "NANOPLASTIC": {
+            "gt": 2630,
+            "matched": 1075,
+            "recall": 0.40874524714828897
+          },
+          "MICROPLASTIC": {
+            "gt": 1980,
+            "matched": 867,
+            "recall": 0.43787878787878787
+          }
+        },
+        "density_correlation": {
+          "pearson_r": -0.4898390693809337,
+          "t": -1.9463492261982045,
+          "n_images": 14
+        },
+        "n_truncated_images": 0,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 116,
+            "matched_class_aware": 86,
+            "matched_spatial": 86,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 262,
+            "matched_class_aware": 233,
+            "matched_spatial": 233,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 126,
+            "matched_class_aware": 99,
+            "matched_spatial": 110,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 90,
+            "matched_class_aware": 0,
+            "matched_spatial": 63,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 24,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 74,
+            "matched_class_aware": 20,
+            "matched_spatial": 20,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 784,
+            "matched_class_aware": 550,
+            "matched_spatial": 550,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 203,
+            "matched_class_aware": 131,
+            "matched_spatial": 134,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 202,
+            "matched_class_aware": 182,
+            "matched_spatial": 182,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 215,
+            "matched_class_aware": 182,
+            "matched_spatial": 182,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 374,
+            "matched_class_aware": 231,
+            "matched_spatial": 231,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 54,
+            "matched_class_aware": 33,
+            "matched_spatial": 42,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 107,
+            "matched_class_aware": 69,
+            "matched_spatial": 69,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 44,
+            "matched_class_aware": 32,
+            "matched_spatial": 32,
+            "truncated": false
+          }
+        ]
+      },
+      "1": {
+        "max_det": 2000,
+        "aggregate_metrics": {
+          "precision": 0.628063275035464,
+          "recall": 0.5470921419597183,
+          "map50": 0.4588594436270913,
+          "map50_95": 0.12698386980614362
+        },
+        "per_class_metrics": {
+          "PE": {
+            "precision": 0.7096774193548387,
+            "recall": 0.7857142857142857,
+            "ap50": 0.7186421388458739,
+            "ap50_95": 0.21790734655600952
+          },
+          "PET": {
+            "precision": 0.6794258373205742,
+            "recall": 0.5730427764326069,
+            "ap50": 0.4594858668414179,
+            "ap50_95": 0.12772496318218765
+          },
+          "PP": {
+            "precision": 0.6371866295264624,
+            "recall": 0.47433903576982894,
+            "ap50": 0.4064432230481619,
+            "ap50_95": 0.10321329773066676
+          },
+          "PS": {
+            "precision": 0.48596321393998065,
+            "recall": 0.35527246992215145,
+            "ap50": 0.2508665457729115,
+            "ap50_95": 0.059089871755710545
+          }
+        },
+        "n_gt": 4610,
+        "global_recall": 0.46702819956616054,
+        "d_rate": 0.4863340563991323,
+        "regime_recall": {
+          "NANOPLASTIC": {
+            "gt": 2630,
+            "matched": 1234,
+            "recall": 0.4692015209125475
+          },
+          "MICROPLASTIC": {
+            "gt": 1980,
+            "matched": 1008,
+            "recall": 0.509090909090909
+          }
+        },
+        "density_correlation": {
+          "pearson_r": -0.47704371763532394,
+          "t": -1.8802666221326625,
+          "n_images": 14
+        },
+        "n_truncated_images": 0,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 92,
+            "matched_class_aware": 80,
+            "matched_spatial": 80,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 355,
+            "matched_class_aware": 300,
+            "matched_spatial": 300,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 348,
+            "matched_class_aware": 273,
+            "matched_spatial": 277,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 90,
+            "matched_class_aware": 68,
+            "matched_spatial": 68,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 13,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 19,
+            "matched_class_aware": 12,
+            "matched_spatial": 13,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 981,
+            "matched_class_aware": 604,
+            "matched_spatial": 604,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 153,
+            "matched_class_aware": 36,
+            "matched_spatial": 101,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 210,
+            "matched_class_aware": 153,
+            "matched_spatial": 156,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 199,
+            "matched_class_aware": 130,
+            "matched_spatial": 140,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 556,
+            "matched_class_aware": 281,
+            "matched_spatial": 281,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 108,
+            "matched_class_aware": 78,
+            "matched_spatial": 84,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 257,
+            "matched_class_aware": 93,
+            "matched_spatial": 93,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 49,
+            "matched_class_aware": 37,
+            "matched_spatial": 37,
+            "truncated": false
+          }
+        ]
+      },
+      "2": {
+        "max_det": 2000,
+        "aggregate_metrics": {
+          "precision": 0.5032704562249779,
+          "recall": 0.5143974798522655,
+          "map50": 0.4043435515150088,
+          "map50_95": 0.10867888531881305
+        },
+        "per_class_metrics": {
+          "PE": {
+            "precision": 0.25471698113207547,
+            "recall": 0.9642857142857143,
+            "ap50": 0.7886399671300311,
+            "ap50_95": 0.18918786384475778
+          },
+          "PET": {
+            "precision": 0.716589861751152,
+            "recall": 0.2510088781275222,
+            "ap50": 0.2056748201197539,
+            "ap50_95": 0.04897735398469034
+          },
+          "PP": {
+            "precision": 0.6044191019244476,
+            "recall": 0.43960601347848627,
+            "ap50": 0.35789702996066564,
+            "ap50_95": 0.11683673678375224
+          },
+          "PS": {
+            "precision": 0.43735588009223675,
+            "recall": 0.402689313517339,
+            "ap50": 0.2651623888495843,
+            "ap50_95": 0.0797135866620519
+          }
+        },
+        "n_gt": 4610,
+        "global_recall": 0.3620390455531453,
+        "d_rate": 0.42190889370932755,
+        "regime_recall": {
+          "NANOPLASTIC": {
+            "gt": 2630,
+            "matched": 895,
+            "recall": 0.3403041825095057
+          },
+          "MICROPLASTIC": {
+            "gt": 1980,
+            "matched": 1050,
+            "recall": 0.5303030303030303
+          }
+        },
+        "density_correlation": {
+          "pearson_r": -0.5428076079189763,
+          "t": -2.238881798812907,
+          "n_images": 14
+        },
+        "n_truncated_images": 0,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 133,
+            "matched_class_aware": 89,
+            "matched_spatial": 89,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 196,
+            "matched_class_aware": 138,
+            "matched_spatial": 159,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 201,
+            "matched_class_aware": 20,
+            "matched_spatial": 180,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 94,
+            "matched_class_aware": 65,
+            "matched_spatial": 65,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 31,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 85,
+            "matched_class_aware": 19,
+            "matched_spatial": 19,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 420,
+            "matched_class_aware": 358,
+            "matched_spatial": 358,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 118,
+            "matched_class_aware": 60,
+            "matched_spatial": 83,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 245,
+            "matched_class_aware": 206,
+            "matched_spatial": 206,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 226,
+            "matched_class_aware": 188,
+            "matched_spatial": 188,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 950,
+            "matched_class_aware": 385,
+            "matched_spatial": 385,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 172,
+            "matched_class_aware": 35,
+            "matched_spatial": 104,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 203,
+            "matched_class_aware": 85,
+            "matched_spatial": 88,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 18,
+            "matched_class_aware": 13,
+            "matched_spatial": 13,
+            "truncated": false
+          }
+        ]
+      },
+      "3": {
+        "max_det": 2000,
+        "aggregate_metrics": {
+          "precision": 0.591947996816545,
+          "recall": 0.42153189975965877,
+          "map50": 0.3355472793236176,
+          "map50_95": 0.14979005963941744
+        },
+        "per_class_metrics": {
+          "PE": {
+            "precision": 0.3468322448847092,
+            "recall": 0.9285714285714286,
+            "ap50": 0.8237672339994264,
+            "ap50_95": 0.3786016264956135
+          },
+          "PET": {
+            "precision": 0.5311703798540248,
+            "recall": 0.5669428797768342,
+            "ap50": 0.32876993971377677,
+            "ap50_95": 0.14162055311783736
+          },
+          "PP": {
+            "precision": 0.7287524756312459,
+            "recall": 0.0724250387441585,
+            "ap50": 0.0794579876338351,
+            "ap50_95": 0.035086657242661905
+          },
+          "PS": {
+            "precision": 0.7610368868962,
+            "recall": 0.11818825194621373,
+            "ap50": 0.11019395594743236,
+            "ap50_95": 0.04385140170155702
+          }
+        },
+        "n_gt": 4610,
+        "global_recall": 0.25010845986984814,
+        "d_rate": 0.35488069414316703,
+        "regime_recall": {
+          "NANOPLASTIC": {
+            "gt": 2630,
+            "matched": 1088,
+            "recall": 0.41368821292775665
+          },
+          "MICROPLASTIC": {
+            "gt": 1980,
+            "matched": 548,
+            "recall": 0.2767676767676768
+          }
+        },
+        "density_correlation": {
+          "pearson_r": -0.5354282821177133,
+          "t": -2.1960932593061506,
+          "n_images": 14
+        },
+        "n_truncated_images": 0,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 143,
+            "matched_class_aware": 86,
+            "matched_spatial": 88,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 370,
+            "matched_class_aware": 327,
+            "matched_spatial": 327,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 312,
+            "matched_class_aware": 286,
+            "matched_spatial": 286,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 60,
+            "matched_class_aware": 53,
+            "matched_spatial": 53,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 20,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 85,
+            "matched_class_aware": 18,
+            "matched_spatial": 20,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 210,
+            "matched_class_aware": 178,
+            "matched_spatial": 183,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 186,
+            "matched_class_aware": 0,
+            "matched_spatial": 149,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 191,
+            "matched_class_aware": 14,
+            "matched_spatial": 165,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 196,
+            "matched_class_aware": 6,
+            "matched_spatial": 172,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 156,
+            "matched_class_aware": 104,
+            "matched_spatial": 104,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 14,
+            "matched_class_aware": 6,
+            "matched_spatial": 13,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 31,
+            "matched_class_aware": 30,
+            "matched_spatial": 30,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 48,
+            "matched_class_aware": 37,
+            "matched_spatial": 38,
+            "truncated": false
+          }
+        ]
+      },
+      "4": {
+        "max_det": 2000,
+        "aggregate_metrics": {
+          "precision": 0.467763719570003,
+          "recall": 0.4886947606070946,
+          "map50": 0.3454128115098209,
+          "map50_95": 0.08630758696045046
+        },
+        "per_class_metrics": {
+          "PE": {
+            "precision": 0.4444444444444444,
+            "recall": 0.8571428571428571,
+            "ap50": 0.7612117692605497,
+            "ap50_95": 0.20574428120998242
+          },
+          "PET": {
+            "precision": 0.3652459016393443,
+            "recall": 0.4495560936238902,
+            "ap50": 0.18112800446211985,
+            "ap50_95": 0.03557942332650146
+          },
+          "PP": {
+            "precision": 0.5254237288135594,
+            "recall": 0.2892690513219285,
+            "ap50": 0.18458073838598404,
+            "ap50_95": 0.033446647533947785
+          },
+          "PS": {
+            "precision": 0.5359408033826638,
+            "recall": 0.35881104033970274,
+            "ap50": 0.25473073393062995,
+            "ap50_95": 0.07045999577137016
+          }
+        },
+        "n_gt": 4610,
+        "global_recall": 0.35184381778741863,
+        "d_rate": 0.4121475054229935,
+        "regime_recall": {
+          "NANOPLASTIC": {
+            "gt": 2630,
+            "matched": 937,
+            "recall": 0.3562737642585551
+          },
+          "MICROPLASTIC": {
+            "gt": 1980,
+            "matched": 963,
+            "recall": 0.4863636363636364
+          }
+        },
+        "density_correlation": {
+          "pearson_r": -0.4943169856131616,
+          "t": -1.9698611148132497,
+          "n_images": 14
+        },
+        "n_truncated_images": 0,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 193,
+            "matched_class_aware": 82,
+            "matched_spatial": 82,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 392,
+            "matched_class_aware": 237,
+            "matched_spatial": 237,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 367,
+            "matched_class_aware": 194,
+            "matched_spatial": 209,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 40,
+            "matched_class_aware": 19,
+            "matched_spatial": 31,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 16,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 37,
+            "matched_class_aware": 18,
+            "matched_spatial": 18,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 538,
+            "matched_class_aware": 341,
+            "matched_spatial": 341,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 237,
+            "matched_class_aware": 0,
+            "matched_spatial": 123,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 376,
+            "matched_class_aware": 132,
+            "matched_spatial": 175,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 325,
+            "matched_class_aware": 88,
+            "matched_spatial": 172,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 727,
+            "matched_class_aware": 350,
+            "matched_spatial": 350,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 50,
+            "matched_class_aware": 39,
+            "matched_spatial": 40,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 105,
+            "matched_class_aware": 67,
+            "matched_spatial": 67,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 65,
+            "matched_class_aware": 47,
+            "matched_spatial": 47,
+            "truncated": false
+          }
+        ]
+      },
+      "5": {
+        "max_det": 2000,
+        "aggregate_metrics": {
+          "precision": 0.6309657801802528,
+          "recall": 0.5075269735918105,
+          "map50": 0.445966839269243,
+          "map50_95": 0.15627578647915935
+        },
+        "per_class_metrics": {
+          "PE": {
+            "precision": 0.3636365911339276,
+            "recall": 0.9285714285714286,
+            "ap50": 0.7137510105725459,
+            "ap50_95": 0.2724604665872363
+          },
+          "PET": {
+            "precision": 0.7715503086439811,
+            "recall": 0.35754640839386603,
+            "ap50": 0.3687611834252427,
+            "ap50_95": 0.11982755925670045
+          },
+          "PP": {
+            "precision": 0.6742596456878566,
+            "recall": 0.5386210471747019,
+            "ap50": 0.49234859314499113,
+            "ap50_95": 0.17655510255105336
+          },
+          "PS": {
+            "precision": 0.7144165752552463,
+            "recall": 0.20536901022724582,
+            "ap50": 0.2090065699341923,
+            "ap50_95": 0.05626001752164726
+          }
+        },
+        "n_gt": 4610,
+        "global_recall": 0.4459869848156182,
+        "d_rate": 0.5336225596529284,
+        "regime_recall": {
+          "NANOPLASTIC": {
+            "gt": 2630,
+            "matched": 1536,
+            "recall": 0.5840304182509506
+          },
+          "MICROPLASTIC": {
+            "gt": 1980,
+            "matched": 924,
+            "recall": 0.4666666666666667
+          }
+        },
+        "density_correlation": {
+          "pearson_r": -0.44666947566523174,
+          "t": -1.7294177995300029,
+          "n_images": 14
+        },
+        "n_truncated_images": 0,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 156,
+            "matched_class_aware": 95,
+            "matched_spatial": 95,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 443,
+            "matched_class_aware": 359,
+            "matched_spatial": 359,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 415,
+            "matched_class_aware": 2,
+            "matched_spatial": 367,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 78,
+            "matched_class_aware": 26,
+            "matched_spatial": 57,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 18,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 61,
+            "matched_class_aware": 20,
+            "matched_spatial": 20,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 882,
+            "matched_class_aware": 623,
+            "matched_spatial": 623,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 205,
+            "matched_class_aware": 130,
+            "matched_spatial": 138,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 243,
+            "matched_class_aware": 208,
+            "matched_spatial": 208,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 248,
+            "matched_class_aware": 202,
+            "matched_spatial": 202,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 360,
+            "matched_class_aware": 205,
+            "matched_spatial": 205,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 77,
+            "matched_class_aware": 68,
+            "matched_spatial": 68,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 100,
+            "matched_class_aware": 67,
+            "matched_spatial": 67,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 61,
+            "matched_class_aware": 43,
+            "matched_spatial": 43,
+            "truncated": false
+          }
+        ]
+      },
+      "6": {
+        "max_det": 2000,
+        "aggregate_metrics": {
+          "precision": 0.6227624905533753,
+          "recall": 0.47400970386768454,
+          "map50": 0.37920887637734024,
+          "map50_95": 0.10444696040318498
+        },
+        "per_class_metrics": {
+          "PE": {
+            "precision": 0.4791666666666667,
+            "recall": 0.8214285714285714,
+            "ap50": 0.6861267410951623,
+            "ap50_95": 0.19148572757651705
+          },
+          "PET": {
+            "precision": 0.7446102819237148,
+            "recall": 0.36238902340597257,
+            "ap50": 0.2993391628951757,
+            "ap50_95": 0.07262962405331035
+          },
+          "PP": {
+            "precision": 0.6026143790849673,
+            "recall": 0.47796785899429756,
+            "ap50": 0.338880421210359,
+            "ap50_95": 0.10814521635058465
+          },
+          "PS": {
+            "precision": 0.6646586345381527,
+            "recall": 0.23425336164189667,
+            "ap50": 0.19248918030866422,
+            "ap50_95": 0.045527273632327746
+          }
+        },
+        "n_gt": 4610,
+        "global_recall": 0.3865509761388286,
+        "d_rate": 0.4386117136659436,
+        "regime_recall": {
+          "NANOPLASTIC": {
+            "gt": 2630,
+            "matched": 1206,
+            "recall": 0.4585551330798479
+          },
+          "MICROPLASTIC": {
+            "gt": 1980,
+            "matched": 816,
+            "recall": 0.4121212121212121
+          }
+        },
+        "density_correlation": {
+          "pearson_r": -0.5803476695642202,
+          "t": -2.4686398089226733,
+          "n_images": 14
+        },
+        "n_truncated_images": 0,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 120,
+            "matched_class_aware": 87,
+            "matched_spatial": 87,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 390,
+            "matched_class_aware": 295,
+            "matched_spatial": 295,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 354,
+            "matched_class_aware": 44,
+            "matched_spatial": 284,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 86,
+            "matched_class_aware": 67,
+            "matched_spatial": 67,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 27,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 21,
+            "matched_class_aware": 15,
+            "matched_spatial": 15,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 607,
+            "matched_class_aware": 435,
+            "matched_spatial": 435,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 170,
+            "matched_class_aware": 142,
+            "matched_spatial": 142,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 200,
+            "matched_class_aware": 180,
+            "matched_spatial": 180,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 217,
+            "matched_class_aware": 184,
+            "matched_spatial": 184,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 249,
+            "matched_class_aware": 163,
+            "matched_spatial": 163,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 55,
+            "matched_class_aware": 50,
+            "matched_spatial": 50,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 144,
+            "matched_class_aware": 66,
+            "matched_spatial": 66,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 56,
+            "matched_class_aware": 46,
+            "matched_spatial": 46,
+            "truncated": false
+          }
+        ]
+      },
+      "7": {
+        "max_det": 2000,
+        "aggregate_metrics": {
+          "precision": 0.6215564527532054,
+          "recall": 0.5032855465560986,
+          "map50": 0.39823988412927985,
+          "map50_95": 0.12504040330762867
+        },
+        "per_class_metrics": {
+          "PE": {
+            "precision": 0.4,
+            "recall": 0.6428571428571429,
+            "ap50": 0.44546768292682926,
+            "ap50_95": 0.11826621034592699
+          },
+          "PET": {
+            "precision": 0.8838582677165354,
+            "recall": 0.36238902340597257,
+            "ap50": 0.3416725103009618,
+            "ap50_95": 0.10845107046793054
+          },
+          "PP": {
+            "precision": 0.5730282375851996,
+            "recall": 0.6101607050285122,
+            "ap50": 0.49356096721646314,
+            "ap50_95": 0.17120872378262733
+          },
+          "PS": {
+            "precision": 0.6293393057110862,
+            "recall": 0.39773531493276715,
+            "ap50": 0.31225837607286516,
+            "ap50_95": 0.10223560863402988
+          }
+        },
+        "n_gt": 4610,
+        "global_recall": 0.4867678958785249,
+        "d_rate": 0.5462039045553145,
+        "regime_recall": {
+          "NANOPLASTIC": {
+            "gt": 2630,
+            "matched": 1439,
+            "recall": 0.5471482889733841
+          },
+          "MICROPLASTIC": {
+            "gt": 1980,
+            "matched": 1079,
+            "recall": 0.544949494949495
+          }
+        },
+        "density_correlation": {
+          "pearson_r": -0.4236146261322946,
+          "t": -1.6199770912848372,
+          "n_images": 14
+        },
+        "n_truncated_images": 0,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 100,
+            "matched_class_aware": 2,
+            "matched_spatial": 81,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 525,
+            "matched_class_aware": 326,
+            "matched_spatial": 327,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 438,
+            "matched_class_aware": 115,
+            "matched_spatial": 304,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 70,
+            "matched_class_aware": 54,
+            "matched_spatial": 58,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 23,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 15,
+            "matched_class_aware": 12,
+            "matched_spatial": 13,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 785,
+            "matched_class_aware": 603,
+            "matched_spatial": 603,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 188,
+            "matched_class_aware": 153,
+            "matched_spatial": 153,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 241,
+            "matched_class_aware": 207,
+            "matched_spatial": 207,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 243,
+            "matched_class_aware": 205,
+            "matched_spatial": 205,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 581,
+            "matched_class_aware": 334,
+            "matched_spatial": 334,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 201,
+            "matched_class_aware": 110,
+            "matched_spatial": 110,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 97,
+            "matched_class_aware": 84,
+            "matched_spatial": 84,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 37,
+            "matched_class_aware": 31,
+            "matched_spatial": 31,
+            "truncated": false
+          }
+        ]
+      },
+      "8": {
+        "max_det": 2000,
+        "aggregate_metrics": {
+          "precision": 0.6515496803397801,
+          "recall": 0.4719278475925852,
+          "map50": 0.42770160867809026,
+          "map50_95": 0.11861418412940486
+        },
+        "per_class_metrics": {
+          "PE": {
+            "precision": 0.5887966845736851,
+            "recall": 0.9285714285714286,
+            "ap50": 0.8200743902439023,
+            "ap50_95": 0.1800352670540604
+          },
+          "PET": {
+            "precision": 0.5706127687689304,
+            "recall": 0.48184019370460046,
+            "ap50": 0.3911442237887346,
+            "ap50_95": 0.12964023682860687
+          },
+          "PP": {
+            "precision": 0.7705935739817413,
+            "recall": 0.2763089683773976,
+            "ap50": 0.30024336634180215,
+            "ap50_95": 0.108737910012969
+          },
+          "PS": {
+            "precision": 0.6761956940347635,
+            "recall": 0.20099079971691436,
+            "ap50": 0.1993444543379219,
+            "ap50_95": 0.056043322621983215
+          }
+        },
+        "n_gt": 4610,
+        "global_recall": 0.3902386117136659,
+        "d_rate": 0.48698481561822127,
+        "regime_recall": {
+          "NANOPLASTIC": {
+            "gt": 2630,
+            "matched": 1344,
+            "recall": 0.5110266159695818
+          },
+          "MICROPLASTIC": {
+            "gt": 1980,
+            "matched": 901,
+            "recall": 0.45505050505050504
+          }
+        },
+        "density_correlation": {
+          "pearson_r": -0.42097815560605356,
+          "t": -1.607714797465743,
+          "n_images": 14
+        },
+        "n_truncated_images": 0,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 122,
+            "matched_class_aware": 91,
+            "matched_spatial": 91,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 352,
+            "matched_class_aware": 297,
+            "matched_spatial": 297,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 361,
+            "matched_class_aware": 294,
+            "matched_spatial": 295,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 86,
+            "matched_class_aware": 70,
+            "matched_spatial": 70,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 18,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 47,
+            "matched_class_aware": 19,
+            "matched_spatial": 19,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 902,
+            "matched_class_aware": 603,
+            "matched_spatial": 603,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 179,
+            "matched_class_aware": 0,
+            "matched_spatial": 139,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 201,
+            "matched_class_aware": 2,
+            "matched_spatial": 176,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 191,
+            "matched_class_aware": 25,
+            "matched_spatial": 157,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 513,
+            "matched_class_aware": 257,
+            "matched_spatial": 257,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 55,
+            "matched_class_aware": 49,
+            "matched_spatial": 49,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 50,
+            "matched_class_aware": 43,
+            "matched_spatial": 43,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 56,
+            "matched_class_aware": 41,
+            "matched_spatial": 41,
+            "truncated": false
+          }
+        ]
+      },
+      "9": {
+        "max_det": 2000,
+        "aggregate_metrics": {
+          "precision": 0.6963144567948668,
+          "recall": 0.5021150679151183,
+          "map50": 0.48497461996197533,
+          "map50_95": 0.13905541848456232
+        },
+        "per_class_metrics": {
+          "PE": {
+            "precision": 0.6532495707165146,
+            "recall": 0.8214285714285714,
+            "ap50": 0.7544642857142858,
+            "ap50_95": 0.2282057741802348
+          },
+          "PET": {
+            "precision": 0.8238277437562154,
+            "recall": 0.4680038292970142,
+            "ap50": 0.4865126638395791,
+            "ap50_95": 0.13871413772262836
+          },
+          "PP": {
+            "precision": 0.821802108651817,
+            "recall": 0.37295568409836966,
+            "ap50": 0.4206515187414097,
+            "ap50_95": 0.11893861259667304
+          },
+          "PS": {
+            "precision": 0.48637840405491994,
+            "recall": 0.346072186836518,
+            "ap50": 0.27827001155262654,
+            "ap50_95": 0.07036314943871301
+          }
+        },
+        "n_gt": 4610,
+        "global_recall": 0.4496746203904555,
+        "d_rate": 0.46702819956616054,
+        "regime_recall": {
+          "NANOPLASTIC": {
+            "gt": 2630,
+            "matched": 1117,
+            "recall": 0.4247148288973384
+          },
+          "MICROPLASTIC": {
+            "gt": 1980,
+            "matched": 1036,
+            "recall": 0.5232323232323233
+          }
+        },
+        "density_correlation": {
+          "pearson_r": -0.44678241730341134,
+          "t": -1.7299641292747587,
+          "n_images": 14
+        },
+        "n_truncated_images": 0,
+        "per_image": [
+          {
+            "image": "PET_PET 5000X 1.png",
+            "n_gt": 141,
+            "n_pred": 106,
+            "matched_class_aware": 79,
+            "matched_spatial": 79,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X-2.png",
+            "n_gt": 490,
+            "n_pred": 382,
+            "matched_class_aware": 301,
+            "matched_spatial": 301,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-2000X.png",
+            "n_gt": 518,
+            "n_pred": 398,
+            "matched_class_aware": 208,
+            "matched_spatial": 259,
+            "truncated": false
+          },
+          {
+            "image": "PET_PET-B-2-5000X.png",
+            "n_gt": 90,
+            "n_pred": 73,
+            "matched_class_aware": 57,
+            "matched_spatial": 57,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000-1.png",
+            "n_gt": 8,
+            "n_pred": 24,
+            "matched_class_aware": 8,
+            "matched_spatial": 8,
+            "truncated": false
+          },
+          {
+            "image": "PE_PE 1000X.png",
+            "n_gt": 20,
+            "n_pred": 28,
+            "matched_class_aware": 16,
+            "matched_spatial": 17,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-1000x1.png",
+            "n_gt": 1268,
+            "n_pred": 715,
+            "matched_class_aware": 536,
+            "matched_spatial": 536,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x4.png",
+            "n_gt": 198,
+            "n_pred": 117,
+            "matched_class_aware": 46,
+            "matched_spatial": 71,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x6.png",
+            "n_gt": 231,
+            "n_pred": 149,
+            "matched_class_aware": 123,
+            "matched_spatial": 126,
+            "truncated": false
+          },
+          {
+            "image": "PP_PP-3000x7.png",
+            "n_gt": 233,
+            "n_pred": 168,
+            "matched_class_aware": 151,
+            "matched_spatial": 151,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-100x.png",
+            "n_gt": 957,
+            "n_pred": 722,
+            "matched_class_aware": 313,
+            "matched_spatial": 313,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS-200x-2.png",
+            "n_gt": 160,
+            "n_pred": 163,
+            "matched_class_aware": 95,
+            "matched_spatial": 95,
+            "truncated": false
+          },
+          {
+            "image": "PS_PS2-200x2.png",
+            "n_gt": 156,
+            "n_pred": 386,
+            "matched_class_aware": 120,
+            "matched_spatial": 120,
+            "truncated": false
+          },
+          {
+            "image": "PS_PSL 10000X.png",
+            "n_gt": 140,
+            "n_pred": 27,
+            "matched_class_aware": 20,
+            "matched_spatial": 20,
+            "truncated": false
+          }
+        ]
+      }
+    }
+  }
+}

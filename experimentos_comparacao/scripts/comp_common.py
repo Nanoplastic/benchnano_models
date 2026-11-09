@@ -1,8 +1,6 @@
 """Utilitários compartilhados pela comparação BenchNano (YOLO26L + SmolVLM)
 vs. o método do paper que introduziu o dataset MiNa (Rezvani, Zarrabi et
-al., Toronto Metropolitan University -- `/home/mi/Downloads/artigomina.pdf`,
-arXiv:2409.13688). Ver plano completo em
-/home/mi/.claude/plans/agile-herding-crescent.md.
+al., Toronto Metropolitan University, arXiv:2409.13688).
 
 Mesma convenção de `experimentos_controlados/scripts/ctrl_common.py`
 (summary.json por experimento com ambiente/proveniência), mas standalone --

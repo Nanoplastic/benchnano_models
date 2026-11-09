@@ -1,0 +1,418 @@
+2026-10-26 18:24:08,905 | INFO | === INÍCIO DO EXPERIMENTO ===
+2026-10-26 18:24:08,905 | INFO | experiment_name=77_reeval_cv_folds_maxdet2000
+2026-10-26 18:24:08,905 | INFO | script_name=/home/mi/Dev/datasetMINA/experimentos/scripts/77_reeval_cv_folds_maxdet2000.py
+2026-10-26 18:24:08,905 | INFO | results_dir=/home/mi/Dev/datasetMINA/experimentos/resultados/77_reeval_cv_folds_maxdet2000
+2026-10-26 18:24:08,905 | INFO | log_path=/home/mi/Dev/datasetMINA/experimentos/resultados/77_reeval_cv_folds_maxdet2000/logs/77_reeval_cv_folds_maxdet2000_20261026T212407Z.log
+2026-10-26 18:24:08,905 | INFO | runtime_metadata={"architecture": "x86_64", "cpu": "x86_64", "cpu_count": 24, "cuda_available": true, "cuda_device": 0, "cuda_version": "12.1", "cudnn_version": 90100, "device": "cuda", "experiment_name": "77_reeval_cv_folds_maxdet2000", "git_commit": "f7a0a0a1", "gpu_capability": [[8, 9]], "gpu_count": 1, "gpu_names": ["NVIDIA GeForce RTX 4060 Ti"], "host": "pop-os", "log_path": "/home/mi/Dev/datasetMINA/experimentos/resultados/77_reeval_cv_folds_maxdet2000/logs/77_reeval_cv_folds_maxdet2000_20261026T212407Z.log", "numpy_version": "1.26.4", "os": "Linux", "os_release": "7.1.5-76070105-generic", "pandas_version": "2.1.4", "peft_version": "0.18.1", "pillow_version": "11.3.0", "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39", "python_implementation": "CPython", "python_version": "3.10.22", "ram_gb": 30.48801040649414, "results_dir": "/home/mi/Dev/datasetMINA/experimentos/resultados/77_reeval_cv_folds_maxdet2000", "results_root": "/home/mi/Dev/datasetMINA/experimentos/resultados", "script_name": "/home/mi/Dev/datasetMINA/experimentos/scripts/77_reeval_cv_folds_maxdet2000.py", "timestamp_utc": "2026-10-26T21:24:07.972616+00:00", "torch_version": "2.4.1+cu121", "transformers_version": "4.49.0", "working_directory": "/home/mi/Dev/datasetMINA/experimentos"}
+2026-10-26 18:24:08,905 | INFO | iniciando nano_only max_det=300
+2026-10-26 18:24:09,409 | INFO | cond=nano_only max_det=300 fold=0 imagem=PET_PET-2000X-3.png gt=485 matched=1 n_pred=289
+2026-10-26 18:24:09,452 | INFO | cond=nano_only max_det=300 fold=0 imagem=PET_PET-2000X.png gt=518 matched=0 n_pred=256
+2026-10-26 18:24:09,593 | INFO | cond=nano_only max_det=300 fold=0 imagem=PET_PET-5000X.png gt=106 matched=0 n_pred=0
+2026-10-26 18:24:09,635 | INFO | cond=nano_only max_det=300 fold=0 imagem=PET_PET-B-1000X.png gt=75 matched=0 n_pred=4
+2026-10-26 18:24:09,669 | INFO | cond=nano_only max_det=300 fold=0 imagem=PET_PET1-5000X.png gt=222 matched=0 n_pred=112
+2026-10-26 18:24:09,702 | INFO | cond=nano_only max_det=300 fold=0 imagem=PET_PETL 200X.png gt=652 matched=0 n_pred=0
+2026-10-26 18:24:09,735 | INFO | cond=nano_only max_det=300 fold=0 imagem=PE_PE 1000-1.png gt=8 matched=5 n_pred=19
+2026-10-26 18:24:09,767 | INFO | cond=nano_only max_det=300 fold=0 imagem=PE_PE 2000X2.png gt=5 matched=1 n_pred=2
+2026-10-26 18:24:09,800 | INFO | cond=nano_only max_det=300 fold=0 imagem=PE_PE 3000X.png gt=14 matched=6 n_pred=7
+2026-10-26 18:24:09,833 | INFO | cond=nano_only max_det=300 fold=0 imagem=PE_PE-2-3000X.png gt=36 matched=6 n_pred=10
+2026-10-26 18:24:09,864 | INFO | cond=nano_only max_det=300 fold=0 imagem=PE_PEL 500X.png gt=68 matched=0 n_pred=0
+2026-10-26 18:24:09,895 | INFO | cond=nano_only max_det=300 fold=0 imagem=PP_PP 2000X.png gt=81 matched=0 n_pred=7
+2026-10-26 18:24:09,940 | INFO | cond=nano_only max_det=300 fold=0 imagem=PP_PP 500-1.png gt=10 matched=0 n_pred=4
+2026-10-26 18:24:09,970 | INFO | cond=nano_only max_det=300 fold=0 imagem=PP_PP 500X2.png gt=113 matched=0 n_pred=1
+2026-10-26 18:24:10,371 | INFO | cond=nano_only max_det=300 fold=0 imagem=PP_PP-3000x3.png gt=227 matched=171 n_pred=249
+2026-10-26 18:24:10,791 | INFO | cond=nano_only max_det=300 fold=0 imagem=PP_PP-3000x7.png gt=233 matched=178 n_pred=253
+2026-10-26 18:24:10,823 | INFO | cond=nano_only max_det=300 fold=0 imagem=PP_PPLFT 200X.png gt=337 matched=0 n_pred=0
+2026-10-26 18:24:10,946 | INFO | cond=nano_only max_det=300 fold=0 imagem=PS_PS 2000X.png gt=592 matched=17 n_pred=67
+2026-10-26 18:24:11,048 | INFO | cond=nano_only max_det=300 fold=0 imagem=PS_PS2  5000X.png gt=229 matched=24 n_pred=47
+2026-10-26 18:24:11,079 | INFO | cond=nano_only max_det=300 fold=0 imagem=PS_PS2-2000x-3.png gt=116 matched=0 n_pred=48
+2026-10-26 18:24:11,323 | INFO | cond=nano_only max_det=300 fold=0 imagem=PS_PSFT 2000X.png gt=295 matched=53 n_pred=109
+2026-10-26 18:24:11,356 | INFO | cond=nano_only max_det=300 fold=0 imagem=PS_PSLFT 200X.png gt=1099 matched=0 n_pred=0
+2026-10-26 18:24:11,516 | INFO | cond=nano_only max_det=300 fold=1 imagem=PET_PET 5000X 2.png gt=106 matched=12 n_pred=39
+2026-10-26 18:24:11,551 | INFO | cond=nano_only max_det=300 fold=1 imagem=PET_PET-2000X-2.png gt=490 matched=0 n_pred=0
+2026-10-26 18:24:11,583 | INFO | cond=nano_only max_det=300 fold=1 imagem=PET_PET-2000X-4.png gt=436 matched=0 n_pred=0
+2026-10-26 18:24:11,624 | INFO | cond=nano_only max_det=300 fold=1 imagem=PET_PET-B-2000x-2.png gt=121 matched=0 n_pred=0
+2026-10-26 18:24:11,664 | INFO | cond=nano_only max_det=300 fold=1 imagem=PET_PET-B2-2000x-1.png gt=226 matched=0 n_pred=0
+2026-10-26 18:24:11,705 | INFO | cond=nano_only max_det=300 fold=1 imagem=PET_PET-B2-2000x-2.png gt=143 matched=0 n_pred=0
+2026-10-26 18:24:11,739 | INFO | cond=nano_only max_det=300 fold=1 imagem=PE_PE 1000X.png gt=20 matched=1 n_pred=16
+2026-10-26 18:24:11,773 | INFO | cond=nano_only max_det=300 fold=1 imagem=PE_PE 3000X 3.png gt=20 matched=14 n_pred=20
+2026-10-26 18:24:11,805 | INFO | cond=nano_only max_det=300 fold=1 imagem=PE_PE-2000X-3.png gt=16 matched=4 n_pred=9
+2026-10-26 18:24:11,835 | INFO | cond=nano_only max_det=300 fold=1 imagem=PE_PEL 200X.png gt=61 matched=0 n_pred=1
+2026-10-26 18:24:11,872 | INFO | cond=nano_only max_det=300 fold=1 imagem=PE_PELFT 2000X.png gt=28 matched=16 n_pred=30
+2026-10-26 18:24:11,903 | INFO | cond=nano_only max_det=300 fold=1 imagem=PP_PP 100X.png gt=421 matched=0 n_pred=2
+2026-10-26 18:24:11,935 | INFO | cond=nano_only max_det=300 fold=1 imagem=PP_PP 2000X2.png gt=97 matched=1 n_pred=20
+2026-10-26 18:24:11,966 | INFO | cond=nano_only max_det=300 fold=1 imagem=PP_PP 5000X.png gt=12 matched=0 n_pred=1
+2026-10-26 18:24:11,997 | INFO | cond=nano_only max_det=300 fold=1 imagem=PP_PP-3000x1.png gt=335 matched=0 n_pred=0
+2026-10-26 18:24:12,029 | INFO | cond=nano_only max_det=300 fold=1 imagem=PP_PPFT 2000X.png gt=50 matched=0 n_pred=30
+2026-10-26 18:24:12,060 | INFO | cond=nano_only max_det=300 fold=1 imagem=PP_PPFT 200X.png gt=367 matched=0 n_pred=0
+2026-10-26 18:24:12,092 | INFO | cond=nano_only max_det=300 fold=1 imagem=PS_PS 5000X.png gt=171 matched=0 n_pred=1
+2026-10-26 18:24:12,127 | INFO | cond=nano_only max_det=300 fold=1 imagem=PS_PS-200X.png gt=1934 matched=0 n_pred=0
+2026-10-26 18:24:12,160 | INFO | cond=nano_only max_det=300 fold=1 imagem=PS_PSFT 200X.png gt=1014 matched=0 n_pred=0
+2026-10-26 18:24:12,192 | INFO | cond=nano_only max_det=300 fold=1 imagem=PS_PSL 10000X.png gt=140 matched=0 n_pred=0
+2026-10-26 18:24:12,222 | INFO | cond=nano_only max_det=300 fold=1 imagem=PS_PSL 5000X.png gt=260 matched=0 n_pred=0
+2026-10-26 18:24:12,394 | INFO | cond=nano_only max_det=300 fold=2 imagem=PET_PET-2-3000X.png gt=425 matched=11 n_pred=23
+2026-10-26 18:24:12,430 | INFO | cond=nano_only max_det=300 fold=2 imagem=PET_PET-5000X-4.png gt=102 matched=0 n_pred=0
+2026-10-26 18:24:12,487 | INFO | cond=nano_only max_det=300 fold=2 imagem=PET_PET-B-2000x-4.png gt=113 matched=20 n_pred=28
+2026-10-26 18:24:12,527 | INFO | cond=nano_only max_det=300 fold=2 imagem=PET_PET-B2-5000x-4.png gt=29 matched=1 n_pred=2
+2026-10-26 18:24:12,558 | INFO | cond=nano_only max_det=300 fold=2 imagem=PET_PETL 5000X.png gt=14 matched=0 n_pred=1
+2026-10-26 18:24:12,592 | INFO | cond=nano_only max_det=300 fold=2 imagem=PE_PE 3000X2.png gt=19 matched=12 n_pred=17
+2026-10-26 18:24:12,622 | INFO | cond=nano_only max_det=300 fold=2 imagem=PE_PE 500-3.png gt=10 matched=0 n_pred=0
+2026-10-26 18:24:12,652 | INFO | cond=nano_only max_det=300 fold=2 imagem=PE_PE-2000X.png gt=16 matched=0 n_pred=0
+2026-10-26 18:24:12,684 | INFO | cond=nano_only max_det=300 fold=2 imagem=PE_PE-3000X.png gt=11 matched=1 n_pred=1
+2026-10-26 18:24:12,714 | INFO | cond=nano_only max_det=300 fold=2 imagem=PE_PE-5000x.png gt=0 matched=0 n_pred=0
+2026-10-26 18:24:12,745 | INFO | cond=nano_only max_det=300 fold=2 imagem=PP_PP 100X2.png gt=330 matched=0 n_pred=0
+2026-10-26 18:24:12,778 | INFO | cond=nano_only max_det=300 fold=2 imagem=PP_PP-1000x3.png gt=1074 matched=0 n_pred=0
+2026-10-26 18:24:12,810 | INFO | cond=nano_only max_det=300 fold=2 imagem=PP_PP-2-3000X.png gt=218 matched=0 n_pred=19
+2026-10-26 18:24:13,008 | INFO | cond=nano_only max_det=300 fold=2 imagem=PP_PP-3000X.png gt=330 matched=55 n_pred=133
+2026-10-26 18:24:13,065 | INFO | cond=nano_only max_det=300 fold=2 imagem=PP_PP-3000x4.png gt=198 matched=16 n_pred=62
+2026-10-26 18:24:13,106 | INFO | cond=nano_only max_det=300 fold=2 imagem=PP_PP-3000x5.png gt=249 matched=5 n_pred=73
+2026-10-26 18:24:13,137 | INFO | cond=nano_only max_det=300 fold=2 imagem=PS_PS 500X 2.png gt=211 matched=0 n_pred=0
+2026-10-26 18:24:13,169 | INFO | cond=nano_only max_det=300 fold=2 imagem=PS_PS 500X.png gt=840 matched=0 n_pred=0
+2026-10-26 18:24:13,199 | INFO | cond=nano_only max_det=300 fold=2 imagem=PS_PS2-200x2.png gt=156 matched=0 n_pred=0
+2026-10-26 18:24:13,345 | INFO | cond=nano_only max_det=300 fold=2 imagem=PS_PSLFT 2000X.png gt=354 matched=23 n_pred=49
+2026-10-26 18:24:13,720 | INFO | cond=nano_only max_det=300 fold=3 imagem=PET_PET-10000X.png gt=31 matched=3 n_pred=5
+2026-10-26 18:24:13,774 | INFO | cond=nano_only max_det=300 fold=3 imagem=PET_PET-5000X-3.png gt=95 matched=14 n_pred=14
+2026-10-26 18:24:13,816 | INFO | cond=nano_only max_det=300 fold=3 imagem=PET_PET-B-5000x-1.png gt=36 matched=3 n_pred=3
+2026-10-26 18:24:13,925 | INFO | cond=nano_only max_det=300 fold=3 imagem=PET_PET-B2-2000x-4.png gt=156 matched=56 n_pred=67
+2026-10-26 18:24:13,957 | INFO | cond=nano_only max_det=300 fold=3 imagem=PET_PETL 1000X.png gt=56 matched=0 n_pred=0
+2026-10-26 18:24:13,995 | INFO | cond=nano_only max_det=300 fold=3 imagem=PE_PE 1000X 3.png gt=49 matched=13 n_pred=21
+2026-10-26 18:24:14,027 | INFO | cond=nano_only max_det=300 fold=3 imagem=PE_PE 2000X.png gt=2 matched=0 n_pred=0
+2026-10-26 18:24:14,057 | INFO | cond=nano_only max_det=300 fold=3 imagem=PE_PE 500-1.png gt=13 matched=1 n_pred=1
+2026-10-26 18:24:14,088 | INFO | cond=nano_only max_det=300 fold=3 imagem=PE_PE-10000X.png gt=0 matched=0 n_pred=0
+2026-10-26 18:24:14,120 | INFO | cond=nano_only max_det=300 fold=3 imagem=PE_PELFT 500X.png gt=40 matched=4 n_pred=4
+2026-10-26 18:24:14,152 | INFO | cond=nano_only max_det=300 fold=3 imagem=PP_PP-10000X.png gt=16 matched=0 n_pred=2
+2026-10-26 18:24:14,322 | INFO | cond=nano_only max_det=300 fold=3 imagem=PP_PP-3000x6.png gt=231 matched=83 n_pred=105
+2026-10-26 18:24:14,613 | INFO | cond=nano_only max_det=300 fold=3 imagem=PP_PP-3000x8.png gt=257 matched=138 n_pred=161
+2026-10-26 18:24:14,645 | INFO | cond=nano_only max_det=300 fold=3 imagem=PP_PPFT 500X.png gt=212 matched=0 n_pred=0
+2026-10-26 18:24:14,676 | INFO | cond=nano_only max_det=300 fold=3 imagem=PP_PPLFT 500X.png gt=202 matched=0 n_pred=1
+2026-10-26 18:24:14,709 | INFO | cond=nano_only max_det=300 fold=3 imagem=PS_PS 500X2.png gt=940 matched=0 n_pred=0
+2026-10-26 18:24:14,740 | INFO | cond=nano_only max_det=300 fold=3 imagem=PS_PS-200x-2.png gt=160 matched=0 n_pred=0
+2026-10-26 18:24:14,780 | INFO | cond=nano_only max_det=300 fold=3 imagem=PS_PS2  2000X.png gt=427 matched=1 n_pred=3
+2026-10-26 18:24:14,813 | INFO | cond=nano_only max_det=300 fold=3 imagem=PS_PSL 200X.png gt=819 matched=0 n_pred=0
+2026-10-26 18:24:14,992 | INFO | cond=nano_only max_det=300 fold=4 imagem=PET_PET 5000X 1.png gt=141 matched=15 n_pred=64
+2026-10-26 18:24:15,059 | INFO | cond=nano_only max_det=300 fold=4 imagem=PET_PET 5000X.png gt=76 matched=16 n_pred=56
+2026-10-26 18:24:15,099 | INFO | cond=nano_only max_det=300 fold=4 imagem=PET_PET-5000X-2.png gt=83 matched=13 n_pred=13
+2026-10-26 18:24:15,151 | INFO | cond=nano_only max_det=300 fold=4 imagem=PET_PET-B-2-5000X.png gt=90 matched=10 n_pred=60
+2026-10-26 18:24:15,193 | INFO | cond=nano_only max_det=300 fold=4 imagem=PET_PET-B-5000X.png gt=3 matched=0 n_pred=56
+2026-10-26 18:24:15,224 | INFO | cond=nano_only max_det=300 fold=4 imagem=PE_PE 1000X 2.png gt=34 matched=0 n_pred=0
+2026-10-26 18:24:15,255 | INFO | cond=nano_only max_det=300 fold=4 imagem=PE_PE 500-2.png gt=10 matched=0 n_pred=0
+2026-10-26 18:24:15,285 | INFO | cond=nano_only max_det=300 fold=4 imagem=PE_PE-1000x.png gt=114 matched=0 n_pred=0
+2026-10-26 18:24:15,316 | INFO | cond=nano_only max_det=300 fold=4 imagem=PE_PE-2000X-2.png gt=10 matched=1 n_pred=1
+2026-10-26 18:24:15,346 | INFO | cond=nano_only max_det=300 fold=4 imagem=PE_PE-5000x-1.png gt=12 matched=0 n_pred=0
+2026-10-26 18:24:15,377 | INFO | cond=nano_only max_det=300 fold=4 imagem=PP_PP 500X.png gt=235 matched=0 n_pred=0
+2026-10-26 18:24:17,921 | INFO | cond=nano_only max_det=300 fold=4 imagem=PP_PP-1000x1.png gt=1268 matched=221 n_pred=300
+2026-10-26 18:24:19,836 | INFO | cond=nano_only max_det=300 fold=4 imagem=PP_PP-1000x2.png gt=960 matched=198 n_pred=300
+2026-10-26 18:24:20,152 | INFO | cond=nano_only max_det=300 fold=4 imagem=PP_PP-3000x2.png gt=218 matched=144 n_pred=204
+2026-10-26 18:24:20,191 | INFO | cond=nano_only max_det=300 fold=4 imagem=PP_PP-5000X.png gt=81 matched=5 n_pred=56
+2026-10-26 18:24:20,225 | INFO | cond=nano_only max_det=300 fold=4 imagem=PS_PS-100x.png gt=957 matched=0 n_pred=0
+2026-10-26 18:24:20,255 | INFO | cond=nano_only max_det=300 fold=4 imagem=PS_PS-200x-3.png gt=98 matched=0 n_pred=0
+2026-10-26 18:24:20,287 | INFO | cond=nano_only max_det=300 fold=4 imagem=PS_PS-200x-4.png gt=616 matched=0 n_pred=0
+2026-10-26 18:24:20,318 | INFO | cond=nano_only max_det=300 fold=4 imagem=PS_PS2-200x-1.png gt=294 matched=0 n_pred=0
+2026-10-26 18:25:09,918 | INFO | iniciando nano_only max_det=2000
+2026-10-26 18:25:10,174 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PET_PET-2000X-3.png gt=485 matched=1 n_pred=289
+2026-10-26 18:25:10,221 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PET_PET-2000X.png gt=518 matched=0 n_pred=256
+2026-10-26 18:25:10,265 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PET_PET-5000X.png gt=106 matched=0 n_pred=0
+2026-10-26 18:25:10,308 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PET_PET-B-1000X.png gt=75 matched=0 n_pred=4
+2026-10-26 18:25:10,342 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PET_PET1-5000X.png gt=222 matched=0 n_pred=112
+2026-10-26 18:25:10,374 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PET_PETL 200X.png gt=652 matched=0 n_pred=0
+2026-10-26 18:25:10,408 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PE_PE 1000-1.png gt=8 matched=5 n_pred=19
+2026-10-26 18:25:10,440 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PE_PE 2000X2.png gt=5 matched=1 n_pred=2
+2026-10-26 18:25:10,474 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PE_PE 3000X.png gt=14 matched=6 n_pred=7
+2026-10-26 18:25:10,509 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PE_PE-2-3000X.png gt=36 matched=6 n_pred=10
+2026-10-26 18:25:10,542 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PE_PEL 500X.png gt=68 matched=0 n_pred=0
+2026-10-26 18:25:10,576 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PP_PP 2000X.png gt=81 matched=0 n_pred=7
+2026-10-26 18:25:10,624 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PP_PP 500-1.png gt=10 matched=0 n_pred=4
+2026-10-26 18:25:10,657 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PP_PP 500X2.png gt=113 matched=0 n_pred=1
+2026-10-26 18:25:11,067 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PP_PP-3000x3.png gt=227 matched=171 n_pred=249
+2026-10-26 18:25:11,566 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PP_PP-3000x7.png gt=233 matched=178 n_pred=253
+2026-10-26 18:25:11,600 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PP_PPLFT 200X.png gt=337 matched=0 n_pred=0
+2026-10-26 18:25:11,726 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PS_PS 2000X.png gt=592 matched=17 n_pred=67
+2026-10-26 18:25:11,831 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PS_PS2  5000X.png gt=229 matched=24 n_pred=47
+2026-10-26 18:25:11,865 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PS_PS2-2000x-3.png gt=116 matched=0 n_pred=48
+2026-10-26 18:25:12,113 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PS_PSFT 2000X.png gt=295 matched=53 n_pred=109
+2026-10-26 18:25:12,148 | INFO | cond=nano_only max_det=2000 fold=0 imagem=PS_PSLFT 200X.png gt=1099 matched=0 n_pred=0
+2026-10-26 18:25:12,306 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PET_PET 5000X 2.png gt=106 matched=12 n_pred=39
+2026-10-26 18:25:12,345 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PET_PET-2000X-2.png gt=490 matched=0 n_pred=0
+2026-10-26 18:25:12,379 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PET_PET-2000X-4.png gt=436 matched=0 n_pred=0
+2026-10-26 18:25:12,423 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PET_PET-B-2000x-2.png gt=121 matched=0 n_pred=0
+2026-10-26 18:25:12,469 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PET_PET-B2-2000x-1.png gt=226 matched=0 n_pred=0
+2026-10-26 18:25:12,513 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PET_PET-B2-2000x-2.png gt=143 matched=0 n_pred=0
+2026-10-26 18:25:12,549 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PE_PE 1000X.png gt=20 matched=1 n_pred=16
+2026-10-26 18:25:12,584 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PE_PE 3000X 3.png gt=20 matched=14 n_pred=20
+2026-10-26 18:25:12,620 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PE_PE-2000X-3.png gt=16 matched=4 n_pred=9
+2026-10-26 18:25:12,654 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PE_PEL 200X.png gt=61 matched=0 n_pred=1
+2026-10-26 18:25:12,693 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PE_PELFT 2000X.png gt=28 matched=16 n_pred=30
+2026-10-26 18:25:12,727 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PP_PP 100X.png gt=421 matched=0 n_pred=2
+2026-10-26 18:25:12,762 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PP_PP 2000X2.png gt=97 matched=1 n_pred=20
+2026-10-26 18:25:12,796 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PP_PP 5000X.png gt=12 matched=0 n_pred=1
+2026-10-26 18:25:12,830 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PP_PP-3000x1.png gt=335 matched=0 n_pred=0
+2026-10-26 18:25:12,866 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PP_PPFT 2000X.png gt=50 matched=0 n_pred=30
+2026-10-26 18:25:12,899 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PP_PPFT 200X.png gt=367 matched=0 n_pred=0
+2026-10-26 18:25:12,931 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PS_PS 5000X.png gt=171 matched=0 n_pred=1
+2026-10-26 18:25:12,966 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PS_PS-200X.png gt=1934 matched=0 n_pred=0
+2026-10-26 18:25:13,001 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PS_PSFT 200X.png gt=1014 matched=0 n_pred=0
+2026-10-26 18:25:13,032 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PS_PSL 10000X.png gt=140 matched=0 n_pred=0
+2026-10-26 18:25:13,063 | INFO | cond=nano_only max_det=2000 fold=1 imagem=PS_PSL 5000X.png gt=260 matched=0 n_pred=0
+2026-10-26 18:25:13,233 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PET_PET-2-3000X.png gt=425 matched=11 n_pred=23
+2026-10-26 18:25:13,269 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PET_PET-5000X-4.png gt=102 matched=0 n_pred=0
+2026-10-26 18:25:13,326 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PET_PET-B-2000x-4.png gt=113 matched=20 n_pred=28
+2026-10-26 18:25:13,368 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PET_PET-B2-5000x-4.png gt=29 matched=1 n_pred=2
+2026-10-26 18:25:13,399 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PET_PETL 5000X.png gt=14 matched=0 n_pred=1
+2026-10-26 18:25:13,434 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PE_PE 3000X2.png gt=19 matched=12 n_pred=17
+2026-10-26 18:25:13,466 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PE_PE 500-3.png gt=10 matched=0 n_pred=0
+2026-10-26 18:25:13,497 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PE_PE-2000X.png gt=16 matched=0 n_pred=0
+2026-10-26 18:25:13,531 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PE_PE-3000X.png gt=11 matched=1 n_pred=1
+2026-10-26 18:25:13,563 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PE_PE-5000x.png gt=0 matched=0 n_pred=0
+2026-10-26 18:25:13,595 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PP_PP 100X2.png gt=330 matched=0 n_pred=0
+2026-10-26 18:25:13,629 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PP_PP-1000x3.png gt=1074 matched=0 n_pred=0
+2026-10-26 18:25:13,662 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PP_PP-2-3000X.png gt=218 matched=0 n_pred=19
+2026-10-26 18:25:13,861 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PP_PP-3000X.png gt=330 matched=55 n_pred=133
+2026-10-26 18:25:13,919 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PP_PP-3000x4.png gt=198 matched=16 n_pred=62
+2026-10-26 18:25:13,959 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PP_PP-3000x5.png gt=249 matched=5 n_pred=73
+2026-10-26 18:25:13,991 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PS_PS 500X 2.png gt=211 matched=0 n_pred=0
+2026-10-26 18:25:14,023 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PS_PS 500X.png gt=840 matched=0 n_pred=0
+2026-10-26 18:25:14,053 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PS_PS2-200x2.png gt=156 matched=0 n_pred=0
+2026-10-26 18:25:14,197 | INFO | cond=nano_only max_det=2000 fold=2 imagem=PS_PSLFT 2000X.png gt=354 matched=23 n_pred=49
+2026-10-26 18:25:14,335 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PET_PET-10000X.png gt=31 matched=3 n_pred=5
+2026-10-26 18:25:14,395 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PET_PET-5000X-3.png gt=95 matched=14 n_pred=14
+2026-10-26 18:25:14,437 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PET_PET-B-5000x-1.png gt=36 matched=3 n_pred=3
+2026-10-26 18:25:14,547 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PET_PET-B2-2000x-4.png gt=156 matched=56 n_pred=67
+2026-10-26 18:25:14,578 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PET_PETL 1000X.png gt=56 matched=0 n_pred=0
+2026-10-26 18:25:14,617 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PE_PE 1000X 3.png gt=49 matched=13 n_pred=21
+2026-10-26 18:25:14,648 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PE_PE 2000X.png gt=2 matched=0 n_pred=0
+2026-10-26 18:25:14,679 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PE_PE 500-1.png gt=13 matched=1 n_pred=1
+2026-10-26 18:25:14,710 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PE_PE-10000X.png gt=0 matched=0 n_pred=0
+2026-10-26 18:25:14,742 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PE_PELFT 500X.png gt=40 matched=4 n_pred=4
+2026-10-26 18:25:14,773 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PP_PP-10000X.png gt=16 matched=0 n_pred=2
+2026-10-26 18:25:14,947 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PP_PP-3000x6.png gt=231 matched=83 n_pred=105
+2026-10-26 18:25:15,242 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PP_PP-3000x8.png gt=257 matched=138 n_pred=161
+2026-10-26 18:25:15,276 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PP_PPFT 500X.png gt=212 matched=0 n_pred=0
+2026-10-26 18:25:15,309 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PP_PPLFT 500X.png gt=202 matched=0 n_pred=1
+2026-10-26 18:25:15,345 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PS_PS 500X2.png gt=940 matched=0 n_pred=0
+2026-10-26 18:25:15,380 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PS_PS-200x-2.png gt=160 matched=0 n_pred=0
+2026-10-26 18:25:15,423 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PS_PS2  2000X.png gt=427 matched=1 n_pred=3
+2026-10-26 18:25:15,458 | INFO | cond=nano_only max_det=2000 fold=3 imagem=PS_PSL 200X.png gt=819 matched=0 n_pred=0
+2026-10-26 18:25:15,744 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PET_PET 5000X 1.png gt=141 matched=15 n_pred=64
+2026-10-26 18:25:15,809 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PET_PET 5000X.png gt=76 matched=16 n_pred=56
+2026-10-26 18:25:15,847 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PET_PET-5000X-2.png gt=83 matched=13 n_pred=13
+2026-10-26 18:25:15,897 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PET_PET-B-2-5000X.png gt=90 matched=10 n_pred=60
+2026-10-26 18:25:15,939 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PET_PET-B-5000X.png gt=3 matched=0 n_pred=56
+2026-10-26 18:25:15,970 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PE_PE 1000X 2.png gt=34 matched=0 n_pred=0
+2026-10-26 18:25:16,000 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PE_PE 500-2.png gt=10 matched=0 n_pred=0
+2026-10-26 18:25:16,031 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PE_PE-1000x.png gt=114 matched=0 n_pred=0
+2026-10-26 18:25:16,062 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PE_PE-2000X-2.png gt=10 matched=1 n_pred=1
+2026-10-26 18:25:16,092 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PE_PE-5000x-1.png gt=12 matched=0 n_pred=0
+2026-10-26 18:25:16,124 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PP_PP 500X.png gt=235 matched=0 n_pred=0
+2026-10-26 18:25:22,353 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PP_PP-1000x1.png gt=1268 matched=460 n_pred=759
+2026-10-26 18:25:28,820 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PP_PP-1000x2.png gt=960 matched=460 n_pred=1059
+2026-10-26 18:25:29,139 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PP_PP-3000x2.png gt=218 matched=144 n_pred=204
+2026-10-26 18:25:29,179 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PP_PP-5000X.png gt=81 matched=5 n_pred=56
+2026-10-26 18:25:29,213 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PS_PS-100x.png gt=957 matched=0 n_pred=0
+2026-10-26 18:25:29,246 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PS_PS-200x-3.png gt=98 matched=0 n_pred=0
+2026-10-26 18:25:29,279 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PS_PS-200x-4.png gt=616 matched=0 n_pred=0
+2026-10-26 18:25:29,312 | INFO | cond=nano_only max_det=2000 fold=4 imagem=PS_PS2-200x-1.png gt=294 matched=0 n_pred=0
+2026-10-26 18:26:19,254 | INFO | iniciando mixed max_det=300
+2026-10-26 18:26:20,331 | INFO | cond=mixed max_det=300 fold=0 imagem=PET_PET-2000X-3.png gt=485 matched=255 n_pred=300
+2026-10-26 18:26:21,236 | INFO | cond=mixed max_det=300 fold=0 imagem=PET_PET-2000X.png gt=518 matched=219 n_pred=300
+2026-10-26 18:26:21,281 | INFO | cond=mixed max_det=300 fold=0 imagem=PET_PET-5000X.png gt=106 matched=1 n_pred=30
+2026-10-26 18:26:21,323 | INFO | cond=mixed max_det=300 fold=0 imagem=PET_PET-B-1000X.png gt=75 matched=0 n_pred=263
+2026-10-26 18:26:21,361 | INFO | cond=mixed max_det=300 fold=0 imagem=PET_PET1-5000X.png gt=222 matched=2 n_pred=139
+2026-10-26 18:26:21,399 | INFO | cond=mixed max_det=300 fold=0 imagem=PET_PETL 200X.png gt=652 matched=0 n_pred=300
+2026-10-26 18:26:21,433 | INFO | cond=mixed max_det=300 fold=0 imagem=PE_PE 1000-1.png gt=8 matched=8 n_pred=35
+2026-10-26 18:26:21,465 | INFO | cond=mixed max_det=300 fold=0 imagem=PE_PE 2000X2.png gt=5 matched=1 n_pred=3
+2026-10-26 18:26:21,499 | INFO | cond=mixed max_det=300 fold=0 imagem=PE_PE 3000X.png gt=14 matched=9 n_pred=13
+2026-10-26 18:26:21,535 | INFO | cond=mixed max_det=300 fold=0 imagem=PE_PE-2-3000X.png gt=36 matched=17 n_pred=22
+2026-10-26 18:26:21,595 | INFO | cond=mixed max_det=300 fold=0 imagem=PE_PEL 500X.png gt=68 matched=45 n_pred=68
+2026-10-26 18:26:21,642 | INFO | cond=mixed max_det=300 fold=0 imagem=PP_PP 2000X.png gt=81 matched=26 n_pred=33
+2026-10-26 18:26:21,687 | INFO | cond=mixed max_det=300 fold=0 imagem=PP_PP 500-1.png gt=10 matched=0 n_pred=10
+2026-10-26 18:26:21,743 | INFO | cond=mixed max_det=300 fold=0 imagem=PP_PP 500X2.png gt=113 matched=35 n_pred=103
+2026-10-26 18:26:21,995 | INFO | cond=mixed max_det=300 fold=0 imagem=PP_PP-3000x3.png gt=227 matched=127 n_pred=260
+2026-10-26 18:26:22,267 | INFO | cond=mixed max_det=300 fold=0 imagem=PP_PP-3000x7.png gt=233 matched=149 n_pred=228
+2026-10-26 18:26:22,787 | INFO | cond=mixed max_det=300 fold=0 imagem=PP_PPLFT 200X.png gt=337 matched=188 n_pred=224
+2026-10-26 18:26:23,962 | INFO | cond=mixed max_det=300 fold=0 imagem=PS_PS 2000X.png gt=592 matched=244 n_pred=300
+2026-10-26 18:26:24,438 | INFO | cond=mixed max_det=300 fold=0 imagem=PS_PS2  5000X.png gt=229 matched=163 n_pred=300
+2026-10-26 18:26:24,471 | INFO | cond=mixed max_det=300 fold=0 imagem=PS_PS2-2000x-3.png gt=116 matched=0 n_pred=101
+2026-10-26 18:26:25,072 | INFO | cond=mixed max_det=300 fold=0 imagem=PS_PSFT 2000X.png gt=295 matched=188 n_pred=300
+2026-10-26 18:26:27,175 | INFO | cond=mixed max_det=300 fold=0 imagem=PS_PSLFT 200X.png gt=1099 matched=234 n_pred=300
+2026-10-26 18:26:27,427 | INFO | cond=mixed max_det=300 fold=1 imagem=PET_PET 5000X 2.png gt=106 matched=27 n_pred=40
+2026-10-26 18:26:27,557 | INFO | cond=mixed max_det=300 fold=1 imagem=PET_PET-2000X-2.png gt=490 matched=28 n_pred=232
+2026-10-26 18:26:27,687 | INFO | cond=mixed max_det=300 fold=1 imagem=PET_PET-2000X-4.png gt=436 matched=26 n_pred=216
+2026-10-26 18:26:27,790 | INFO | cond=mixed max_det=300 fold=1 imagem=PET_PET-B-2000x-2.png gt=121 matched=47 n_pred=157
+2026-10-26 18:26:27,978 | INFO | cond=mixed max_det=300 fold=1 imagem=PET_PET-B2-2000x-1.png gt=226 matched=62 n_pred=207
+2026-10-26 18:26:28,085 | INFO | cond=mixed max_det=300 fold=1 imagem=PET_PET-B2-2000x-2.png gt=143 matched=43 n_pred=149
+2026-10-26 18:26:28,120 | INFO | cond=mixed max_det=300 fold=1 imagem=PE_PE 1000X.png gt=20 matched=13 n_pred=31
+2026-10-26 18:26:28,155 | INFO | cond=mixed max_det=300 fold=1 imagem=PE_PE 3000X 3.png gt=20 matched=19 n_pred=25
+2026-10-26 18:26:28,189 | INFO | cond=mixed max_det=300 fold=1 imagem=PE_PE-2000X-3.png gt=16 matched=14 n_pred=38
+2026-10-26 18:26:28,223 | INFO | cond=mixed max_det=300 fold=1 imagem=PE_PEL 200X.png gt=61 matched=11 n_pred=43
+2026-10-26 18:26:28,256 | INFO | cond=mixed max_det=300 fold=1 imagem=PE_PELFT 2000X.png gt=28 matched=3 n_pred=22
+2026-10-26 18:26:28,418 | INFO | cond=mixed max_det=300 fold=1 imagem=PP_PP 100X.png gt=421 matched=46 n_pred=109
+2026-10-26 18:26:28,458 | INFO | cond=mixed max_det=300 fold=1 imagem=PP_PP 2000X2.png gt=97 matched=13 n_pred=30
+2026-10-26 18:26:28,490 | INFO | cond=mixed max_det=300 fold=1 imagem=PP_PP 5000X.png gt=12 matched=1 n_pred=7
+2026-10-26 18:26:28,534 | INFO | cond=mixed max_det=300 fold=1 imagem=PP_PP-3000x1.png gt=335 matched=6 n_pred=30
+2026-10-26 18:26:28,565 | INFO | cond=mixed max_det=300 fold=1 imagem=PP_PPFT 2000X.png gt=50 matched=0 n_pred=50
+2026-10-26 18:26:28,789 | INFO | cond=mixed max_det=300 fold=1 imagem=PP_PPFT 200X.png gt=367 matched=83 n_pred=119
+2026-10-26 18:26:28,820 | INFO | cond=mixed max_det=300 fold=1 imagem=PS_PS 5000X.png gt=171 matched=0 n_pred=6
+2026-10-26 18:26:30,385 | INFO | cond=mixed max_det=300 fold=1 imagem=PS_PS-200X.png gt=1934 matched=113 n_pred=127
+2026-10-26 18:26:32,324 | INFO | cond=mixed max_det=300 fold=1 imagem=PS_PSFT 200X.png gt=1014 matched=249 n_pred=300
+2026-10-26 18:26:32,356 | INFO | cond=mixed max_det=300 fold=1 imagem=PS_PSL 10000X.png gt=140 matched=0 n_pred=0
+2026-10-26 18:26:32,410 | INFO | cond=mixed max_det=300 fold=1 imagem=PS_PSL 5000X.png gt=260 matched=11 n_pred=65
+2026-10-26 18:26:32,807 | INFO | cond=mixed max_det=300 fold=2 imagem=PET_PET-2-3000X.png gt=425 matched=83 n_pred=153
+2026-10-26 18:26:32,856 | INFO | cond=mixed max_det=300 fold=2 imagem=PET_PET-5000X-4.png gt=102 matched=16 n_pred=16
+2026-10-26 18:26:32,974 | INFO | cond=mixed max_det=300 fold=2 imagem=PET_PET-B-2000x-4.png gt=113 matched=86 n_pred=108
+2026-10-26 18:26:33,014 | INFO | cond=mixed max_det=300 fold=2 imagem=PET_PET-B2-5000x-4.png gt=29 matched=0 n_pred=16
+2026-10-26 18:26:33,044 | INFO | cond=mixed max_det=300 fold=2 imagem=PET_PETL 5000X.png gt=14 matched=0 n_pred=4
+2026-10-26 18:26:33,082 | INFO | cond=mixed max_det=300 fold=2 imagem=PE_PE 3000X2.png gt=19 matched=15 n_pred=45
+2026-10-26 18:26:33,113 | INFO | cond=mixed max_det=300 fold=2 imagem=PE_PE 500-3.png gt=10 matched=5 n_pred=22
+2026-10-26 18:26:33,145 | INFO | cond=mixed max_det=300 fold=2 imagem=PE_PE-2000X.png gt=16 matched=12 n_pred=17
+2026-10-26 18:26:33,177 | INFO | cond=mixed max_det=300 fold=2 imagem=PE_PE-3000X.png gt=11 matched=6 n_pred=9
+2026-10-26 18:26:33,207 | INFO | cond=mixed max_det=300 fold=2 imagem=PE_PE-5000x.png gt=0 matched=0 n_pred=0
+2026-10-26 18:26:33,718 | INFO | cond=mixed max_det=300 fold=2 imagem=PP_PP 100X2.png gt=330 matched=158 n_pred=229
+2026-10-26 18:26:35,778 | INFO | cond=mixed max_det=300 fold=2 imagem=PP_PP-1000x3.png gt=1074 matched=269 n_pred=300
+2026-10-26 18:26:35,889 | INFO | cond=mixed max_det=300 fold=2 imagem=PP_PP-2-3000X.png gt=218 matched=53 n_pred=102
+2026-10-26 18:26:35,985 | INFO | cond=mixed max_det=300 fold=2 imagem=PP_PP-3000X.png gt=330 matched=28 n_pred=112
+2026-10-26 18:26:36,104 | INFO | cond=mixed max_det=300 fold=2 imagem=PP_PP-3000x4.png gt=198 matched=61 n_pred=183
+2026-10-26 18:26:36,292 | INFO | cond=mixed max_det=300 fold=2 imagem=PP_PP-3000x5.png gt=249 matched=87 n_pred=222
+2026-10-26 18:26:36,375 | INFO | cond=mixed max_det=300 fold=2 imagem=PS_PS 500X 2.png gt=211 matched=34 n_pred=41
+2026-10-26 18:26:37,992 | INFO | cond=mixed max_det=300 fold=2 imagem=PS_PS 500X.png gt=840 matched=267 n_pred=300
+2026-10-26 18:26:38,125 | INFO | cond=mixed max_det=300 fold=2 imagem=PS_PS2-200x2.png gt=156 matched=69 n_pred=102
+2026-10-26 18:26:38,824 | INFO | cond=mixed max_det=300 fold=2 imagem=PS_PSLFT 2000X.png gt=354 matched=202 n_pred=298
+2026-10-26 18:26:38,960 | INFO | cond=mixed max_det=300 fold=3 imagem=PET_PET-10000X.png gt=31 matched=0 n_pred=0
+2026-10-26 18:26:39,014 | INFO | cond=mixed max_det=300 fold=3 imagem=PET_PET-5000X-3.png gt=95 matched=4 n_pred=38
+2026-10-26 18:26:39,054 | INFO | cond=mixed max_det=300 fold=3 imagem=PET_PET-B-5000x-1.png gt=36 matched=0 n_pred=19
+2026-10-26 18:26:39,106 | INFO | cond=mixed max_det=300 fold=3 imagem=PET_PET-B2-2000x-4.png gt=156 matched=10 n_pred=63
+2026-10-26 18:26:39,137 | INFO | cond=mixed max_det=300 fold=3 imagem=PET_PETL 1000X.png gt=56 matched=1 n_pred=51
+2026-10-26 18:26:39,179 | INFO | cond=mixed max_det=300 fold=3 imagem=PE_PE 1000X 3.png gt=49 matched=24 n_pred=38
+2026-10-26 18:26:39,209 | INFO | cond=mixed max_det=300 fold=3 imagem=PE_PE 2000X.png gt=2 matched=1 n_pred=1
+2026-10-26 18:26:39,240 | INFO | cond=mixed max_det=300 fold=3 imagem=PE_PE 500-1.png gt=13 matched=6 n_pred=6
+2026-10-26 18:26:39,269 | INFO | cond=mixed max_det=300 fold=3 imagem=PE_PE-10000X.png gt=0 matched=0 n_pred=0
+2026-10-26 18:26:39,304 | INFO | cond=mixed max_det=300 fold=3 imagem=PE_PELFT 500X.png gt=40 matched=19 n_pred=20
+2026-10-26 18:26:39,334 | INFO | cond=mixed max_det=300 fold=3 imagem=PP_PP-10000X.png gt=16 matched=2 n_pred=3
+2026-10-26 18:26:39,460 | INFO | cond=mixed max_det=300 fold=3 imagem=PP_PP-3000x6.png gt=231 matched=60 n_pred=185
+2026-10-26 18:26:39,734 | INFO | cond=mixed max_det=300 fold=3 imagem=PP_PP-3000x8.png gt=257 matched=141 n_pred=284
+2026-10-26 18:26:39,817 | INFO | cond=mixed max_det=300 fold=3 imagem=PP_PPFT 500X.png gt=212 matched=39 n_pred=72
+2026-10-26 18:26:39,964 | INFO | cond=mixed max_det=300 fold=3 imagem=PP_PPLFT 500X.png gt=202 matched=86 n_pred=132
+2026-10-26 18:26:41,774 | INFO | cond=mixed max_det=300 fold=3 imagem=PS_PS 500X2.png gt=940 matched=273 n_pred=300
+2026-10-26 18:26:42,113 | INFO | cond=mixed max_det=300 fold=3 imagem=PS_PS-200x-2.png gt=160 matched=129 n_pred=299
+2026-10-26 18:26:42,953 | INFO | cond=mixed max_det=300 fold=3 imagem=PS_PS2  2000X.png gt=427 matched=181 n_pred=300
+2026-10-26 18:26:44,541 | INFO | cond=mixed max_det=300 fold=3 imagem=PS_PSL 200X.png gt=819 matched=248 n_pred=300
+2026-10-26 18:26:44,755 | INFO | cond=mixed max_det=300 fold=4 imagem=PET_PET 5000X 1.png gt=141 matched=43 n_pred=152
+2026-10-26 18:26:44,810 | INFO | cond=mixed max_det=300 fold=4 imagem=PET_PET 5000X.png gt=76 matched=36 n_pred=99
+2026-10-26 18:26:44,851 | INFO | cond=mixed max_det=300 fold=4 imagem=PET_PET-5000X-2.png gt=83 matched=16 n_pred=45
+2026-10-26 18:26:44,891 | INFO | cond=mixed max_det=300 fold=4 imagem=PET_PET-B-2-5000X.png gt=90 matched=0 n_pred=74
+2026-10-26 18:26:44,932 | INFO | cond=mixed max_det=300 fold=4 imagem=PET_PET-B-5000X.png gt=3 matched=0 n_pred=89
+2026-10-26 18:26:44,966 | INFO | cond=mixed max_det=300 fold=4 imagem=PE_PE 1000X 2.png gt=34 matched=11 n_pred=11
+2026-10-26 18:26:44,997 | INFO | cond=mixed max_det=300 fold=4 imagem=PE_PE 500-2.png gt=10 matched=0 n_pred=1
+2026-10-26 18:26:45,032 | INFO | cond=mixed max_det=300 fold=4 imagem=PE_PE-1000x.png gt=114 matched=6 n_pred=6
+2026-10-26 18:26:45,062 | INFO | cond=mixed max_det=300 fold=4 imagem=PE_PE-2000X-2.png gt=10 matched=8 n_pred=13
+2026-10-26 18:26:45,093 | INFO | cond=mixed max_det=300 fold=4 imagem=PE_PE-5000x-1.png gt=12 matched=7 n_pred=8
+2026-10-26 18:26:45,123 | INFO | cond=mixed max_det=300 fold=4 imagem=PP_PP 500X.png gt=235 matched=0 n_pred=34
+2026-10-26 18:26:47,313 | INFO | cond=mixed max_det=300 fold=4 imagem=PP_PP-1000x1.png gt=1268 matched=232 n_pred=297
+2026-10-26 18:26:48,810 | INFO | cond=mixed max_det=300 fold=4 imagem=PP_PP-1000x2.png gt=960 matched=188 n_pred=300
+2026-10-26 18:26:49,046 | INFO | cond=mixed max_det=300 fold=4 imagem=PP_PP-3000x2.png gt=218 matched=130 n_pred=300
+2026-10-26 18:26:49,082 | INFO | cond=mixed max_det=300 fold=4 imagem=PP_PP-5000X.png gt=81 matched=8 n_pred=14
+2026-10-26 18:26:49,360 | INFO | cond=mixed max_det=300 fold=4 imagem=PS_PS-100x.png gt=957 matched=26 n_pred=41
+2026-10-26 18:26:49,391 | INFO | cond=mixed max_det=300 fold=4 imagem=PS_PS-200x-3.png gt=98 matched=0 n_pred=3
+2026-10-26 18:26:49,459 | INFO | cond=mixed max_det=300 fold=4 imagem=PS_PS-200x-4.png gt=616 matched=6 n_pred=16
+2026-10-26 18:26:49,490 | INFO | cond=mixed max_det=300 fold=4 imagem=PS_PS2-200x-1.png gt=294 matched=0 n_pred=9
+2026-10-26 18:27:38,609 | INFO | iniciando mixed max_det=2000
+2026-10-26 18:27:40,215 | INFO | cond=mixed max_det=2000 fold=0 imagem=PET_PET-2000X-3.png gt=485 matched=343 n_pred=444
+2026-10-26 18:27:41,345 | INFO | cond=mixed max_det=2000 fold=0 imagem=PET_PET-2000X.png gt=518 matched=289 n_pred=453
+2026-10-26 18:27:41,388 | INFO | cond=mixed max_det=2000 fold=0 imagem=PET_PET-5000X.png gt=106 matched=1 n_pred=30
+2026-10-26 18:27:41,430 | INFO | cond=mixed max_det=2000 fold=0 imagem=PET_PET-B-1000X.png gt=75 matched=0 n_pred=263
+2026-10-26 18:27:41,468 | INFO | cond=mixed max_det=2000 fold=0 imagem=PET_PET1-5000X.png gt=222 matched=2 n_pred=139
+2026-10-26 18:27:41,544 | INFO | cond=mixed max_det=2000 fold=0 imagem=PET_PETL 200X.png gt=652 matched=4 n_pred=578
+2026-10-26 18:27:41,578 | INFO | cond=mixed max_det=2000 fold=0 imagem=PE_PE 1000-1.png gt=8 matched=8 n_pred=35
+2026-10-26 18:27:41,610 | INFO | cond=mixed max_det=2000 fold=0 imagem=PE_PE 2000X2.png gt=5 matched=1 n_pred=3
+2026-10-26 18:27:41,644 | INFO | cond=mixed max_det=2000 fold=0 imagem=PE_PE 3000X.png gt=14 matched=9 n_pred=13
+2026-10-26 18:27:41,680 | INFO | cond=mixed max_det=2000 fold=0 imagem=PE_PE-2-3000X.png gt=36 matched=17 n_pred=22
+2026-10-26 18:27:41,741 | INFO | cond=mixed max_det=2000 fold=0 imagem=PE_PEL 500X.png gt=68 matched=45 n_pred=68
+2026-10-26 18:27:41,787 | INFO | cond=mixed max_det=2000 fold=0 imagem=PP_PP 2000X.png gt=81 matched=26 n_pred=33
+2026-10-26 18:27:41,833 | INFO | cond=mixed max_det=2000 fold=0 imagem=PP_PP 500-1.png gt=10 matched=0 n_pred=10
+2026-10-26 18:27:41,889 | INFO | cond=mixed max_det=2000 fold=0 imagem=PP_PP 500X2.png gt=113 matched=35 n_pred=103
+2026-10-26 18:27:42,141 | INFO | cond=mixed max_det=2000 fold=0 imagem=PP_PP-3000x3.png gt=227 matched=127 n_pred=260
+2026-10-26 18:27:42,416 | INFO | cond=mixed max_det=2000 fold=0 imagem=PP_PP-3000x7.png gt=233 matched=149 n_pred=228
+2026-10-26 18:27:42,937 | INFO | cond=mixed max_det=2000 fold=0 imagem=PP_PPLFT 200X.png gt=337 matched=188 n_pred=224
+2026-10-26 18:27:44,865 | INFO | cond=mixed max_det=2000 fold=0 imagem=PS_PS 2000X.png gt=592 matched=352 n_pred=493
+2026-10-26 18:27:45,379 | INFO | cond=mixed max_det=2000 fold=0 imagem=PS_PS2  5000X.png gt=229 matched=171 n_pred=336
+2026-10-26 18:27:45,411 | INFO | cond=mixed max_det=2000 fold=0 imagem=PS_PS2-2000x-3.png gt=116 matched=0 n_pred=101
+2026-10-26 18:27:46,245 | INFO | cond=mixed max_det=2000 fold=0 imagem=PS_PSFT 2000X.png gt=295 matched=209 n_pred=433
+2026-10-26 18:27:52,390 | INFO | cond=mixed max_det=2000 fold=0 imagem=PS_PSLFT 200X.png gt=1099 matched=504 n_pred=892
+2026-10-26 18:27:52,560 | INFO | cond=mixed max_det=2000 fold=1 imagem=PET_PET 5000X 2.png gt=106 matched=27 n_pred=40
+2026-10-26 18:27:52,684 | INFO | cond=mixed max_det=2000 fold=1 imagem=PET_PET-2000X-2.png gt=490 matched=28 n_pred=232
+2026-10-26 18:27:52,907 | INFO | cond=mixed max_det=2000 fold=1 imagem=PET_PET-2000X-4.png gt=436 matched=26 n_pred=216
+2026-10-26 18:27:53,011 | INFO | cond=mixed max_det=2000 fold=1 imagem=PET_PET-B-2000x-2.png gt=121 matched=47 n_pred=157
+2026-10-26 18:27:53,200 | INFO | cond=mixed max_det=2000 fold=1 imagem=PET_PET-B2-2000x-1.png gt=226 matched=62 n_pred=207
+2026-10-26 18:27:53,306 | INFO | cond=mixed max_det=2000 fold=1 imagem=PET_PET-B2-2000x-2.png gt=143 matched=43 n_pred=149
+2026-10-26 18:27:53,341 | INFO | cond=mixed max_det=2000 fold=1 imagem=PE_PE 1000X.png gt=20 matched=13 n_pred=31
+2026-10-26 18:27:53,376 | INFO | cond=mixed max_det=2000 fold=1 imagem=PE_PE 3000X 3.png gt=20 matched=19 n_pred=25
+2026-10-26 18:27:53,410 | INFO | cond=mixed max_det=2000 fold=1 imagem=PE_PE-2000X-3.png gt=16 matched=14 n_pred=38
+2026-10-26 18:27:53,445 | INFO | cond=mixed max_det=2000 fold=1 imagem=PE_PEL 200X.png gt=61 matched=11 n_pred=43
+2026-10-26 18:27:53,477 | INFO | cond=mixed max_det=2000 fold=1 imagem=PE_PELFT 2000X.png gt=28 matched=3 n_pred=22
+2026-10-26 18:27:53,639 | INFO | cond=mixed max_det=2000 fold=1 imagem=PP_PP 100X.png gt=421 matched=46 n_pred=109
+2026-10-26 18:27:53,680 | INFO | cond=mixed max_det=2000 fold=1 imagem=PP_PP 2000X2.png gt=97 matched=13 n_pred=30
+2026-10-26 18:27:53,710 | INFO | cond=mixed max_det=2000 fold=1 imagem=PP_PP 5000X.png gt=12 matched=1 n_pred=7
+2026-10-26 18:27:53,754 | INFO | cond=mixed max_det=2000 fold=1 imagem=PP_PP-3000x1.png gt=335 matched=6 n_pred=30
+2026-10-26 18:27:53,785 | INFO | cond=mixed max_det=2000 fold=1 imagem=PP_PPFT 2000X.png gt=50 matched=0 n_pred=50
+2026-10-26 18:27:54,008 | INFO | cond=mixed max_det=2000 fold=1 imagem=PP_PPFT 200X.png gt=367 matched=83 n_pred=119
+2026-10-26 18:27:54,038 | INFO | cond=mixed max_det=2000 fold=1 imagem=PS_PS 5000X.png gt=171 matched=0 n_pred=6
+2026-10-26 18:27:55,614 | INFO | cond=mixed max_det=2000 fold=1 imagem=PS_PS-200X.png gt=1934 matched=113 n_pred=127
+2026-10-26 18:28:00,717 | INFO | cond=mixed max_det=2000 fold=1 imagem=PS_PSFT 200X.png gt=1014 matched=471 n_pred=794
+2026-10-26 18:28:00,749 | INFO | cond=mixed max_det=2000 fold=1 imagem=PS_PSL 10000X.png gt=140 matched=0 n_pred=0
+2026-10-26 18:28:00,803 | INFO | cond=mixed max_det=2000 fold=1 imagem=PS_PSL 5000X.png gt=260 matched=11 n_pred=65
+2026-10-26 18:28:01,203 | INFO | cond=mixed max_det=2000 fold=2 imagem=PET_PET-2-3000X.png gt=425 matched=83 n_pred=153
+2026-10-26 18:28:01,251 | INFO | cond=mixed max_det=2000 fold=2 imagem=PET_PET-5000X-4.png gt=102 matched=16 n_pred=16
+2026-10-26 18:28:01,369 | INFO | cond=mixed max_det=2000 fold=2 imagem=PET_PET-B-2000x-4.png gt=113 matched=86 n_pred=108
+2026-10-26 18:28:01,410 | INFO | cond=mixed max_det=2000 fold=2 imagem=PET_PET-B2-5000x-4.png gt=29 matched=0 n_pred=16
+2026-10-26 18:28:01,441 | INFO | cond=mixed max_det=2000 fold=2 imagem=PET_PETL 5000X.png gt=14 matched=0 n_pred=4
+2026-10-26 18:28:01,478 | INFO | cond=mixed max_det=2000 fold=2 imagem=PE_PE 3000X2.png gt=19 matched=15 n_pred=45
+2026-10-26 18:28:01,510 | INFO | cond=mixed max_det=2000 fold=2 imagem=PE_PE 500-3.png gt=10 matched=5 n_pred=22
+2026-10-26 18:28:01,541 | INFO | cond=mixed max_det=2000 fold=2 imagem=PE_PE-2000X.png gt=16 matched=12 n_pred=17
+2026-10-26 18:28:01,573 | INFO | cond=mixed max_det=2000 fold=2 imagem=PE_PE-3000X.png gt=11 matched=6 n_pred=9
+2026-10-26 18:28:01,603 | INFO | cond=mixed max_det=2000 fold=2 imagem=PE_PE-5000x.png gt=0 matched=0 n_pred=0
+2026-10-26 18:28:02,107 | INFO | cond=mixed max_det=2000 fold=2 imagem=PP_PP 100X2.png gt=330 matched=158 n_pred=229
+2026-10-26 18:28:08,444 | INFO | cond=mixed max_det=2000 fold=2 imagem=PP_PP-1000x3.png gt=1074 matched=622 n_pred=934
+2026-10-26 18:28:08,556 | INFO | cond=mixed max_det=2000 fold=2 imagem=PP_PP-2-3000X.png gt=218 matched=53 n_pred=102
+2026-10-26 18:28:08,652 | INFO | cond=mixed max_det=2000 fold=2 imagem=PP_PP-3000X.png gt=330 matched=28 n_pred=112
+2026-10-26 18:28:08,771 | INFO | cond=mixed max_det=2000 fold=2 imagem=PP_PP-3000x4.png gt=198 matched=61 n_pred=183
+2026-10-26 18:28:08,958 | INFO | cond=mixed max_det=2000 fold=2 imagem=PP_PP-3000x5.png gt=249 matched=87 n_pred=222
+2026-10-26 18:28:09,041 | INFO | cond=mixed max_det=2000 fold=2 imagem=PS_PS 500X 2.png gt=211 matched=34 n_pred=41
+2026-10-26 18:28:13,818 | INFO | cond=mixed max_det=2000 fold=2 imagem=PS_PS 500X.png gt=840 matched=518 n_pred=904
+2026-10-26 18:28:13,949 | INFO | cond=mixed max_det=2000 fold=2 imagem=PS_PS2-200x2.png gt=156 matched=69 n_pred=102
+2026-10-26 18:28:14,639 | INFO | cond=mixed max_det=2000 fold=2 imagem=PS_PSLFT 2000X.png gt=354 matched=202 n_pred=298
+2026-10-26 18:28:14,783 | INFO | cond=mixed max_det=2000 fold=3 imagem=PET_PET-10000X.png gt=31 matched=0 n_pred=0
+2026-10-26 18:28:14,838 | INFO | cond=mixed max_det=2000 fold=3 imagem=PET_PET-5000X-3.png gt=95 matched=4 n_pred=38
+2026-10-26 18:28:14,879 | INFO | cond=mixed max_det=2000 fold=3 imagem=PET_PET-B-5000x-1.png gt=36 matched=0 n_pred=19
+2026-10-26 18:28:14,931 | INFO | cond=mixed max_det=2000 fold=3 imagem=PET_PET-B2-2000x-4.png gt=156 matched=10 n_pred=63
+2026-10-26 18:28:14,962 | INFO | cond=mixed max_det=2000 fold=3 imagem=PET_PETL 1000X.png gt=56 matched=1 n_pred=51
+2026-10-26 18:28:15,006 | INFO | cond=mixed max_det=2000 fold=3 imagem=PE_PE 1000X 3.png gt=49 matched=24 n_pred=38
+2026-10-26 18:28:15,037 | INFO | cond=mixed max_det=2000 fold=3 imagem=PE_PE 2000X.png gt=2 matched=1 n_pred=1
+2026-10-26 18:28:15,068 | INFO | cond=mixed max_det=2000 fold=3 imagem=PE_PE 500-1.png gt=13 matched=6 n_pred=6
+2026-10-26 18:28:15,098 | INFO | cond=mixed max_det=2000 fold=3 imagem=PE_PE-10000X.png gt=0 matched=0 n_pred=0
+2026-10-26 18:28:15,132 | INFO | cond=mixed max_det=2000 fold=3 imagem=PE_PELFT 500X.png gt=40 matched=19 n_pred=20
+2026-10-26 18:28:15,162 | INFO | cond=mixed max_det=2000 fold=3 imagem=PP_PP-10000X.png gt=16 matched=2 n_pred=3
+2026-10-26 18:28:15,290 | INFO | cond=mixed max_det=2000 fold=3 imagem=PP_PP-3000x6.png gt=231 matched=60 n_pred=185
+2026-10-26 18:28:15,573 | INFO | cond=mixed max_det=2000 fold=3 imagem=PP_PP-3000x8.png gt=257 matched=141 n_pred=284
+2026-10-26 18:28:15,656 | INFO | cond=mixed max_det=2000 fold=3 imagem=PP_PPFT 500X.png gt=212 matched=39 n_pred=72
+2026-10-26 18:28:15,804 | INFO | cond=mixed max_det=2000 fold=3 imagem=PP_PPLFT 500X.png gt=202 matched=86 n_pred=132
+2026-10-26 18:28:19,099 | INFO | cond=mixed max_det=2000 fold=3 imagem=PS_PS 500X2.png gt=940 matched=419 n_pred=532
+2026-10-26 18:28:19,438 | INFO | cond=mixed max_det=2000 fold=3 imagem=PS_PS-200x-2.png gt=160 matched=129 n_pred=299
+2026-10-26 18:28:20,332 | INFO | cond=mixed max_det=2000 fold=3 imagem=PS_PS2  2000X.png gt=427 matched=186 n_pred=316
+2026-10-26 18:28:23,373 | INFO | cond=mixed max_det=2000 fold=3 imagem=PS_PSL 200X.png gt=819 matched=392 n_pred=563
+2026-10-26 18:28:23,586 | INFO | cond=mixed max_det=2000 fold=4 imagem=PET_PET 5000X 1.png gt=141 matched=43 n_pred=152
+2026-10-26 18:28:23,646 | INFO | cond=mixed max_det=2000 fold=4 imagem=PET_PET 5000X.png gt=76 matched=36 n_pred=99
+2026-10-26 18:28:23,687 | INFO | cond=mixed max_det=2000 fold=4 imagem=PET_PET-5000X-2.png gt=83 matched=16 n_pred=45
+2026-10-26 18:28:23,728 | INFO | cond=mixed max_det=2000 fold=4 imagem=PET_PET-B-2-5000X.png gt=90 matched=0 n_pred=74
+2026-10-26 18:28:23,769 | INFO | cond=mixed max_det=2000 fold=4 imagem=PET_PET-B-5000X.png gt=3 matched=0 n_pred=89
+2026-10-26 18:28:23,802 | INFO | cond=mixed max_det=2000 fold=4 imagem=PE_PE 1000X 2.png gt=34 matched=11 n_pred=11
+2026-10-26 18:28:23,833 | INFO | cond=mixed max_det=2000 fold=4 imagem=PE_PE 500-2.png gt=10 matched=0 n_pred=1
+2026-10-26 18:28:23,867 | INFO | cond=mixed max_det=2000 fold=4 imagem=PE_PE-1000x.png gt=114 matched=6 n_pred=6
+2026-10-26 18:28:23,898 | INFO | cond=mixed max_det=2000 fold=4 imagem=PE_PE-2000X-2.png gt=10 matched=8 n_pred=13
+2026-10-26 18:28:23,929 | INFO | cond=mixed max_det=2000 fold=4 imagem=PE_PE-5000x-1.png gt=12 matched=7 n_pred=8
+2026-10-26 18:28:23,959 | INFO | cond=mixed max_det=2000 fold=4 imagem=PP_PP 500X.png gt=235 matched=0 n_pred=34
+2026-10-26 18:28:26,169 | INFO | cond=mixed max_det=2000 fold=4 imagem=PP_PP-1000x1.png gt=1268 matched=232 n_pred=297
+2026-10-26 18:28:28,259 | INFO | cond=mixed max_det=2000 fold=4 imagem=PP_PP-1000x2.png gt=960 matched=257 n_pred=437
+2026-10-26 18:28:28,504 | INFO | cond=mixed max_det=2000 fold=4 imagem=PP_PP-3000x2.png gt=218 matched=132 n_pred=325
+2026-10-26 18:28:28,540 | INFO | cond=mixed max_det=2000 fold=4 imagem=PP_PP-5000X.png gt=81 matched=8 n_pred=14
+2026-10-26 18:28:28,821 | INFO | cond=mixed max_det=2000 fold=4 imagem=PS_PS-100x.png gt=957 matched=26 n_pred=41
+2026-10-26 18:28:28,852 | INFO | cond=mixed max_det=2000 fold=4 imagem=PS_PS-200x-3.png gt=98 matched=0 n_pred=3
+2026-10-26 18:28:28,918 | INFO | cond=mixed max_det=2000 fold=4 imagem=PS_PS-200x-4.png gt=616 matched=6 n_pred=16
+2026-10-26 18:28:28,949 | INFO | cond=mixed max_det=2000 fold=4 imagem=PS_PS2-200x-1.png gt=294 matched=0 n_pred=9

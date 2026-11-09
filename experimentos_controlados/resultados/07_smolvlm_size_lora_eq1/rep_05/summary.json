@@ -1,0 +1,36 @@
+{
+  "experiment": "07_smolvlm_size_lora_eq1",
+  "repetition_index": 5,
+  "repetition_seed": 5,
+  "environment": {
+    "timestamp_utc": "2026-10-23T20:26:01.850550+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+    "python_version": "3.10.22",
+    "git_commit": "f7a0a0a1",
+    "cpu_model": "AMD Ryzen 9 7900 12-Core Processor",
+    "n_cpus_logical": 24,
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "ram_total_gb": 30.49,
+    "cuda_version": "12.1",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
+    "nvidia_driver_version": "595.104.02",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "ultralytics_version": "8.4.126"
+  },
+  "metrics": {
+    "best_val_acc": 0.9291666666666667,
+    "test_acc": 0.9567307692307693
+  },
+  "metadata": {
+    "tag": "size_lora_eq1_ctrl_seed5",
+    "adapter_dir": "/home/mi/Dev/datasetMINA/experimentos/resultados/checkpoints/size_lora_eq1_ctrl_seed5",
+    "manifest": "/home/mi/Dev/datasetMINA/experimentos/resultados/57_build_size_regime_manifest_eq1/data/manifest_size_regime_eq1.csv",
+    "size_regime_rule": "eq1_equivalent_diameter",
+    "train_samples": 1000,
+    "val_samples": 240,
+    "test_samples": 208
+  }
+}

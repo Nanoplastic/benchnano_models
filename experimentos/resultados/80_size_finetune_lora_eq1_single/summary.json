@@ -1,0 +1,54 @@
+{
+  "experiment_name": "80_size_finetune_lora_eq1_single",
+  "metadata": {
+    "timestamp_utc": "2026-10-27T17:10:35.031619+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+    "os": "Linux",
+    "os_release": "7.1.5-76070105-generic",
+    "python_version": "3.10.22",
+    "python_implementation": "CPython",
+    "architecture": "x86_64",
+    "cpu": "x86_64",
+    "cpu_count": 24,
+    "ram_gb": 30.48801040649414,
+    "working_directory": "/home/mi/Dev/datasetMINA/experimentos",
+    "results_root": "/home/mi/Dev/datasetMINA/experimentos/resultados",
+    "device": "cuda",
+    "git_commit": "f7a0a0a1",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.1.4",
+    "pillow_version": "11.3.0",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "gpu_count": 1,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 4060 Ti"
+    ],
+    "gpu_capability": [
+      [
+        8,
+        9
+      ]
+    ],
+    "cuda_device": 0,
+    "experiment_name": "80_size_finetune_lora_eq1_single",
+    "script_name": "/home/mi/Dev/datasetMINA/experimentos/scripts/80_size_finetune_lora_eq1_single.py",
+    "results_dir": "/home/mi/Dev/datasetMINA/experimentos/resultados/80_size_finetune_lora_eq1_single",
+    "log_path": "/home/mi/Dev/datasetMINA/experimentos/resultados/80_size_finetune_lora_eq1_single/logs/80_size_finetune_lora_eq1_single_20261027T171035Z.log",
+    "tag": "size_lora_eq1_single"
+  },
+  "metrics": {
+    "tag": "size_lora_eq1_single",
+    "manifest": "/home/mi/Dev/datasetMINA/experimentos/resultados/57_build_size_regime_manifest_eq1/data/manifest_size_regime_eq1.csv",
+    "train_samples": 1000,
+    "val_samples": 240,
+    "test_samples": 208,
+    "best_val_acc": 0.9333333333333333,
+    "test_acc": 0.9711538461538461
+  }
+}

@@ -8,19 +8,29 @@
         \hline
         \textbf{Experimento} & \textbf{Métrica} & \textbf{n} & \textbf{Média} $\pm$ \textbf{DP} & \textbf{IC 95\%} \\
         \hline
-        YOLO26L principal & precision & 10 & 65.5\% $\pm$ 6.1\% & [61.1\%, 69.8\%] \\
-        YOLO26L principal & recall & 10 & 43.0\% $\pm$ 2.9\% & [41.0\%, 45.1\%] \\
-        YOLO26L principal & map50 & 10 & 35.8\% $\pm$ 4.6\% & [32.5\%, 39.1\%] \\
-        YOLO26L principal & map50_95 & 10 & 10.9\% $\pm$ 2.2\% & [9.4\%, 12.5\%] \\
+        YOLO26L principal (histórico, max_det=300 -- SUPERADO, ver 01_yolo26_main_maxdet2000) & precision & 10 & 65.5\% $\pm$ 6.1\% & [61.1\%, 69.8\%] \\
+        YOLO26L principal (histórico, max_det=300 -- SUPERADO, ver 01_yolo26_main_maxdet2000) & recall & 10 & 43.0\% $\pm$ 2.9\% & [41.0\%, 45.1\%] \\
+        YOLO26L principal (histórico, max_det=300 -- SUPERADO, ver 01_yolo26_main_maxdet2000) & map50 & 10 & 35.8\% $\pm$ 4.6\% & [32.5\%, 39.1\%] \\
+        YOLO26L principal (histórico, max_det=300 -- SUPERADO, ver 01_yolo26_main_maxdet2000) & map50_95 & 10 & 10.9\% $\pm$ 2.2\% & [9.4\%, 12.5\%] \\
+        YOLO26L principal (max_det=2000, corrigido -- valor publicado no artigo) & precision & 10 & 59.8\% $\pm$ 6.9\% & [54.9\%, 64.7\%] \\
+        YOLO26L principal (max_det=2000, corrigido -- valor publicado no artigo) & recall & 10 & 49.4\% $\pm$ 3.3\% & [47.0\%, 51.8\%] \\
+        YOLO26L principal (max_det=2000, corrigido -- valor publicado no artigo) & map50 & 10 & 40.0\% $\pm$ 5.6\% & [36.0\%, 44.0\%] \\
+        YOLO26L principal (max_det=2000, corrigido -- valor publicado no artigo) & map50_95 & 10 & 12.1\% $\pm$ 2.3\% & [10.5\%, 13.7\%] \\
         SmolVLM LoRA polímero (só real) & test_acc & 10 & 70.2\% $\pm$ 3.4\% & [67.8\%, 72.7\%] \\
         SmolVLM LoRA polímero (real+sintético) & test_acc & 10 & 68.0\% $\pm$ 4.3\% & [64.9\%, 71.1\%] \\
         SmolVLM ~2B polímero (só real) & test_acc & 10 & 73.4\% $\pm$ 3.2\% & [71.1\%, 75.7\%] \\
-        SmolVLM LoRA regime de tamanho & test_acc & 10 & 89.8\% $\pm$ 2.1\% & [88.3\%, 91.2\%] \\
-        SmolVLM full fine-tune regime de tamanho & test_acc & 10 & 87.9\% $\pm$ 2.0\% & [86.5\%, 89.4\%] \\
-        Fim-a-fim pareado (YOLO+SmolVLM regime) & D_rate & 10 & 37.4\% $\pm$ 2.9\% & [35.3\%, 39.5\%] \\
-        Fim-a-fim pareado (YOLO+SmolVLM regime) & P_rate_given_D & 10 & 81.7\% $\pm$ 8.3\% & [75.7\%, 87.6\%] \\
-        Fim-a-fim pareado (YOLO+SmolVLM regime) & smolvlm_accuracy_predicted_box & 10 & 87.0\% $\pm$ 2.4\% & [85.3\%, 88.7\%] \\
-        Fim-a-fim pareado (YOLO+SmolVLM regime) & E_rate_strict_end_to_end & 10 & 26.6\% $\pm$ 3.5\% & [24.1\%, 29.0\%] \\
+        SmolVLM LoRA regime de tamanho (histórico -- SUPERADO, ver 07_smolvlm_size_lora_eq1) & test_acc & 10 & 89.8\% $\pm$ 2.1\% & [88.3\%, 91.2\%] \\
+        SmolVLM full fine-tune regime de tamanho (histórico -- SUPERADO, ver 08_smolvlm_size_full_eq1) & test_acc & 10 & 87.9\% $\pm$ 2.0\% & [86.5\%, 89.4\%] \\
+        SmolVLM LoRA regime de tamanho (regra eq1 -- valor publicado no artigo) & test_acc & 10 & 92.9\% $\pm$ 1.3\% & [92.0\%, 93.8\%] \\
+        SmolVLM full fine-tune regime de tamanho (regra eq1 -- valor publicado no artigo) & test_acc & 10 & 92.8\% $\pm$ 1.1\% & [92.1\%, 93.6\%] \\
+        Fim-a-fim pareado (YOLO+SmolVLM regime) (histórico, max_det=300 -- SUPERADO, ver 09_end_to_end_paired_maxdet2000) & D_rate & 10 & 37.4\% $\pm$ 2.9\% & [35.3\%, 39.5\%] \\
+        Fim-a-fim pareado (YOLO+SmolVLM regime) (histórico, max_det=300 -- SUPERADO, ver 09_end_to_end_paired_maxdet2000) & P_rate_given_D & 10 & 81.7\% $\pm$ 8.3\% & [75.7\%, 87.6\%] \\
+        Fim-a-fim pareado (YOLO+SmolVLM regime) (histórico, max_det=300 -- SUPERADO, ver 09_end_to_end_paired_maxdet2000) & smolvlm_accuracy_predicted_box & 10 & 87.0\% $\pm$ 2.4\% & [85.3\%, 88.7\%] \\
+        Fim-a-fim pareado (YOLO+SmolVLM regime) (histórico, max_det=300 -- SUPERADO, ver 09_end_to_end_paired_maxdet2000) & E_rate_strict_end_to_end & 10 & 26.6\% $\pm$ 3.5\% & [24.1\%, 29.0\%] \\
+        Fim-a-fim pareado (YOLO+SmolVLM regime) (max_det=2000 -- valor publicado no artigo) & D_rate & 10 & 45.7\% $\pm$ 5.9\% & [41.5\%, 49.9\%] \\
+        Fim-a-fim pareado (YOLO+SmolVLM regime) (max_det=2000 -- valor publicado no artigo) & P_rate_given_D & 10 & 83.6\% $\pm$ 7.4\% & [78.3\%, 88.8\%] \\
+        Fim-a-fim pareado (YOLO+SmolVLM regime) (max_det=2000 -- valor publicado no artigo) & smolvlm_accuracy_predicted_box & 10 & 86.1\% $\pm$ 3.0\% & [83.9\%, 88.2\%] \\
+        Fim-a-fim pareado (YOLO+SmolVLM regime) (max_det=2000 -- valor publicado no artigo) & E_rate_strict_end_to_end & 10 & 32.9\% $\pm$ 5.2\% & [29.2\%, 36.6\%] \\
         \hline
     \end{tabular}
 \end{table}
