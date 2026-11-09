@@ -1,6 +1,10 @@
 # Benchnano Models
 
-Code, configurations, and experimental results from the paper **"Two Stage Vision Pipeline and Layered Provenance Architecture for Microplastic and Nanoplastic Analysis in SEM"** (Evangelista, da Silva, de Jesus, Alexsander, da Silva, Flores, Barros, Guterres, Pimentel Júnior, Dora, Malheiros, Pias — Federal University of Rio Grande, Center for Computational Sciences).
+<p align="center">
+  <img src="assets/logos_banner.png" alt="e-Colab, FURG, UTEC, UEM">
+</p>
+
+Code, configurations, and experimental results from the paper **"Two Stage Vision Pipeline and Layered Provenance Architecture for Microplastic and Nanoplastic Analysis in SEM"** (Evangelista, da Silva, de Jesus, Alexsander, da Silva, Flores, Barros, Guterres, Pimentel Júnior, Dora, Malheiros, Pias — Federal University of Rio Grande (FURG, Brazil), Technological University of Uruguay (UTEC, Uruguay), and State University of Maringá (UEM, Brazil)).
 
 ## About the Project
 
