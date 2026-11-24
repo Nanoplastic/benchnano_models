@@ -1,0 +1,85 @@
+{
+  "polymer_family": [
+    {
+      "config_a": "Real only LoRA (500M)",
+      "config_b": "Real+synthetic LoRA (500M)",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.7024038461538461,
+      "mean_b": 0.6798076923076923,
+      "diff_pp": 2.2596153846153766,
+      "ci95_diff_pp": [
+        -1.4218266447740755,
+        5.9410574140048285
+      ],
+      "t_stat": 1.2940137131943905,
+      "df_welch": 17.167234380194508,
+      "p_value": 0.21279916630981327,
+      "hedges_g": 0.5542483904319184,
+      "alpha_corrected": 0.016666666666666666,
+      "significant_bonferroni": false
+    },
+    {
+      "config_a": "Real only LoRA (500M)",
+      "config_b": "Real only LoRA (~2B)",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.7024038461538461,
+      "mean_b": 0.7341346153846153,
+      "diff_pp": -3.173076923076923,
+      "ci95_diff_pp": [
+        -6.309091706258277,
+        -0.037062139895568946
+      ],
+      "t_stat": -2.1264522820788803,
+      "df_welch": 17.917586951744088,
+      "p_value": 0.04762179503023755,
+      "hedges_g": -0.9107961860489564,
+      "alpha_corrected": 0.016666666666666666,
+      "significant_bonferroni": false
+    },
+    {
+      "config_a": "Real+synthetic LoRA (500M)",
+      "config_b": "Real only LoRA (~2B)",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.6798076923076923,
+      "mean_b": 0.7341346153846153,
+      "diff_pp": -5.4326923076922995,
+      "ci95_diff_pp": [
+        -9.030104924798795,
+        -1.835279690585804
+      ],
+      "t_stat": -3.191162475364369,
+      "df_welch": 16.65805406877795,
+      "p_value": 0.005456868526291185,
+      "hedges_g": -1.3668299242449675,
+      "alpha_corrected": 0.016666666666666666,
+      "significant_bonferroni": true
+    }
+  ],
+  "size_regime_family": [
+    {
+      "config_a": "LoRA",
+      "config_b": "Full fine tuning",
+      "n_a": 10,
+      "n_b": 10,
+      "mean_a": 0.8975961538461539,
+      "mean_b": 0.8793269230769232,
+      "diff_pp": 1.8269230769230704,
+      "ci95_diff_pp": [
+        -0.0747969592394912,
+        3.728643113085632
+      ],
+      "t_stat": 2.018410560620049,
+      "df_welch": 17.98504089129392,
+      "p_value": 0.05871520712308011,
+      "hedges_g": 0.8645200534180069,
+      "alpha_corrected": 0.05,
+      "significant_bonferroni": false,
+      "mann_whitney_p_value": 0.04010984646878768
+    }
+  ],
+  "polymer_alpha_corrected": 0.016666666666666666,
+  "size_regime_alpha": 0.05
+}

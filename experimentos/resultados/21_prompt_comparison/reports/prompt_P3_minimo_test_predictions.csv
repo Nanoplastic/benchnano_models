@@ -1,0 +1,209 @@
+image_path,true_label,raw_answer,pred_label,correct
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_92.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_107.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_6.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_111.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_110.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_100.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_94.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_106.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_102.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_4.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_96.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_104.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_103.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_101.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_95.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_108.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_97.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_98.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_3.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_99.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_109.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_2.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_1.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_5.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_7.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_8.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_93.png,MICROPLASTIC,MICROPLASTIC (above).,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_105.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2501.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1091.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1080.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2562.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2697.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1144.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1267.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4206.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_924.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1086.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1118.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1213.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1075.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1125.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2470.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET 5000X 1_84.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4138.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4122.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1110.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2398.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_795.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET 5000X 1_32.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_838.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_955.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1246.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_889.png,NANOPLASTIC,NANOPLASTIC.,NANOPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_971.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2425.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4135.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2612.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1248.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2399.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1198.png,NANOPLASTIC,Above.,Unresolved,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_786.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_820.png,MICROPLASTIC,Above.,Unresolved,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1023.png,NANOPLASTIC,Above.,Unresolved,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_985.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_857.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET 5000X 1_7.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2644.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_972.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2346.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET 5000X 1_25.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2310.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2601.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4186.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2359.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1266.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1016.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4144.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2645.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_910.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1207.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1127.png,NANOPLASTIC,NANOPLASTIC.,NANOPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1205.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2590.png,NANOPLASTIC,NANOPLASTIC.,NANOPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2326.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2334.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET 5000X 1_128.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_787.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2337.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1957.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2412.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1755.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2025.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6465.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1341.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1386.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6011.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2124.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6827.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1434.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6831.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6676.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2037.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6666.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6475.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1709.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6440.png,NANOPLASTIC,NANOPLASTIC.,NANOPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6665.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6455.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6616.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1438.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6418.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1813.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6854.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1822.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2279.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6075.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1485.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2060.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6569.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6107.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1954.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2092.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6806.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1610.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2267.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6849.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6664.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2079.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1645.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6090.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2373.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2024.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1413.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1968.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2428.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1505.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1489.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6087.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1461.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2453.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6050.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6543.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2576.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2233.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1361.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1947.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1404.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4041.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4024.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8733.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4311.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8784.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_3922.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4765.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4814.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4211.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4291.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4613.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10187.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4711.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4450.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4264.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4609.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-200x-2_6817.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10241.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4292.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8736.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10226.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10208.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4532.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4244.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4123.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4389.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4420.png,MICROPLASTIC,MICROPLASTIC (above).,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4083.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_3932.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4540.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-200x-2_6853.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8820.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4671.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4375.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4640.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8806.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10297.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-200x-2_6849.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8741.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10264.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-200x-2_6889.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4074.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8847.png,MICROPLASTIC,NANOPLASTIC.,NANOPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8844.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4719.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4566.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4812.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8789.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8862.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4001.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-200x-2_6810.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_3969.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4734.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10221.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4017.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8854.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4219.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4045.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4409.png,MICROPLASTIC,MICROPLASTIC.,MICROPLASTIC,True
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10249.png,NANOPLASTIC,MICROPLASTIC.,MICROPLASTIC,False

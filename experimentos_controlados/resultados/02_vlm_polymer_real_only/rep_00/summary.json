@@ -1,0 +1,30 @@
+{
+  "experiment": "02_vlm_polymer_real_only",
+  "repetition_index": 0,
+  "repetition_seed": 0,
+  "environment": {
+    "timestamp_utc": "2026-09-02T20:30:20.384006+00:00",
+    "host": "pop-os",
+    "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.35",
+    "python_version": "3.10.12",
+    "git_commit": "af2f535c",
+    "torch_version": "2.4.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
+    "transformers_version": "4.49.0",
+    "peft_version": "0.18.1",
+    "ultralytics_version": "8.4.126"
+  },
+  "metrics": {
+    "best_val_acc": 0.6041666666666666,
+    "test_acc": 0.6923076923076923
+  },
+  "metadata": {
+    "tag": "mina_real_only_lora_ctrl_seed0",
+    "adapter_dir": "<PROJETO_ORIGEM>/experimentos/resultados/checkpoints/mina_real_only_lora_ctrl_seed0",
+    "train_samples": 1000,
+    "val_samples": 240,
+    "test_samples": 208
+  }
+}

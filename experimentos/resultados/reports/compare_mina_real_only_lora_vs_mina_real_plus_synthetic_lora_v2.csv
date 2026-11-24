@@ -1,0 +1,2 @@
+tag_a,tag_b,n,acc_a,acc_b,diff,naive_ci_low,naive_ci_high,bootstrap_ci_low,bootstrap_ci_high,mcnemar_p_value,mcnemar_significant
+mina_real_only_lora,mina_real_plus_synthetic_lora_v2,208,0.7115384615384616,0.6923076923076923,0.019230769230769273,-0.04515550782922742,0.08361704629076588,-0.09375431629834254,0.11186779661016945,0.6587380770236564,False

@@ -1,0 +1,4 @@
+# PT: caches de rótulos gerados pelo Ultralytics (recriados automaticamente) / EN: Ultralytics label caches (recreated automatically)
+*.cache
+__pycache__/
+*.pyc

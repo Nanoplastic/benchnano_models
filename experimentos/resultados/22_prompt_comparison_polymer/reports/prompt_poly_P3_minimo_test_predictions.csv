@@ -1,0 +1,209 @@
+image_path,true_label,raw_answer,pred_label,correct
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_92.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_107.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_6.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_111.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_110.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_100.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_94.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_106.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_102.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_4.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_96.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_104.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_103.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_101.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_95.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_108.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_97.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_98.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_3.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_99.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_109.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_2.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_1.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_5.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_7.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000-1_8.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_93.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PE/PE 1000X_105.png,PE,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2501.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1091.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1080.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2562.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2697.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1144.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1267.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4206.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_924.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1086.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1118.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1213.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1075.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1125.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2470.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET 5000X 1_84.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4138.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4122.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1110.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2398.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_795.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET 5000X 1_32.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_838.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_955.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1246.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_889.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_971.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2425.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4135.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2612.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1248.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2399.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1198.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_786.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_820.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1023.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_985.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_857.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET 5000X 1_7.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2644.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_972.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2346.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET 5000X 1_25.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2310.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2601.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4186.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2359.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1266.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1016.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-B-2-5000X_4144.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2645.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_910.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1207.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1127.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_1205.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2590.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2326.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X_2334.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET 5000X 1_128.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PET/PET-2000X-2_787.png,PET,PET.,PET,True
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2337.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1957.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2412.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1755.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2025.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6465.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1341.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1386.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6011.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2124.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6827.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1434.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6831.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6676.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2037.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6666.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6475.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1709.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6440.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6665.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6455.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6616.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1438.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6418.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1813.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6854.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1822.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2279.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6075.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1485.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2060.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6569.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6107.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1954.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2092.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6806.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1610.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2267.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6849.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x7_6664.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2079.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1645.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6090.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2373.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2024.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1413.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1968.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2428.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1505.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1489.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6087.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1461.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2453.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x4_6050.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-3000x6_6543.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2576.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_2233.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1361.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1947.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PP/PP-1000x1_1404.png,PP,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4041.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4024.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8733.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4311.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8784.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_3922.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4765.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4814.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4211.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4291.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4613.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10187.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4711.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4450.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4264.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4609.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-200x-2_6817.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10241.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4292.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8736.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10226.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10208.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4532.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4244.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4123.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4389.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4420.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4083.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_3932.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4540.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-200x-2_6853.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8820.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4671.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4375.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4640.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8806.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10297.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-200x-2_6849.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8741.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10264.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-200x-2_6889.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4074.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8847.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8844.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4719.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4566.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4812.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8789.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8862.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4001.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-200x-2_6810.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_3969.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4734.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10221.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4017.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS2-200x2_8854.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4219.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4045.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PS-100x_4409.png,PS,PET.,PET,False
+resultados/01_extract_real_crops/data/real_crops/test/PS/PSL 10000X_10249.png,PS,PET.,PET,False
